@@ -1,0 +1,172 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{11}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Migdall}\ \emph {et~al.}(1985)\citenamefont
+  {Migdall}, \citenamefont {Prodan}, \citenamefont {Phillips}, \citenamefont
+  {Bergeman},\ and\ \citenamefont {Metcalf}}]{Migdall1985}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~L.}\ \bibnamefont
+  {Migdall}}, \bibinfo {author} {\bibfnamefont {J.~V.}\ \bibnamefont {Prodan}},
+  \bibinfo {author} {\bibfnamefont {W.~D.}\ \bibnamefont {Phillips}}, \bibinfo
+  {author} {\bibfnamefont {T.~H.}\ \bibnamefont {Bergeman}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {H.~J.}\ \bibnamefont {Metcalf}},\ }\href {\doibase
+  10.1103/PhysRevLett.54.2596} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo
+  {pages} {2596} (\bibinfo {year} {1985})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Petrich}\ \emph {et~al.}(1995)\citenamefont
+  {Petrich}, \citenamefont {Anderson}, \citenamefont {Ensher},\ and\
+  \citenamefont {Cornell}}]{Petrich1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Petrich}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Anderson}}, \bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Ensher}}, \ and\ \bibinfo {author} {\bibfnamefont {E.~A.}\ \bibnamefont
+  {Cornell}},\ }\href {\doibase 10.1103/PhysRevLett.74.3352} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
+  {volume} {74}},\ \bibinfo {pages} {3352} (\bibinfo {year}
+  {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davis}\ \emph {et~al.}(1995)\citenamefont {Davis},
+  \citenamefont {Mewes}, \citenamefont {Andrews}, \citenamefont {van Druten},
+  \citenamefont {Durfee}, \citenamefont {Kurn},\ and\ \citenamefont
+  {Ketterle}}]{Davis1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~B.}\ \bibnamefont
+  {Davis}}, \bibinfo {author} {\bibfnamefont {M.~O.}\ \bibnamefont {Mewes}},
+  \bibinfo {author} {\bibfnamefont {M.~R.}\ \bibnamefont {Andrews}}, \bibinfo
+  {author} {\bibfnamefont {N.~J.}\ \bibnamefont {van Druten}}, \bibinfo
+  {author} {\bibfnamefont {D.~S.}\ \bibnamefont {Durfee}}, \bibinfo {author}
+  {\bibfnamefont {D.~M.}\ \bibnamefont {Kurn}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Ketterle}},\ }\href {\doibase
+  10.1103/PhysRevLett.75.3969} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
+  {pages} {3969} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lara}\ \emph {et~al.}(2008)\citenamefont {Lara},
+  \citenamefont {Lev},\ and\ \citenamefont {Bohn}}]{Lara2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lara}}, \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont {Lev}}, \
+  and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Bohn}},\ }\href
+  {\doibase 10.1103/PhysRevA.78.033433} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review A - Atomic, Molecular, and Optical Physics}\
+  }\textbf {\bibinfo {volume} {78}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2008})},\ \Eprint {http://arxiv.org/abs/arXiv:0806.2245v1}
+  {arXiv:arXiv:0806.2245v1} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bergeman}\ \emph {et~al.}(1989)\citenamefont
+  {Bergeman}, \citenamefont {McNicholl}, \citenamefont {Kycia}, \citenamefont
+  {Metcalf},\ and\ \citenamefont {Balazs}}]{Bergeman1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
+  {Bergeman}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {McNicholl}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kycia}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Metcalf}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {N.~L.}\ \bibnamefont {Balazs}},\ }\href {\doibase
+  10.1364/JOSAB.6.002249} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of the Optical Society of America B}\ }\textbf {\bibinfo {volume} {6}},\
+  \bibinfo {pages} {2249} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont {Qu}(2013)}]{Bohn2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Qu}},\
+  }\href {\doibase 10.1080/00268976.2013.783721} {\bibfield  {journal}
+  {\bibinfo  {journal} {Molecular physics}\ }\textbf {\bibinfo {volume}
+  {111}},\ \bibinfo {pages} {1931} (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/arXiv:1301.2590v1} {arXiv:arXiv:1301.2590v1}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Golub}\ and\ \citenamefont
+  {Pendlebury}(1979)}]{Golub1979}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Golub}}\ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Pendlebury}},\ }\href {\doibase 10.1088/0034-4885/42/3/002} {\bibfield
+  {journal} {\bibinfo  {journal} {Reports on Progress in Physics}\ }\textbf
+  {\bibinfo {volume} {42}},\ \bibinfo {pages} {439} (\bibinfo {year}
+  {1979})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pritchard}(1983)}]{Pritchard1983}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
+  {Pritchard}},\ }\href {\doibase 10.1103/PhysRevLett.51.1336} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
+  {volume} {51}},\ \bibinfo {pages} {1336} (\bibinfo {year}
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rabi}(1936)}]{Rabi1936}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~I.}\ \bibnamefont
+  {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
+  \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stuhl}\ \emph {et~al.}(2012)\citenamefont {Stuhl},
+  \citenamefont {Hummon}, \citenamefont {Yeo}, \citenamefont
+  {Qu{\'{e}}m{\'{e}}ner}, \citenamefont {Bohn},\ and\ \citenamefont
+  {Ye}}]{Stuhl2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Qu{\'{e}}m{\'{e}}ner}}, \bibinfo {author}
+  {\bibfnamefont {J.~L.}\ \bibnamefont {Bohn}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
+  10.1038/nature11718} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
+  }\textbf {\bibinfo {volume} {492}},\ \bibinfo {pages} {396} (\bibinfo {year}
+  {2012})},\ \Eprint {http://arxiv.org/abs/1209.6343} {arXiv:1209.6343}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stuhl}\ \emph {et~al.}(2013)\citenamefont {Stuhl},
+  \citenamefont {Yeo}, \citenamefont {Hummon},\ and\ \citenamefont
+  {Ye}}]{Stuhl2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo
+  {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
+  10.1080/00268976.2013.793838} {\bibfield  {journal} {\bibinfo  {journal}
+  {Molecular Physics}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages}
+  {1} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\end{thebibliography}%
