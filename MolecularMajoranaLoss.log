@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  2 JAN 2017 14:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  25 JAN 2017 09:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -319,60 +319,132 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<rainbow_EB_angle_ring.png, id=18, 385.44pt x 238.8925pt>
-File: rainbow_EB_angle_ring.png Graphic file (type png)
+)
+<blocking.png, id=1, 526.96875pt x 301.125pt>
+File: blocking.png Graphic file (type png)
+ <use blocking.png>
+Package pdftex.def Info: blocking.png used on input line 91.
+(pdftex.def)             Requested size: 284.52756pt x 162.59587pt.
 
-<use rainbow_EB_angle_ring.png>
-Package pdftex.def Info: rainbow_EB_angle_ring.png used on input line 119.
-(pdftex.def)             Requested size: 199.16928pt x 123.44109pt.
+Overfull \hbox (38.52756pt too wide) in paragraph at lines 91--92
+ [][] 
+ []
 
-<blue-red-yellow-v2_CAD.png, id=20, 1606.0pt x 903.375pt>
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} <./blocking.png 
+(PNG copy)>]
+
+Package natbib Warning: Citation `sawyer2008' on page 2 undefined on input line
+ 106.
+
+
+LaTeX Warning: Reference `HZprop' on page 2 undefined on input line 106.
+
+<blue-red-yellow-v2_CAD.png, id=19, 1606.0pt x 903.375pt>
 File: blue-red-yellow-v2_CAD.png Graphic file (type png)
 
 <use blue-red-yellow-v2_CAD.png>
-Package pdftex.def Info: blue-red-yellow-v2_CAD.png used on input line 151.
-(pdftex.def)             Requested size: 199.16928pt x 112.0256pt.
+Package pdftex.def Info: blue-red-yellow-v2_CAD.png used on input line 139.
+(pdftex.def)             Requested size: 256.0748pt x 144.03293pt.
 
-<Loss_Surface_Chunks_0-320_0.jpeg, id=21, 1572.87625pt x 1606.0pt>
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 139--140
+ [][] 
+ []
+
+[2 <./blue-red-yellow-v2_CAD.png>]
+
+Package natbib Warning: Citation `Bochinnski2003' on page 3 undefined on input 
+line 151.
+
+<Loss_Surface_Chunks_0-320_0.jpeg, id=28, 1572.87625pt x 1606.0pt>
 File: Loss_Surface_Chunks_0-320_0.jpeg Graphic file (type jpg)
 
 <use Loss_Surface_Chunks_0-320_0.jpeg>
 Package pdftex.def Info: Loss_Surface_Chunks_0-320_0.jpeg used on input line 15
-9.
-(pdftex.def)             Requested size: 199.16928pt x 203.34709pt.
- (./MolecularMajoranaLoss.bbl [2 <./rainbow_EB_angle_ring.png>]
+4.
+(pdftex.def)             Requested size: 256.0748pt x 261.44977pt.
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 80.
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 154--155
+ [][] 
+ []
 
-) [3 <./blue-red-yellow-v2_CAD.png>] [4 <./Loss_Surface_Chunks_0-320_0.jpeg>]
-(./MolecularMajoranaLoss.aux) ) 
+<V-to-W-plot-3D-dave.png, id=29, 577.39926pt x 435.9022pt>
+File: V-to-W-plot-3D-dave.png Graphic file (type png)
+
+<use V-to-W-plot-3D-dave.png>
+Package pdftex.def Info: V-to-W-plot-3D-dave.png used on input line 170.
+(pdftex.def)             Requested size: 256.0748pt x 193.32736pt.
+
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 170--171
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `ref:githubCOMcode' on page 3 undefined on inp
+ut line 178.
+
+[3 <./Loss_Surface_Chunks_0-320_0.jpeg> <./V-to-W-plot-3D-dave.png (PNG copy)>]
+<MW-thermometry.png, id=33, 575.90157pt x 355.3275pt>
+File: MW-thermometry.png Graphic file (type png)
+ <use MW-thermometry.png>
+Package pdftex.def Info: MW-thermometry.png used on input line 181.
+(pdftex.def)             Requested size: 256.0748pt x 157.99823pt.
+
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 181--182
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `stuhl2012evap' on page 4 undefined on input l
+ine 187.
+
+<reduce-density-compare.png, id=34, 538.26094pt x 325.215pt>
+File: reduce-density-compare.png Graphic file (type png)
+
+<use reduce-density-compare.png>
+Package pdftex.def Info: reduce-density-compare.png used on input line 192.
+(pdftex.def)             Requested size: 256.0748pt x 154.72188pt.
+
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 192--193
+ [][] 
+ []
+
+(./MolecularMajoranaLoss.bbl [4 <./MW-thermometry.png (PNG copy)> <./reduce-den
+sity-compare.png (PNG copy)>])
+
+Package natbib Warning: There were undefined citations.
+
+[5] (./MolecularMajoranaLoss.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4562 strings out of 494227
- 60062 string characters out of 6157703
- 140872 words of memory out of 5000000
- 7767 multiletter control sequences out of 15000+600000
+ 4587 strings out of 494227
+ 60520 string characters out of 6157703
+ 137930 words of memory out of 5000000
+ 7789 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 38i,7n,28p,3225b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-</opt/local/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb></opt/local/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmbx9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></opt/loc
-al/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/local/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></opt/local/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/local/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/local/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (4 pages, 1679303 bytes).
+ 38i,7n,28p,1600b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
+pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
+cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/local/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/local/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr5.pfb></opt/local/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
+opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/lo
+cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on MolecularMajoranaLoss.pdf (5 pages, 1675929 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
