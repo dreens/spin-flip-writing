@@ -85,50 +85,55 @@ Quantum degenerate atomic ensembles continue to support an impressive array of f
 
 The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the very first magnetic trapping of neutrals\cite{Migdall1985}. Spin flips were directly observed and overcome in the TOP trap\cite{Petrich1995}, and shortly later with a plugged dipole trap\cite{Davis1995}, famously enabling the first quantum degenerate atomic ensembles. The molecular spin-flips can occur at much higher temperatures compared with their atomic counterpart, and thus they need to be addressed much earlier than might have been expected. The magnitude of the loss varies with molecular species, and is particularly strong for the case of the OH molecule used here, but is nonetheless remarkably general.
 
+In section two, we will thoroughly explain this crossed field spin flip loss mechanism and it's applicability to other molecules, before describing our new electromagnetic trap geometry in section three. In section four we provide our experimental evidence and then conclude.
+
 
 %%%%%%%%%%%%%%%%%%%
 %  EXPLAIN THE LOSS MECHANISM
 %%%%%%%%%%%%%%%%%%%
 \section{Loss Mechanism  \label{sec:lm} }
-To understand the enhanced trap loss for dipolar molecules, first consider a molecule in homogeneous fields. For Hund's case (a) molecules, as described in \cite{Lara2008}, the Stark and Zeeman perturbations are not mutually diagonal, and thus the effects combine differently depending on the angle between the fields. With parallel fields the effects are purely additive, but with perpendicular fields they are less so.
+Successful trapping is predicated on the adiabatic criterion that the internal state of the trapped species is decoupled from the trapping geometry and maintains its quantization direction despite slow changes in the magnitude and direction of the field providing said quantization. Conversely, this fails whenever the variation in the external field is too fast, in which case the adiabatic criterion is not satisfied and the state may flip to an un-trapped one. Near the zero of a magnetic quadrupole trap, the direction of the field can change rapidly, leading to this breakdown, which we call spin-flip loss.
 
-Specializing to the case of a magnetic quadrupole trapping geometry with superposed homogeneous electric field, we find that close to the trap center, where the magnetic field goes to zero, the electric field means that the trap doesn't grow as strongly in the plane where E.B=0 as it does outside. In ref.~\cite{Lara2008} it is correctly predicted that the resulting increase in the size of the region where spin flips occur is negligible for $^2\Pi_{1/2}$ molecules. However the situation is different for $^2\Pi_{3/2}$. Essentially the greater spin quantum number requires a higher order perturbative coupling to break the Stark basis, and so the zeeman effect actually becomes quadratic. Worse, the zeeman effect is the same for the top two states to quadratic order, and so the gap between them only grows with the cube of the magnetic field.
+An equivalent description of spin-flip loss focuses on the proximity of other states to the primary trapped state. When other states are nearby in energy to the trapped one, it becomes possible to hop to them, and since the external field breaks the degeneracy between these states, when it is small hops are possible, again near the zero of a magnetic quadrupole trap. The exact formulation for the simplest system first performed by Majorana shows that both descriptions contribute, and hopping probability is proportional to the exponent of energy gap between nearby states divided by the rate of change of the state energy:
 
-This mechanism would be even more greatly pronounced in a state with higher J.
- 
-The Loss Mechanism is a diabatic passage of the molecule from a trapped to an untrapped state, brought about by a competition between the dual quantization influence of electric and magnetic fields for dipolar species. Essentially when a small magnetic field is introduced perpendicular to an existing electric field, the zeeman perturbation is not diagonal in the stark basis for Hund's case (a) molecules, and The effect was considered in \cite{Lara2008},  Let us consider a representative stark and zeeman active Hamiltonian, where the Stark effect couples two states of opposite parity separated by $2\Delta$ in energy, and each of those states has total spin $1/2$ and identical g-factors. This can be achieved in practice in a molecule with a $^2\Pi_{1/2}$ ground state and a small lambda doublet, but the result is completely general for any dipolar molecular. FALSE. $^2\Pi_{1/2}$ doesn't exhibit the effect. Only $^2\Pi_{3/2}$ and probably higher.
 \begin{equation}
-H = \left(
-\begin{matrix}
-    \Delta+B         &         0                       & E\cos{\beta}                             &          -  E\sin{\beta}                     \\
-                0                   & \Delta-B          &            - E\sin{\beta}                 &-E\cos{\beta}   \\
-    E\cos{\beta} &        -   E\sin{\beta}                      & -\Delta+B                &            0                     \\
-           -      E\sin{\beta}                   & -E\cos{\beta} &             0                 & -\Delta-B 
-\end{matrix} 
-\right)
+P_{\text{LZ}}=e^{-\Delta^2/E'}
 \end{equation}
-Here $B$ and $E$ represent the Zeeman and Stark energy, respectively, with all dipole moments and spin quantum numbers subsumed. $\beta$ is the angle between the fields. The Hamiltonian is expressed in a Zeeman basis, as is evident by the appearance of $B$ only on the diagonal. $\Delta$ is half the lambda doubling energy for the molecule, or equivalently it can be thought of as the distance to whichever is the nearest molecular state of opposite parity which will be mixed in by electric fields. 
 
-What we find is that the electric field behaves in two very distinct ways, depending on $\beta$. For $\beta=0$, the electric field couples the first and third states and also the second and fourth. Since these pairs of states shift in the same direction under the Zeeman effect, there is no influence on the shape of a magnetic trapping potential. an electric field of constant magnitude added everywhere parallel to a magnetic trap would only shift the entire trap homogeneously in energy.
+Although this only applies exactly in the case of two states and a linear tuning of the external field from minus to plus infinity, in practice it can be applied whenever only two states are nearby and they approach linearly with time close to a crossing. 
 
-In contrast, when $\beta=\pi/2$, the electric field couples states 1 and 4 and also states 2 and 3. These states have opposite Zeeman effects. This means that close to the zero of a magnetic trapping potential, the addition of an electric field perpendicular to the magnetic perturbs the eigenstates of the Hamiltonian, mixing states of opposite Zeeman effect and thus reducing the effective magnitude of the Zeeman effect. In other words, if an electric field of fixed magnitude were added to a magnetic trapping potential everywhere perpendicular to the magnetic field, the Zeeman effect would appear to behave quadratically instead of linearly, and the states of opposite Zeeman effect would lie in close proximity over a much larger volume than in the linear zeeman case.
+To understand the enhanced trap loss for dipolar molecules, we first consider a molecule in homogeneous fields. For Hund's case (a) molecules, as described in \cite{Lara2008}, the Stark and Zeeman perturbations are not mutually diagonal, and thus the effects combine differently depending on the angle between the fields. With parallel fields the effects are purely additive, but with perpendicular fields they are less so. In fact, the presence of one field can be thought of as ``blocking" the effect of the second field when it is much smaller than the first. In Fig.~\ref{fig:starkzeemanlines}, the Zeeman effect in the presence of an orthogonal electric field is compared to that with a parallel field of the same magnitude and without any electric field. It is seen that the electric field blocks the zeeman effect from linear to cubic for ground state $^2\Pi_{3/2}$ weak field seeking OH:
 
-In practice, overlapped electric and magnetic fields do not often have a uniform angle when one of the fields is creating a trapping potential. Consider instead the case of a homogeneous electric field overlapping a magnetic quadrupole trapping configuration, as shown in Fig.~\ref{fig:EBangle}. Along one plane intersecting the trap center, the electric and magnetic fields are orthogonal, and along the axis normal to this plane, they are parallel. Everywhere else the angle is intermediate to the two. Along the orthogonal plane, the zeeman effect is quadratic near zero, and so the top two states are close to each other in a large disk region, whose size is related to the relative strength of the Stark and Zeeman effects. Any molecules crossing this disk will experience a classic Landau Zener crossing in their trajectory dependent internal state Hamiltonian, where the crossing width depends on the location of their crossing the loss plane.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+\begin{equation}
+H_Z\propto \frac{B^3}{E^4}f(\Delta,E)\Delta
+\end{equation}
 
-\begin{figure}[b]
-\includegraphics[width=70mm]{rainbow_EB_angle_ring.png}%
-\caption{
-Generic magnetic quadrupole field (black arrows, make arrows larger!) superimposed with a linear electric field (red arrows, make arrows larger!). Color denotes the depth of the magnetic trapping potential. Spin-flip losses are possible whenever the angle between the two fields changes rapidly. In contrast to conventional Majorana loss, which happens only in the center of the trap at vanishing magnetic field, this leads to a large loss plain extending along the ?-direction (add coordinates!). For OH, this situation can be understood using the top two states of the ground-state manifold. 
-\label{fig:EBangle}}
-\end{figure}
+Here $B$, $E$, and $\Delta$ are Zeeman, Stark, and lambda doublet energies with all coefficients subsumed. $f$ is a function of lambda doublet and stark energy with units of energy that approaches $\Delta$ for $E << \Delta$ but $E$ for large $E$. Thus in any magnetic trap where electric field exists near a magnetic field zero, states will be close to one another in a larger region than otherwise because the zeeman effect is blocked from linear to cubic and extra magnetic field is required to break the degeneracy. More precisely, let $\kappa$ be the threshold for gaps between states below which spin-flips are possible at say the 1\% level. $\kappa$ depends on the velocity of trapped species, but suppose we have a specific temperature of interest, and therefore a mean velocity. Without electric field, the effective cross sectional area for a hopping region is $\pi \kappa^2$, since loss can occur where $B<\kappa$. With electric field, we have
 
+\begin{equation}
+B < \sqrt[3]{\frac{\kappa E^4}{f(\Delta,E)\Delta}}
+\end{equation}
 
+With $E<<\kappa$ there is no enhancement. (Nor is there any reduction, the Zeeman effect returns to linear by the time $B$ reaches $\kappa$. For $E>\sqrt[4]{\kappa^2\Delta f(\Delta,E)}~\sqrt{\kappa\Delta}$, there is an enhancement. We can assume $E<\Delta$ since $\kappa<<\Delta$ at temperatures of interest. In terms of loss area, the enhancement factor is given by:
+
+\begin{equation}
+\nu = \left(\frac{E^4}{\kappa^2\Delta^2}\right)^\frac{2}{3}\label{eq:blimit}
+\end{equation} 
+
+It is interesting to note that in ref.~\cite{Lara2008}, it was specifically undertaken to investigate the spin-flip loss for OH molecules in a magnetic quadrupole trap with superposed electric field, and no enhancement was found. This turns out to be a consequence of a reasonable yet false assumption that a 4-state approximate Hamiltonian with two spin states and two parities would contain the behavior relevant for spin-flip loss in mixed fields. This approximate Hamiltonian exhibits only constant order blocking- i.e. the Zeeman effect remains linear though with adjusted slope. This is intuitively reasonable, because with two spin states, the Zeeman effect has to break the Stark effect's coupling of opposite spin states, a 1st order task, but a 3rd order when there are 4 spin states and the states coupled by the Stark effect are three magnetic quanta apart. More recent work in our lab correctly recognized the importance of the effect and accounted for it, although this was done numerically with no algebraic interpretation.
+
+This effect will influence any case (a) molecule with more than two magnetic states such as NO ($X^2\Pi_{3/2}$), and it will also influence case (b) molecules in accordance with the strength of their non-zero spin-rotation coupling often denoted $\gamma$. (I'd like to check how much this enhances loss for YO and SrF, but I haven't done it yet). It also might crop up with superposed optical and magnetic fields, though I haven't tried to check.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %  PIN TRAP GEOMETRY
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Pin Trap Geometry \label{sec:ptg} }
-Our Fields can be approximated as:
+One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the large lambda-doublet splitting. However this splitting also results in a significant reduction in trap gradient close to the trap center, very undesirable for further cooling by evaporation, which needs as much phase space density as possible.
+
+Another option would be to apply electric fields nowhere orthogonal to magnetic, for example overlapped quadrupole fields. In this case the loss is neither enhanced nor entirely removed, but perfect alignment is required. If the zeros do not overlap, there is a loss region whose size is set by the misalignment. 
+
+Seeking to remove the loss entirely but without any trap gradient sacrifice, we developed a solution that requires devoting both electric and magnetic fields to trapping, but is in all other respects a best-case scenario. Instead of avoiding orthogonal fields entirely, the geometry simply ensures that the magnetic field is not too close to zero when they are orthogonal. The key idea is to use a 2D instead of a 3D magnetic quadrupole, apply a homogeneous bias magnetic field in the untrapped direction to prevent the magnetic field from having any zeros, and trap in the third direction with electric fields. The fields can be approximated as follows:
+
 \begin{eqnarray}
 \vec{B} &=&  B^\prime y\hat{x}+ B^\prime x\hat{y} + B_{coil} \hat{z}\\
 \vec{E} &=&  E^\prime y\hat{y}-  E^\prime z\hat{z}
@@ -138,12 +143,18 @@ In other words 2D quadrupole traps in the xy plane for B and in the yz plane for
 \begin{eqnarray}
 \vec{B}\cdot \vec{E} &= 0\\
 B^\prime x E^\prime y - B_{coil}  E^\prime z &= 0\\
-z &= xyB^\prime/B_{coil}
+B_{coil}z &= xyB^\prime
 \end{eqnarray}
 
-So we see that E and B are perpendicular on a hyperbolic sheet which deviates more quickly from the z axis with increasing $B_{coil}$, and reduces to a pair of planes in the limit that $B_{coil} = 0$.
+So we see that E and B are perpendicular on a hyperbolic sheet which deviates more significantly from the z axis with increasing $B_{coil}$, and reduces to the pair of planes $x=0$ and $y=0$ in the limit that $B_{coil} = 0$. On this hyperbolic sheet, B must be larger than the threshold set by Eq.~\ref{eq:blimit}. In fact, the volume everywhere in which the limit is satisfied can be directly solved. 
 
-When $B\cdot E = 0$, the hopping region is still restricted to where $\mu_eE >> \mu_b B$, i.e. close to the z-axis since that is where $B$ is small, and further from $z=0$ since that is where $E$ is large. You can see the loss regions plotted as a function of $B_{coil}$, with $B_{pin}$ set to zero in Fig.~\ref{fig:LSurfs}.
+\begin{equation}
+|B|^3 = \left(B'^2(x^2+y^2)+B_{\text{coil}}^2\right)^3 < \begin{cases} \kappa E'^4(y^2+z^2)^2/\Delta^2,  E'\sqrt(y^2+z^2)<\Delta\\ E'^3(y^2+z^2)^{3/2} /\Delta, E'\sqrt(y^2+z^2)>\Delta\end{cases}
+\end{equation}
+
+In our experiment, $B' \approx 5 \text{T/cm} \times 1.4\mu_\text{B}$, and $E' ~ 120 \text{kV/cm}^2 \times 1.67 d_E$, so $B'/E' ~ 1$. 
+
+When $B\cdot E = 0$, the B field must be larger than the limit where $\mu_eE >> \mu_b B$, i.e. close to the z-axis since that is where $B$ is small, and further from $z=0$ since that is where $E$ is large. You can see the loss regions plotted as a function of $B_{coil}$, with $B_{pin}$ set to zero in Fig.~\ref{fig:LSurfs}.
 
 Notably, $B_{coil}$ tunes the proximity of the loss regions to the trap center, and is thus potentially useful as a knife for spectroscopy or evaporation.
 
