@@ -32,7 +32,7 @@ prl,
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-%\usepackage{hyperref}% add hypertext capabilities
+\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
 
@@ -85,7 +85,7 @@ The ultracold regime extends toward molecules on many fronts. Several bialkali m
 
 The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the very first magnetic trapping of neutrals\cite{Migdall1985}. Spin flips were directly observed and overcome in the TOP trap\cite{Petrich1995}, and shortly later with a plugged dipole trap\cite{Davis1995}, famously enabling the first Bose-Einstein condensates. The molecular spin-flips can occur at much higher temperatures compared with their atomic counterpart, and thus they need to be addressed much earlier than might have been expected. The magnitude of the loss varies with molecular species, and is particularly strong for the case of the neutral hydroxyl radical (OH) that we study. 
 
-Essentially, the loss enhancement is related to the sensitivity of molecules not only to the rotation of the magnetic field in the trap, but also to the relative orientation of electric and magnetic fields. For Hund's case (a) molecules with very strong spin-rotation coupling, or for case (b) molecules to the extent that their spin-rotation coupling $\gamma$ is nonzero, electric and magnetic energy shifts add linearly when the fields are parallel but sublinearly when the fields are orthogonal. Consequentially, the presence of a constant orthogonal electric field reduces the magnitude of the Zeeman splitting over a certain range, until the splitting becomes large relative to the influence of the constant electric field. We call this effect ``blocking". For the relevant trapped substate of the OH ground state manifold, the Zeeman splitting to the next accessible state is blocked from linear to cubic as shown in fig.~\ref{fig:blocking}.  The result of this Blocking is that when $B<<E$ and $B\cdot E=0$, the energy gap between states of opposite magnetic quantum number is small, and spin-flips can occur. In a quadrupole trapping geometry with homogeneous electric field, these conditions are met on a disk through the origin whose size is controlled by the magnitude of $E$. Just outside the disk, blocking returns to linear, which results in a worst case scenario for loss, since $P_{\text{flip}}\propto e^{-\Delta^2/(dE/dt)}$ and we have not only small $\Delta$ but large $dE/dt$. Panel (e) of fig.~\ref{fig:blocking} describes this further.
+Essentially, the loss enhancement is related to the sensitivity of molecules to the relative orientation of $E$ and $B$ fields, whereas in the familiar atomic case it is only the rotation of the magnetic field relative to the lab frame. For Hund's case (a) molecules with very strong spin-rotation coupling, or for case (b) molecules to the extent that their spin-rotation coupling $\gamma$ is nonzero, electric and magnetic energy shifts add linearly when the fields are parallel but sublinearly when the fields are orthogonal. Consequentially, the presence of a constant orthogonal electric field reduces the magnitude of the Zeeman splitting over a certain range, until the splitting becomes large relative to the influence of the constant electric field. We call this effect ``blocking". For the relevant trapped substate of the OH ground state manifold, the Zeeman splitting to the next accessible state is blocked from linear to cubic as shown in fig.~\ref{fig:blocking}.  The result of this blocking is that when $B<<E$ and $E\perp B$, the energy gap between states of opposite magnetic quantum number is small, and spin-flips can occur. In a quadrupole trapping geometry with homogeneous electric field, these conditions are met on a disk through the origin whose size is controlled by the magnitude of $E$. Just outside the disk, blocking returns to linear, which results in a worst case scenario for loss, since $P_{\text{flip}}\propto e^{-\Delta^2/(dE/dt)}$ and we have not only small $\Delta$ but large $dE/dt$. Panel (e) of fig.~\ref{fig:blocking} describes this further.
 
 \begin{figure}
 \includegraphics[width=100mm]{blocking.png}%
@@ -133,7 +133,7 @@ In ref.~\cite{Lara2008}, it was specifically undertaken to investigate the spin-
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the large lambda-doublet splitting. However this splitting also results in a significant reduction in trap gradient close to the trap center, very undesirable for further cooling by evaporation, which needs as much phase space density as possible.
+One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the $\Delta=1.67\text{ GHz}$ splitting between the weak and strong field seeking states. However this splitting also results in a significant reduction in trap gradient close to the center, very undesirable for further cooling by evaporation. Moreover, there are enhancements in elastic collision rates and reductions in inelastic to benefit from in magnetic fields. \cite{goulven}
 
 \begin{figure}
 \includegraphics[width=90mm]{blue-red-yellow-v2_CAD.png}%
@@ -142,13 +142,7 @@ OH molecules are created using a supersonic expansion source and decelerated fro
 \label{fig:CAD}}
 \end{figure}
 
-Seeking to remove the loss entirely but without trap gradient sacrifice, we switch from a 3D to a 2D magnetic trap, and use electric fields to trap in the remaining dimension. This does not remove the possibility of $E.B=0$, but it allows us to tune the minimum magnetic field with an external bias coil oriented along the zero axis of the 2D quadrupole trap.  Our fields are as follows:
-\begin{eqnarray}
-\vec{B} &=&  B^\prime y\hat{x}+ B^\prime x\hat{y} + B_{coil} \hat{z}\\
-\vec{E} &=&  E^\prime y\hat{y}-  E^\prime z\hat{z}
-\end{eqnarray}
-
-\noindent In other words 2D quadrupole traps in the xy plane for $B$ and in the $yz$ plane for $E$. Serendipitously, we are able to achieve these fields with a geometry that exactly matches that of our Stark decelerator \cite{Bochinnski2003}, as shown in fig.~\ref{fig:CAD}. This represents a near best-case scenario for coupling between a pulsed decelerator and a trap. For N38 magnets chosen so as to maintain magnetization during violent conditioning procedures, $B^\prime=5\text{ T/cm}$ and $E^\prime=100 \text{ kV/cm}^2$. These correspond to trap frequencies for a molecule with velocity matching the thermal mean of $7 \text{ m/s}$ of $\nu=?$ in each direction.
+Seeking to remove the loss entirely but without trap gradient sacrifice, we switch from a 3D to a 2D magnetic trap, and use an intersecting electric 2D quadrupole to plug the remaining direction (and incidentally add strength to one of the already trapped directions). This does not remove the possibility of $E.B=0$, but it allows us to tune the minimum magnetic field with an external bias coil oriented along the zero axis of the 2D quadrupole trap. This is similar to the Ioffe-Pritchard strategy \cite{ref:iptrap}, where a 2D quadrupole is combined with an axial dipole trap. Typically, the axial and radial trapping interfere somewhat, resulting in significantly lower trap depths. This is averted by the use of different fields for the two directions, which can block one another to some extent but never result in an absolute decrease in potential energy of the doubly trapped substate. Serendipitously, we are able to achieve these fields with a geometry that exactly matches that of our Stark decelerator \cite{Bochinnski2003}, as shown in fig.~\ref{fig:CAD}. By intuition and by our phase space coupling simulations, this represents a near best-case scenario for coupling between a pulsed decelerator and a trap, although in practice we do not realize any significant molecule number increase. This could be related to the difficulty of conditioning the magnet surfaces. For N38 magnets chosen so as to maintain magnetization during violent conditioning procedures, $B^\prime=5\text{ T/cm}$ and $E^\prime=100 \text{ kV/cm}^2$. These correspond to trap frequencies for a molecule with velocity matching the thermal mean of $7 \text{ m/s}$ of $\nu=?$ in each direction.
 
 \begin{figure}
 \includegraphics[width=90mm]{Loss_Surface_Chunks_recolored.png}%
@@ -157,14 +151,7 @@ Contours every 100mK, colors 0,20,40,80,160,320 G bias field and pin offset at z
 \label{fig:LSurfs}}
 \end{figure}
 
-Now regarding the molecule enhanced spin-flip loss, $E\perp B$ when:
-\begin{eqnarray}
-\vec{B}\cdot \vec{E} &= 0\\
-B^\prime x E^\prime y - B_{coil}  E^\prime z &= 0\\
-B_{coil}z &= xyB^\prime
-\end{eqnarray}
-
-So we see that E and B are perpendicular on a hyperbolic sheet which deviates more significantly from the z axis with increasing $B_{coil}$, and reduces to the pair of planes $x=0$ and $y=0$ in the limit that $B_{coil} = 0$. On this hyperbolic sheet, $B$ must be larger than the threshold set by Eq.~\ref{eq:blimit} to overcome blocking. Fortunately, $B_{coil}$ does not have to overcome the blocking limit, it only needs to push the $B\perp E$ surface slightly off the $z$-axis for the strong  quadrupole fields to overcome the blocking. In fig.~\ref{fig:LSurfs}, the surfaces where $B\perp E$ are colored wherever the splitting there is below the threshold $\kappa$. Since the $B$ fields are more localized than the $E$, there are always regions susceptible to spin flips, but they can be pushed far enough from the trap center so as to only affect molecules with energy above the trap depth.
+Now regarding the molecule enhanced spin-flip loss, $E\perp B$ on a hyperbolic sheet which deviates more significantly from the z axis with increasing $B_{coil}$, and reduces to the pair of planes $x=0$ and $y=0$ in the limit that $B_{coil} = 0$. On this hyperbolic sheet, $B$ must be larger than the threshold set by Eq.~\ref{eq:blimit} to overcome blocking. Fortunately, $B_{coil}$ does not have to overcome the blocking limit, it only needs to push the $B\perp E$ surface slightly off the $z$-axis for the strong  quadrupole fields to overcome the blocking. In fig.~\ref{fig:LSurfs}, the surfaces where $B\perp E$ are colored wherever the splitting there is below the threshold $\kappa$. Since the $B$ fields are more localized than the $E$, there are always regions susceptible to spin flips, but they can be pushed far enough from the trap center so as to only affect molecules with energy above the trap depth.
 
 \begin{figure}
 \includegraphics[width=90mm]{V-to-W-plot-3D-dave.png}%
@@ -184,7 +171,7 @@ Microwave Thermometry in the trap.
 \label{fig:spec}}
 \end{figure}
 
-As a further confirmation of our model for the spin-flip loss in this trapping geometry, we perform a Zeeman spectroscopy along the $|f,3/2\rangle$ to $|e,3/2\rangle$ line as in our previous work \cite{stuhl2012evap} to measure the population fraction as a function of $B$ field. The results are shown in fig.~\ref{fig:spec}. With the magnetic pins aligned, it is seen that higher values of $B_{\text{coil}}$ increase the population of molecules accessing higher magnetic fields in the trap. This is consistent with our expectation that $B_\text{coil}$ would tune the distance of the loss region from the trap center. In order to perform this spectroscopy, the trapping electric fields are switched off immediately prior to the application of a microwave transfer pulse tuned to a particular magnetic field strength. Thus the results reflect the Zeeman potential energy only, not the Stark. 
+As a further confirmation of our model for the spin-flip loss in this trapping geometry, we perform a Zeeman microwave spectroscopy along the $|f,3/2\rangle$ to $|e,3/2\rangle$ line as in our previous work \cite{stuhl2012evap}. Rather than using a bias tee setup, a dangerous operation with our trap deeply integrated in the high voltage decelerator, we use a home-made microwave probe to directly excite free space cavity modes of our vacuum chamber. The results are shown in fig.~\ref{fig:spec}. With the magnetic pins aligned, it is seen that higher values of $B_{\text{coil}}$ increase the population of molecules accessing higher magnetic fields in the trap, consistent with our expectation that $B_\text{coil}$ would tune the distance of the loss region from the trap center. In order to perform this spectroscopy, the trapping electric fields are switched off immediately prior to the application of a microwave transfer pulse tuned to a particular magnetic field strength. Thus the results reflect the Zeeman potential energy only, not the Stark.
 
 In the case of lowest applied magnetic field in fig.~\ref{fig:spec}, i.e. deepest cutting of the loss region toward the trap center, a negative going signal is observed. Since the population signal is obtained via subtractive comparison of molecules in the $|f,3/2\rangle$ state with and without a microwave coupling to $|e,3/2\rangle$ applied at a particular $B$ field, this indicates a build-up in the $|e,3/2\rangle$ state. This suggests a secondary trapped state whose state character has $e$ parity in some regions of the trap. Although the spin-flips we have discussed connect $|f,\pm3/2\rangle$, the $|f,-3/2\rangle$ state actually remains mostly trapped thanks to adiabatic transitions to $|f,1/2\rangle$ and later $e,3/2\rangle$ facilitated by the large $E$ fields present in the trap. 
 
@@ -196,6 +183,19 @@ Trajectory over time with loss removed, with and without a density reduction tec
 \end{figure}
 
 We have conclusively demonstrated the existence of molecule enhanced spin-flip loss by tuning it from an overwhelming rate to complete removal. It remains to be seen what other processes may be in effect once this loss mechanism is removed. Although the trend shown in fig.~\ref{fig:timetrace} is suggestive of a collisional process, we implement a completely phase-space blind density reduction technique to significantly reduce our molecule number and observe no change in the trend, indicating that only single particle physics is responsible so far. This is not too surprising given the increased initial temperature of this trap compared to our previous ones, but we intend to address this with a suite of density enhancing experimental improvements in the near term.
+
+\appendix
+\begin{eqnarray}
+\vec{B} &=&  B^\prime y\hat{x}+ B^\prime x\hat{y} + B_{coil} \hat{z}\\
+\vec{E} &=&  E^\prime y\hat{y}-  E^\prime z\hat{z}
+\end{eqnarray}
+
+\begin{eqnarray}
+\vec{B}\cdot \vec{E} &= 0\\
+B^\prime x E^\prime y - B_{coil}  E^\prime z &= 0\\
+B_{coil}z &= xyB^\prime
+\end{eqnarray}
+
 
 %includes uncited bib entries
 \nocite{*}

@@ -70,6 +70,9 @@ image2(:,:,1) = red;
 image2(:,:,2) = green;
 image2(:,:,3) = blue;
 
+%some clipping
+image2 = image2(250:1450,:,:);
+
 imtool(image2)
 
 imwrite(image2,'~/Documents/OH/spin-flip-writing/Loss_Surface_Chunks_recolored.PNG')
