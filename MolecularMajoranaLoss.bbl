@@ -127,18 +127,6 @@
   }\textbf {\bibinfo {volume} {492}},\ \bibinfo {pages} {396} (\bibinfo {year}
   {2012}{\natexlab{a}})},\ \Eprint {http://arxiv.org/abs/1209.6343}
   {arXiv:1209.6343} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bergeman}\ \emph {et~al.}(1989)\citenamefont
-  {Bergeman}, \citenamefont {McNicholl}, \citenamefont {Kycia}, \citenamefont
-  {Metcalf},\ and\ \citenamefont {Balazs}}]{Bergeman1989}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
-  {Bergeman}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {McNicholl}},
-  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kycia}}, \bibinfo
-  {author} {\bibfnamefont {H.}~\bibnamefont {Metcalf}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {N.~L.}\ \bibnamefont {Balazs}},\ }\href {\doibase
-  10.1364/JOSAB.6.002249} {\bibfield  {journal} {\bibinfo  {journal} {Journal
-  of the Optical Society of America B}\ }\textbf {\bibinfo {volume} {6}},\
-  \bibinfo {pages} {2249} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bochinski}\ \emph {et~al.}(2003)\citenamefont
   {Bochinski}, \citenamefont {Hudson}, \citenamefont {Lewandowski},
   \citenamefont {Ye},\ and\ \citenamefont {Meijer}}]{Bochinski2003}%
@@ -153,6 +141,18 @@
   \bibinfo {pages} {5} (\bibinfo {year} {2003})},\ \Eprint
   {http://arxiv.org/abs/0306062} {arXiv:0306062 [physics]} \BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Bergeman}\ \emph {et~al.}(1989)\citenamefont
+  {Bergeman}, \citenamefont {McNicholl}, \citenamefont {Kycia}, \citenamefont
+  {Metcalf},\ and\ \citenamefont {Balazs}}]{Bergeman1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~H.}\ \bibnamefont
+  {Bergeman}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {McNicholl}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Kycia}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Metcalf}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {N.~L.}\ \bibnamefont {Balazs}},\ }\href {\doibase
+  10.1364/JOSAB.6.002249} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of the Optical Society of America B}\ }\textbf {\bibinfo {volume} {6}},\
+  \bibinfo {pages} {2249} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bohn}\ and\ \citenamefont {Qu}(2013)}]{Bohn2013}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
