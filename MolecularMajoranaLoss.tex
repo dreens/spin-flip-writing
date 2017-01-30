@@ -111,18 +111,21 @@ H_Z\approx \frac{(1.4\mu_BB)^3}{(1.7d_EE)^4}\Delta^2 f(\Delta,d_EE)
 
 The following table provides numerical values of the loss enhancement factor and absolute rates for various conditions of experimental interest for OH molecules.
 
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
 \begin{table}[h]
-\caption{Enhancements and Rates for OH molecules}
+\caption{Enhancements and loss rates for OH}
 \label{tab:rates}
-\begin{tabular}{c|ccc}
-\toprule
-E & $\nu$ & $\Gamma$ & Purpose \\
-\toprule
-10 V/cm & 1 & 1 & Stray Field \\
-300 V/cm & 10 & 10 & Evaporation Crossings\\
-550 V/cm & 20 & 20 & Spectroscopy Crossings\\
-3 kV/cm & 100 & 100 & Polarizing Field\\
-\toprule
+\begin{tabular}{c|cc|cc|c}
+\hline\hline
+ & \raisebox{-1.3ex}{\shiftright{4pt}{45 mK}} & & \raisebox{-1.3ex}{\shiftright{4pt}{20 mK}} & & \\
+\raisebox{1.5ex}{$E$ field} & $\nu$ & $\Gamma\,(s^{-1})$ & $\nu$ & $\Gamma\,(s^{-1})$ & \raisebox{1.5ex}{Purpose} \\
+\hline
+0 V/cm & 1 & 0.1 & 1 & 0.4 & No Field \\
+300 V/cm & 3 & 0.3 & 4.7 & 2.0 & Evaporation \\
+550 V/cm & 12 & 1.1 & 16 & 6.9 & Spectroscopy \\
+3 kV/cm & 630 & 59 & 840 & 350 & Polarizing \\
+\hline
 \end{tabular}
 \end{table}
 
