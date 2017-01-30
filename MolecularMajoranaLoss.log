@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  29 JAN 2017 20:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  30 JAN 2017 08:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -432,67 +432,67 @@ Overfull \hbox (38.52756pt too wide) in paragraph at lines 91--92
 [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} <./blocking.png 
 (PNG copy)>]
 
-LaTeX Warning: Reference `HZprop' on page 2 undefined on input line 106.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <CAD_recolor_laser.PNG, id=47, 1606.0pt x 903.375pt>
 File: CAD_recolor_laser.PNG Graphic file (type png)
 
 <use CAD_recolor_laser.PNG>
-Package pdftex.def Info: CAD_recolor_laser.PNG used on input line 142.
+Package pdftex.def Info: CAD_recolor_laser.PNG used on input line 140.
 (pdftex.def)             Requested size: 244.6937pt x 137.63698pt.
 
 
 Package natbib Warning: Citation `ref:iptrap' on page 2 undefined on input line
- 148.
+ 146.
 
 [2 <./CAD_recolor_laser.PNG (PNG copy)>]
-<Loss_Surface_Chunks_recolored_legend.png, id=64, 1572.87625pt x 1205.50375pt>
+<Loss_Surface_Chunks_recolored_legend.png, id=65, 1572.87625pt x 1205.50375pt>
 File: Loss_Surface_Chunks_recolored_legend.png Graphic file (type png)
 
 <use Loss_Surface_Chunks_recolored_legend.png>
 Package pdftex.def Info: Loss_Surface_Chunks_recolored_legend.png used on input
- line 151.
+ line 149.
 (pdftex.def)             Requested size: 256.0748pt x 196.25073pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 151--152
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
-<V-to-W-plot-3D-dave.png, id=67, 577.39926pt x 435.9022pt>
+<V-to-W-plot-3D-dave.png, id=68, 577.39926pt x 435.9022pt>
 File: V-to-W-plot-3D-dave.png Graphic file (type png)
 
 <use V-to-W-plot-3D-dave.png>
-Package pdftex.def Info: V-to-W-plot-3D-dave.png used on input line 160.
+Package pdftex.def Info: V-to-W-plot-3D-dave.png used on input line 158.
 (pdftex.def)             Requested size: 256.0748pt x 193.32736pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 160--161
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
 
 Package natbib Warning: Citation `ref:githubCOMcode' on page 3 undefined on inp
-ut line 168.
+ut line 166.
 
 [3 <./Loss_Surface_Chunks_recolored_legend.png> <./V-to-W-plot-3D-dave.png (PNG
- copy)>] <MW-thermometry.png, id=78, 575.90157pt x 355.3275pt>
+ copy)>] <MW-thermometry.png, id=79, 575.90157pt x 355.3275pt>
 File: MW-thermometry.png Graphic file (type png)
 
 <use MW-thermometry.png>
-Package pdftex.def Info: MW-thermometry.png used on input line 171.
+Package pdftex.def Info: MW-thermometry.png used on input line 169.
 (pdftex.def)             Requested size: 256.0748pt x 157.99823pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 171--172
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 169--170
  [][] 
  []
 
-<reduce-density-compare.png, id=82, 538.26094pt x 325.215pt>
+<reduce-density-compare.png, id=83, 538.26094pt x 325.215pt>
 File: reduce-density-compare.png Graphic file (type png)
 
 <use reduce-density-compare.png>
-Package pdftex.def Info: reduce-density-compare.png used on input line 182.
+Package pdftex.def Info: reduce-density-compare.png used on input line 180.
 (pdftex.def)             Requested size: 256.0748pt x 154.72188pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 182--183
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
@@ -502,44 +502,41 @@ sity-compare.png (PNG copy)>])
 Package natbib Warning: There were undefined citations.
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./MolecularMajoranaLoss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `MolecularMajoranaLoss.out' has not changed.
 (rerunfilecheck)             Checksum: 010FD4176A327919788F3CF5E3CF2734;193.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 8065 strings out of 494227
- 113654 string characters out of 6157703
- 225902 words of memory out of 5000000
- 11214 multiletter control sequences out of 15000+600000
+ 8063 strings out of 494227
+ 113638 string characters out of 6157703
+ 224715 words of memory out of 5000000
+ 11212 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 34i,11n,28p,1722b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,28p,1722b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/share/t
 exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/local/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmmi9.pfb></opt/local/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr5.pfb></opt/local/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmr9.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/lo
-cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (5 pages, 1513698 bytes).
+texlive/fonts/type1/public/amsfonts/cm/cmmi5.pfb></opt/local/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/local/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi9.pfb></opt/local/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr5.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr6.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.p
+fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
+cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on MolecularMajoranaLoss.pdf (5 pages, 1521629 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 195 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
