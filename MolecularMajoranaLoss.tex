@@ -109,7 +109,7 @@ H_Z\approx \frac{(1.4\mu_BB)^3}{(1.7d_EE)^4}\Delta^2 f(\Delta,d_EE)
 \label{eq:blimit}
 \end{equation} 
 
-The following table provides numerical values of the loss enhancement factor and absolute rates for various conditions of experimental interest for OH molecules.
+We can numerically evaluate the loss rates and enhancements for a thermal molecule distribution by performing an integral to calculate flux through the relevant loss plane weighted by the hopping probability on that plane. This is described more fully in the appendix, and is a significant improvement over previous attempts to evaluate this loss. The following table provides the results of these calculations for various conditions of experimental interest for OH molecules.
 
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
 
@@ -134,7 +134,7 @@ The following table provides numerical values of the loss enhancement factor and
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the $\Delta=1.67\text{ GHz}$ splitting between the weak and strong field seeking states. However this splitting also results in a significant reduction in trap gradient close to the center, very undesirable for further cooling by evaporation. Moreover, there are enhancements in elastic collision rates and reductions in inelastic to benefit from in magnetic fields. \cite{stuhl2012evap}
+One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the $\Delta=1.67\text{ GHz}$ splitting between the weak and strong field seeking states. However this splitting also results in a significant reduction in trap gradient close to the center, very undesirable for further cooling by evaporation. Moreover, there are reductions in inelastic to benefit from in magnetic fields. \cite{stuhl2012evap}
 
 \begin{figure}
 \includegraphics[width=86mm]{CAD_recolor_laser.PNG}%blue-red-yellow-v2_CAD.png}%
@@ -197,6 +197,9 @@ B^\prime x E^\prime y - B_{coil}  E^\prime z &= 0\\
 B_{coil}z &= xyB^\prime
 \end{eqnarray}
 
+\begin{equation}
+\gamma_\text{flip}=\frac{\int\limits^\infty_0 2\pi r e^{-r/r_0} \int\limits^\infty_{-\infty} e^{-mv_z^2/kT} |v_z| e^{-2\pi\Gamma(r,v_z)}dv_zdr}{\int\limits^\infty_0 2\pi r e^{-r/r_0} \int\limits^\infty_{-\infty} e^{-mv_z^2/kT} dv_zdr}
+\end{equation}
 
 %includes uncited bib entries
 \nocite{*}

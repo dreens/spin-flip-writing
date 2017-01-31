@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  30 JAN 2017 08:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  30 JAN 2017 23:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -430,11 +430,7 @@ Overfull \hbox (38.52756pt too wide) in paragraph at lines 91--92
  []
 
 [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} <./blocking.png 
-(PNG copy)>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<CAD_recolor_laser.PNG, id=47, 1606.0pt x 903.375pt>
+(PNG copy)>] <CAD_recolor_laser.PNG, id=47, 1606.0pt x 903.375pt>
 File: CAD_recolor_laser.PNG Graphic file (type png)
 
 <use CAD_recolor_laser.PNG>
@@ -446,7 +442,7 @@ Package natbib Warning: Citation `ref:iptrap' on page 2 undefined on input line
  146.
 
 [2 <./CAD_recolor_laser.PNG (PNG copy)>]
-<Loss_Surface_Chunks_recolored_legend.png, id=65, 1572.87625pt x 1205.50375pt>
+<Loss_Surface_Chunks_recolored_legend.png, id=64, 1572.87625pt x 1205.50375pt>
 File: Loss_Surface_Chunks_recolored_legend.png Graphic file (type png)
 
 <use Loss_Surface_Chunks_recolored_legend.png>
@@ -458,7 +454,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
-<V-to-W-plot-3D-dave.png, id=68, 577.39926pt x 435.9022pt>
+<V-to-W-plot-3D-dave.png, id=67, 577.39926pt x 435.9022pt>
 File: V-to-W-plot-3D-dave.png Graphic file (type png)
 
 <use V-to-W-plot-3D-dave.png>
@@ -502,21 +498,26 @@ sity-compare.png (PNG copy)>])
 Package natbib Warning: There were undefined citations.
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
  (./MolecularMajoranaLoss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `MolecularMajoranaLoss.out' has not changed.
 (rerunfilecheck)             Checksum: 010FD4176A327919788F3CF5E3CF2734;193.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
  ) 
 Here is how much of TeX's memory you used:
- 8063 strings out of 494227
- 113638 string characters out of 6157703
- 224715 words of memory out of 5000000
+ 8064 strings out of 494227
+ 113648 string characters out of 6157703
+ 227038 words of memory out of 5000000
  11212 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 34i,11n,28p,1722b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,28p,1722b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/sh
@@ -533,10 +534,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (5 pages, 1521629 bytes).
+Output written on MolecularMajoranaLoss.pdf (5 pages, 1525606 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
