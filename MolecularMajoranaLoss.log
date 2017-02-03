@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  1 FEB 2017 17:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  1 FEB 2017 20:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -419,7 +419,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<blocking.png, id=26, 526.96875pt x 301.125pt>
+<blocking.png, id=28, 526.96875pt x 301.125pt>
 File: blocking.png Graphic file (type png)
  <use blocking.png>
 Package pdftex.def Info: blocking.png used on input line 91.
@@ -430,14 +430,14 @@ Overfull \hbox (38.52756pt too wide) in paragraph at lines 91--92
  []
 
 [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} <./blocking.png 
-(PNG copy)>] <CAD_recolor_laser.PNG, id=57, 1606.0pt x 903.375pt>
+(PNG copy)>] <CAD_recolor_laser.PNG, id=61, 1606.0pt x 903.375pt>
 File: CAD_recolor_laser.PNG Graphic file (type png)
 
 <use CAD_recolor_laser.PNG>
 Package pdftex.def Info: CAD_recolor_laser.PNG used on input line 140.
 (pdftex.def)             Requested size: 244.6937pt x 137.63698pt.
  [2 <./CAD_recolor_laser.PNG (PNG copy)>]
-<Loss_Surface_Chunks_recolored_legend.png, id=75, 1572.87625pt x 1205.50375pt>
+<Loss_Surface_Chunks_recolored_legend.png, id=79, 1572.87625pt x 1205.50375pt>
 File: Loss_Surface_Chunks_recolored_legend.png Graphic file (type png)
 
 <use Loss_Surface_Chunks_recolored_legend.png>
@@ -449,7 +449,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 151--152
  [][] 
  []
 
-<V-to-W-plot-3D-dave.png, id=78, 577.39926pt x 435.9022pt>
+<V-to-W-plot-3D-dave.png, id=82, 577.39926pt x 435.9022pt>
 File: V-to-W-plot-3D-dave.png Graphic file (type png)
 
 <use V-to-W-plot-3D-dave.png>
@@ -466,7 +466,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 160--161
 Package natbib Warning: Citation `githubCOMcode' on page 4 undefined on input l
 ine 168.
 
-<MW-thermometry.png, id=90, 575.90157pt x 355.3275pt>
+<MW-thermometry.png, id=94, 575.90157pt x 355.3275pt>
 File: MW-thermometry.png Graphic file (type png)
  <use MW-thermometry.png>
 Package pdftex.def Info: MW-thermometry.png used on input line 171.
@@ -476,7 +476,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 171--172
  [][] 
  []
 
-<reduce-density-compare.png, id=95, 538.26094pt x 325.215pt>
+<reduce-density-compare.png, id=99, 538.26094pt x 325.215pt>
 File: reduce-density-compare.png Graphic file (type png)
 
 <use reduce-density-compare.png>
@@ -506,7 +506,7 @@ n/9 , 174001 (2016)[],
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 282--289
+Underfull \hbox (badness 1484) in paragraph at lines 338--345
  []\OT1/cmr/m/n/9 R. Gonz^^Salez-F^^Serez, M. I~narrea, J. P. Salas,  and
  []
 
@@ -523,10 +523,10 @@ Package rerunfilecheck Info: File `MolecularMajoranaLoss.out' has not changed.
 (rerunfilecheck)             Checksum: 010FD4176A327919788F3CF5E3CF2734;193.
  ) 
 Here is how much of TeX's memory you used:
- 8114 strings out of 494227
- 114550 string characters out of 6157703
- 249157 words of memory out of 5000000
- 11252 multiletter control sequences out of 15000+600000
+ 8135 strings out of 494227
+ 114927 string characters out of 6157703
+ 257046 words of memory out of 5000000
+ 11269 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  34i,11n,28p,1642b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -546,10 +546,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (5 pages, 1532207 bytes).
+Output written on MolecularMajoranaLoss.pdf (5 pages, 1533402 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{24}%
+\begin{thebibliography}{28}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -172,6 +172,76 @@
   {pages} {1} (\bibinfo {year} {2013})},\ \Eprint
   {http://arxiv.org/abs/arXiv:1209.4069v1} {arXiv:arXiv:1209.4069v1}
   \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Doyle}\ \emph {et~al.}(1998)\citenamefont {Doyle},
+  \citenamefont {Weinstein}, \citenamefont {DeCarvalho}, \citenamefont
+  {Guillet},\ and\ \citenamefont {Friedrich}}]{Doyle1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Doyle}}, \bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Weinstein}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {DeCarvalho}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Guillet}},
+  \ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Friedrich}},\
+  }\href {\doibase 10.1038/25949} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nature}\ }\textbf {\bibinfo {volume} {395}},\ \bibinfo {pages} {148}
+  (\bibinfo {year} {1998})},\ \Eprint {http://arxiv.org/abs/9810036}
+  {arXiv:9810036 [physics]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zeppenfeld}\ \emph {et~al.}(2012)\citenamefont
+  {Zeppenfeld}, \citenamefont {Englert}, \citenamefont {Gl{\"{o}}ckner},
+  \citenamefont {Prehn}, \citenamefont {Mielenz}, \citenamefont {Sommer},
+  \citenamefont {van Buuren}, \citenamefont {Motsch},\ and\ \citenamefont
+  {Rempe}}]{Zeppenfeld2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zeppenfeld}}, \bibinfo {author} {\bibfnamefont {B.~G.~U.}\ \bibnamefont
+  {Englert}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Gl{\"{o}}ckner}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Prehn}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mielenz}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Sommer}}, \bibinfo
+  {author} {\bibfnamefont {L.~D.}\ \bibnamefont {van Buuren}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Motsch}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Rempe}},\ }\href {\doibase
+  10.1038/nature11595} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
+  }\textbf {\bibinfo {volume} {491}},\ \bibinfo {pages} {570} (\bibinfo {year}
+  {2012})},\ \Eprint {http://arxiv.org/abs/1208.0046} {arXiv:1208.0046
+  [physics.atom-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bethlem}\ \emph {et~al.}(1999)\citenamefont
+  {Bethlem}, \citenamefont {Berden},\ and\ \citenamefont
+  {Meijer}}]{Bethlem1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~L.}\ \bibnamefont
+  {Bethlem}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Berden}}, \
+  and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Meijer}},\ }\href
+  {\doibase 10.1103/PhysRevLett.83.1558} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume} {83}},\
+  \bibinfo {pages} {1558} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bochinski}\ \emph {et~al.}(2003)\citenamefont
+  {Bochinski}, \citenamefont {Hudson}, \citenamefont {Lewandowski},
+  \citenamefont {Ye},\ and\ \citenamefont {Meijer}}]{Bochinski2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
+  {Bochinski}}, \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
+  {Hudson}}, \bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont
+  {Lewandowski}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ye}}, \
+  and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Meijer}},\ }\href
+  {\doibase doi: 10.1103/physrevlett.91.243001} {\bibfield  {journal} {\bibinfo
+   {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume} {91}},\
+  \bibinfo {pages} {5} (\bibinfo {year} {2003})},\ \Eprint
+  {http://arxiv.org/abs/0306062} {arXiv:0306062 [physics]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Akerman}\ \emph {et~al.}(2015)\citenamefont
+  {Akerman}, \citenamefont {Karpov}, \citenamefont {David}, \citenamefont
+  {Lavert-Ofir}, \citenamefont {Narevicius},\ and\ \citenamefont
+  {Narevicius}}]{Akerman2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Akerman}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Karpov}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {David}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {Lavert-Ofir}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Narevicius}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Narevicius}},\ }\href {\doibase
+  10.1088/1367-2630/17/6/065015} {\bibfield  {journal} {\bibinfo  {journal}
+  {New Journal of Physics}\ }\textbf {\bibinfo {volume} {17}},\ \bibinfo
+  {pages} {65015} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Migdall}\ \emph {et~al.}(1985)\citenamefont
   {Migdall}, \citenamefont {Prodan}, \citenamefont {Phillips}, \citenamefont
   {Bergeman},\ and\ \citenamefont {Metcalf}}]{Migdall1985}%
@@ -256,20 +326,6 @@
   {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
   {volume} {51}},\ \bibinfo {pages} {1336} (\bibinfo {year}
   {1983})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bochinski}\ \emph {et~al.}(2003)\citenamefont
-  {Bochinski}, \citenamefont {Hudson}, \citenamefont {Lewandowski},
-  \citenamefont {Ye},\ and\ \citenamefont {Meijer}}]{Bochinski2003}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~R.}\ \bibnamefont
-  {Bochinski}}, \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont
-  {Hudson}}, \bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont
-  {Lewandowski}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ye}}, \
-  and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Meijer}},\ }\href
-  {\doibase doi: 10.1103/physrevlett.91.243001} {\bibfield  {journal} {\bibinfo
-   {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume} {91}},\
-  \bibinfo {pages} {5} (\bibinfo {year} {2003})},\ \Eprint
-  {http://arxiv.org/abs/0306062} {arXiv:0306062 [physics]} \BibitemShut
-  {NoStop}%
 \bibitem [{\citenamefont {Gonz{\'{a}}lez-F{\'{e}}rez}\ \emph
   {et~al.}(2014)\citenamefont {Gonz{\'{a}}lez-F{\'{e}}rez}, \citenamefont
   {I{\~{n}}arrea}, \citenamefont {Salas},\ and\ \citenamefont
@@ -296,6 +352,41 @@
   10.1364/JOSAB.6.002249} {\bibfield  {journal} {\bibinfo  {journal} {Journal
   of the Optical Society of America B}\ }\textbf {\bibinfo {volume} {6}},\
   \bibinfo {pages} {2249} (\bibinfo {year} {1989})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
+  {Qu}(2013{\natexlab{a}})}]{Bohn2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Qu}},\
+  }\href {\doibase 10.1080/00268976.2013.783721} {\bibfield  {journal}
+  {\bibinfo  {journal} {Molecular physics}\ }\textbf {\bibinfo {volume}
+  {111}},\ \bibinfo {pages} {1931} (\bibinfo {year} {2013}{\natexlab{a}})},\
+  \Eprint {http://arxiv.org/abs/arXiv:1301.2590v1} {arXiv:arXiv:1301.2590v1}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
+  {Qu}(2013{\natexlab{b}})}]{Bohn2013a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Qu}},\
+  }\href {\doibase 10.1080/00268976.2013.783721} {\bibfield  {journal}
+  {\bibinfo  {journal} {Molecular physics}\ }\textbf {\bibinfo {volume}
+  {111}},\ \bibinfo {pages} {1931} (\bibinfo {year} {2013}{\natexlab{b}})},\
+  \Eprint {http://arxiv.org/abs/arXiv:1301.2590v1} {arXiv:arXiv:1301.2590v1}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Golub}\ and\ \citenamefont
+  {Pendlebury}(1979)}]{Golub1979}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Golub}}\ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Pendlebury}},\ }\href {\doibase 10.1088/0034-4885/42/3/002} {\bibfield
+  {journal} {\bibinfo  {journal} {Reports on Progress in Physics}\ }\textbf
+  {\bibinfo {volume} {42}},\ \bibinfo {pages} {439} (\bibinfo {year}
+  {1979})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rabi}(1936)}]{Rabi1936}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~I.}\ \bibnamefont
+  {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
+  \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph {et~al.}(2013)\citenamefont {Stuhl},
   \citenamefont {Yeo}, \citenamefont {Hummon},\ and\ \citenamefont
   {Ye}}]{Stuhl2013}%
@@ -307,22 +398,6 @@
   10.1080/00268976.2013.793838} {\bibfield  {journal} {\bibinfo  {journal}
   {Molecular Physics}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages}
   {1} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rabi}(1936)}]{Rabi1936}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~I.}\ \bibnamefont
-  {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
-  {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
-  \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
-  {Qu}(2013{\natexlab{a}})}]{Bohn2013}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
-  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Qu}},\
-  }\href {\doibase 10.1080/00268976.2013.783721} {\bibfield  {journal}
-  {\bibinfo  {journal} {Molecular physics}\ }\textbf {\bibinfo {volume}
-  {111}},\ \bibinfo {pages} {1931} (\bibinfo {year} {2013}{\natexlab{a}})},\
-  \Eprint {http://arxiv.org/abs/arXiv:1301.2590v1} {arXiv:arXiv:1301.2590v1}
-  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph
   {et~al.}(2012{\natexlab{b}})\citenamefont {Stuhl}, \citenamefont {Yeo},
   \citenamefont {Sawyer}, \citenamefont {Hummon},\ and\ \citenamefont
@@ -338,23 +413,4 @@
   {\bibinfo {volume} {85}},\ \bibinfo {pages} {1} (\bibinfo {year}
   {2012}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1108.4871}
   {arXiv:1108.4871} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Golub}\ and\ \citenamefont
-  {Pendlebury}(1979)}]{Golub1979}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Golub}}\ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
-  {Pendlebury}},\ }\href {\doibase 10.1088/0034-4885/42/3/002} {\bibfield
-  {journal} {\bibinfo  {journal} {Reports on Progress in Physics}\ }\textbf
-  {\bibinfo {volume} {42}},\ \bibinfo {pages} {439} (\bibinfo {year}
-  {1979})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
-  {Qu}(2013{\natexlab{b}})}]{Bohn2013a}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
-  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Qu}},\
-  }\href {\doibase 10.1080/00268976.2013.783721} {\bibfield  {journal}
-  {\bibinfo  {journal} {Molecular physics}\ }\textbf {\bibinfo {volume}
-  {111}},\ \bibinfo {pages} {1931} (\bibinfo {year} {2013}{\natexlab{b}})},\
-  \Eprint {http://arxiv.org/abs/arXiv:1301.2590v1} {arXiv:arXiv:1301.2590v1}
-  \BibitemShut {NoStop}%
 \end{thebibliography}%
