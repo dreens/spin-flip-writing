@@ -116,6 +116,8 @@ grid on
 xr = xx(1:40:end,1:40:end);
 zr = zz(1:40:end,1:40:end);
 quiver(xr,zr,xr,-2*zr,'Color',blue)
+xlim([-100 100])
+ylim([-50 50])
 
 subplot(2,3,5)
 hold on
@@ -133,7 +135,11 @@ xlabel('Distance (\mum)')
 
 uB = 9.72401e-24 * Bp * 1.4;
 dE = 1.7 * 3.34e-30 * E;
-xr = xx(1+round([0 1 2 3 4 5 6]*(size(xx,1)-1)/6),round(1+[0.1 1 2 3 4 5 5.9]*(size(xx,2)-1)/6));
-zr = zz(1+round([0 1 2 3 4 5 6]*(size(zz,1)-1)/6),round(1+[0.1 1 2 3 4 5 5.9]*(size(zz,2)-1)/6));
-quiver(xr,zr,uB*xr,-2*uB*zr-sign(zr)*dE,0.5,'Color',blue)
-
+xr = xx(1:40:end,1:40:end);
+zr = zz(1:40:end,1:40:end);
+mag = sqrt((uB*xr).^2 + (-2*uB*zr-sign(zr)*dE).^2);
+s = (mag - dE)./mag;
+s(isinf(s))=0;
+quiver(xr,zr,s.*uB.*xr,-2*uB*zr.*s-sign(zr)*dE.*s,0.75,'Color',blue)
+xlim([-100 100])
+ylim([-50 50])
