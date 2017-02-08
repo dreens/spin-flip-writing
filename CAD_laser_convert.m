@@ -30,9 +30,9 @@ blue(plane) = 255;
 %imtool3 r0 g75 b10
 
 t = 120;
-red(alpha < t) = uint8(177+double(red(alpha < t)/2));
-green(alpha < t) = uint8(177+double(green(alpha < t)/2));
-blue(alpha < t) = uint8(177+double(blue(alpha < t)/2));
+red(alpha < t) = 230;%uint8(177+double(red(alpha < t)/2));
+green(alpha < t) = 230;%uint8(177+double(green(alpha < t)/2));
+blue(alpha < t) = 230;%uint8(177+double(blue(alpha < t)/2));
 
 image2 = image;
 image2(:,:,1) = red;

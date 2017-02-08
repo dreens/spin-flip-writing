@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  7 FEB 2017 09:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  7 FEB 2017 22:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -429,12 +429,12 @@ Package pdftex.def Info: blocking.png used on input line 91.
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 107.
 
-<CAD_recolor_laser.PNG, id=68, 1606.0pt x 903.375pt>
-File: CAD_recolor_laser.PNG Graphic file (type png)
+<CAD_recolor_laser_panels.PNG, id=68, 1284.8pt x 1445.4pt>
+File: CAD_recolor_laser_panels.PNG Graphic file (type png)
 
-<use CAD_recolor_laser.PNG>
-Package pdftex.def Info: CAD_recolor_laser.PNG used on input line 140.
-(pdftex.def)             Requested size: 244.6937pt x 137.63698pt.
+<use CAD_recolor_laser_panels.PNG>
+Package pdftex.def Info: CAD_recolor_laser_panels.PNG used on input line 140.
+(pdftex.def)             Requested size: 244.6937pt x 275.26845pt.
  [2 <./blocking.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
@@ -460,13 +460,17 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
-[3 <./CAD_recolor_laser.PNG (PNG copy)> <./Loss_Surface_Chunks_recolored_legend
-.png> <./V-to-W-plot-3D-dave.png (PNG copy)>]
+[3 <./CAD_recolor_laser_panels.PNG> <./Loss_Surface_Chunks_recolored_legend.png
+>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 167.
+
 
 Package natbib Warning: Citation `githubCOMcode' on page 4 undefined on input l
 ine 168.
 
-<MW-thermometry.png, id=102, 575.90157pt x 355.3275pt>
+<MW-thermometry.png, id=103, 575.90157pt x 355.3275pt>
 File: MW-thermometry.png Graphic file (type png)
 
 <use MW-thermometry.png>
@@ -477,7 +481,7 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 171--172
  [][] 
  []
 
-<reduce-density-compare.png, id=107, 538.26094pt x 325.215pt>
+<reduce-density-compare.png, id=108, 538.26094pt x 325.215pt>
 File: reduce-density-compare.png Graphic file (type png)
 
 <use reduce-density-compare.png>
@@ -488,8 +492,8 @@ Overfull \hbox (10.0748pt too wide) in paragraph at lines 182--183
  [][] 
  []
 
-[4 <./MW-thermometry.png (PNG copy)> <./reduce-density-compare.png (PNG copy)>]
-(./MolecularMajoranaLoss.bbl
+[4 <./V-to-W-plot-3D-dave.png (PNG copy)> <./MW-thermometry.png (PNG copy)> <./
+reduce-density-compare.png (PNG copy)>] (./MolecularMajoranaLoss.bbl
 Underfull \hbox (badness 1484) in paragraph at lines 338--344
  []\OT1/cmr/m/n/9 R. Gonz^^Salez-F^^Serez, M. I~narrea, J. P. Salas,  and
  []
@@ -505,16 +509,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `MolecularMajoranaLoss.out' has not changed.
 (rerunfilecheck)             Checksum: 010FD4176A327919788F3CF5E3CF2734;193.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
  ) 
 Here is how much of TeX's memory you used:
  8139 strings out of 494227
- 114961 string characters out of 6157703
- 260731 words of memory out of 5000000
+ 114996 string characters out of 6157703
+ 263731 words of memory out of 5000000
  11273 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
@@ -535,9 +534,9 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (5 pages, 2454862 bytes).
+Output written on MolecularMajoranaLoss.pdf (5 pages, 3643242 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 249 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams
  48 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
