@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  7 FEB 2017 22:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  7 FEB 2017 22:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -429,12 +429,12 @@ Package pdftex.def Info: blocking.png used on input line 91.
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 107.
 
-<CAD_recolor_laser_panels.PNG, id=68, 1284.8pt x 1445.4pt>
+<CAD_recolor_laser_panels.PNG, id=68, 1284.8pt x 1374.20067pt>
 File: CAD_recolor_laser_panels.PNG Graphic file (type png)
 
 <use CAD_recolor_laser_panels.PNG>
 Package pdftex.def Info: CAD_recolor_laser_panels.PNG used on input line 140.
-(pdftex.def)             Requested size: 244.6937pt x 275.26845pt.
+(pdftex.def)             Requested size: 244.6937pt x 261.70892pt.
  [2 <./blocking.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
@@ -534,7 +534,7 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (5 pages, 3643242 bytes).
+Output written on MolecularMajoranaLoss.pdf (5 pages, 3635766 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams
