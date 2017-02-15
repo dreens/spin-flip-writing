@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  15 FEB 2017 08:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  15 FEB 2017 08:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -489,7 +489,7 @@ LaTeX Warning: Reference `fig:timetrace' on page 5 undefined on input line 181.
 
 
 (./MolecularMajoranaLoss.bbl
-Underfull \hbox (badness 1484) in paragraph at lines 338--344
+Underfull \hbox (badness 1484) in paragraph at lines 354--360
  []\OT1/cmr/m/n/9 R. Gonz^^Salez-F^^Serez, M. I~narrea, J. P. Salas,  and
  []
 
@@ -510,13 +510,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8139 strings out of 494227
- 115053 string characters out of 6157703
- 235697 words of memory out of 5000000
- 11269 multiletter control sequences out of 15000+600000
+ 8148 strings out of 494227
+ 115259 string characters out of 6157703
+ 235850 words of memory out of 5000000
+ 11276 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 34i,11n,30p,1642b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,30p,1642b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/sh
@@ -533,10 +533,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (6 pages, 4424129 bytes).
+Output written on MolecularMajoranaLoss.pdf (6 pages, 4424474 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
  50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
