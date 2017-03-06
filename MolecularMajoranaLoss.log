@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  15 FEB 2017 08:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_3) (format=pdflatex 2013.11.20)  6 MAR 2017 12:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -423,85 +423,86 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Blocking/blocking.png Graphic file (type png)
 
 <use Blocking/blocking.png>
-Package pdftex.def Info: Blocking/blocking.png used on input line 91.
+Package pdftex.def Info: Blocking/blocking.png used on input line 89.
 (pdftex.def)             Requested size: 244.6937pt x 213.78851pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 104.
-
-<Geometry/CAD_recolor_laser_panels.PNG, id=68, 1284.8pt x 1374.20067pt>
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Blocking/bloc
+king.png>]
+<Geometry/CAD_recolor_laser_panels.PNG, id=70, 1284.8pt x 1374.20067pt>
 File: Geometry/CAD_recolor_laser_panels.PNG Graphic file (type png)
 
 <use Geometry/CAD_recolor_laser_panels.PNG>
 Package pdftex.def Info: Geometry/CAD_recolor_laser_panels.PNG used on input li
-ne 140.
+ne 155.
 (pdftex.def)             Requested size: 244.6937pt x 261.70892pt.
- [2 <./Blocking/blocking.png>]
+ [2]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 149.
+ on input line 164.
 
 
-<LossSurfaces/Loss_Surface_Chunks_recolored_legend.png, id=87, 1258.2207pt x 96
+<LossSurfaces/Loss_Surface_Chunks_recolored_legend.png, id=86, 1258.2207pt x 96
 4.0818pt>
 File: LossSurfaces/Loss_Surface_Chunks_recolored_legend.png Graphic file (type 
 png)
  <use LossSurfaces/Loss_Surface_Chunks_recolored_legend.png>
 Package pdftex.def Info: LossSurfaces/Loss_Surface_Chunks_recolored_legend.png 
-used on input line 151.
+used on input line 166.
 (pdftex.def)             Requested size: 244.6937pt x 187.48767pt.
 
-<VWFig/tim-style-by-dave.png, id=90, 329.24829pt x 574.53827pt>
+
+LaTeX Warning: Reference `eq:blimit' on page 3 undefined on input line 172.
+
+<VWFig/tim-style-by-dave.png, id=88, 329.24829pt x 574.53827pt>
 File: VWFig/tim-style-by-dave.png Graphic file (type png)
 
 <use VWFig/tim-style-by-dave.png>
-Package pdftex.def Info: VWFig/tim-style-by-dave.png used on input line 160.
+Package pdftex.def Info: VWFig/tim-style-by-dave.png used on input line 175.
 (pdftex.def)             Requested size: 244.6937pt x 427.00145pt.
- [3 <./Geometry/CAD_recolor_laser_panels.PNG> <./LossSurfaces/Loss_Surface_Chun
-ks_recolored_legend.png>]
+
+
+Package natbib Warning: Citation `githubCOMcode' on page 3 undefined on input l
+ine 183.
+
+[3 <./Geometry/CAD_recolor_laser_panels.PNG> <./LossSurfaces/Loss_Surface_Chunk
+s_recolored_legend.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 167.
+ on input line 184.
 
-
-Package natbib Warning: Citation `githubCOMcode' on page 4 undefined on input l
-ine 168.
-
-<MWSpec/MW-therm-dave.png, id=103, 375.5631pt x 312.6882pt>
+<MWSpec/MW-therm-dave.png, id=102, 375.5631pt x 312.6882pt>
 File: MWSpec/MW-therm-dave.png Graphic file (type png)
 
 <use MWSpec/MW-therm-dave.png>
-Package pdftex.def Info: MWSpec/MW-therm-dave.png used on input line 171.
+Package pdftex.def Info: MWSpec/MW-therm-dave.png used on input line 186.
 (pdftex.def)             Requested size: 256.0748pt x 213.22156pt.
 
-Overfull \hbox (10.0748pt too wide) in paragraph at lines 171--172
+Overfull \hbox (10.0748pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
+
+LaTeX Warning: Reference `fig:timetrace' on page 4 undefined on input line 196.
+
+
 [4 <./VWFig/tim-style-by-dave.png> <./MWSpec/MW-therm-dave.png>]
-
-LaTeX Warning: Reference `fig:timetrace' on page 5 undefined on input line 181.
-
-
 (./MolecularMajoranaLoss.bbl
-Underfull \hbox (badness 1484) in paragraph at lines 354--360
+Underfull \hbox (badness 1484) in paragraph at lines 361--367
  []\OT1/cmr/m/n/9 R. Gonz^^Salez-F^^Serez, M. I~narrea, J. P. Salas,  and
  []
 
-[5])
+)
 
 Package natbib Warning: There were undefined citations.
 
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./MolecularMajoranaLoss.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `MolecularMajoranaLoss.out' has not changed.
 (rerunfilecheck)             Checksum: 47917BDE5A8C3A73C853E3BC939F3BCB;197.
 
@@ -510,13 +511,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8148 strings out of 494227
- 115259 string characters out of 6157703
- 235850 words of memory out of 5000000
- 11276 multiletter control sequences out of 15000+600000
+ 8150 strings out of 494227
+ 115291 string characters out of 6157703
+ 265427 words of memory out of 5000000
+ 11280 multiletter control sequences out of 15000+600000
  13994 words of font info for 52 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 34i,11n,30p,1642b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,30p,2284b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></opt/local/sh
@@ -533,10 +534,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/local/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on MolecularMajoranaLoss.pdf (6 pages, 4424474 bytes).
+Output written on MolecularMajoranaLoss.pdf (5 pages, 4416813 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
  50 words of extra memory for PDF output out of 10000 (max. 10000000)
 

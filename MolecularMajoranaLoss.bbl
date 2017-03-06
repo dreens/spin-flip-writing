@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{30}%
+\begin{thebibliography}{31}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -300,6 +300,12 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Molecular Physics}\ }\textbf
   {\bibinfo {volume} {111}},\ \bibinfo {pages} {1931} (\bibinfo {year}
   {2013})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {The existence of the internal spin-dynamical effect was
+  known and described in the appendix of \cite {Stuhl2013}, but more thorough
+  recent investigations have demonstrated it to be of larger
+  magnitude.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Lara}\ \emph {et~al.}(2008)\citenamefont {Lara},
   \citenamefont {Lev},\ and\ \citenamefont {Bohn}}]{Lara2008}%
   \BibitemOpen
@@ -309,22 +315,23 @@
   {\doibase 10.1103/PhysRevA.78.033433} {\bibfield  {journal} {\bibinfo
   {journal} {Physical Review A}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
   {pages} {033433} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sawyer}\ \emph {et~al.}(2008)\citenamefont {Sawyer},
-  \citenamefont {Stuhl}, \citenamefont {Wang}, \citenamefont {Yeo},\ and\
-  \citenamefont {Ye}}]{sawyer2008}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
-  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}},
-  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Wang}}, \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
-  10.1103/PhysRevLett.101.203203} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
-  {pages} {203203} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph
-  {et~al.}(2012{\natexlab{a}})\citenamefont {Stuhl}, \citenamefont {Hummon},
+  {et~al.}(2012{\natexlab{a}})\citenamefont {Stuhl}, \citenamefont {Yeo},
+  \citenamefont {Sawyer}, \citenamefont {Hummon},\ and\ \citenamefont
+  {Ye}}]{Stuhl2012uwave}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo
+  {author} {\bibfnamefont {B.~C.}\ \bibnamefont {Sawyer}}, \bibinfo {author}
+  {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
+  10.1103/PhysRevA.85.033427} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review A}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages}
+  {033427} (\bibinfo {year} {2012}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stuhl}\ \emph
+  {et~al.}(2012{\natexlab{b}})\citenamefont {Stuhl}, \citenamefont {Hummon},
   \citenamefont {Yeo}, \citenamefont {Qu{\'{e}}m{\'{e}}ner}, \citenamefont
-  {Bohn},\ and\ \citenamefont {Ye}}]{stuhl2012evap}%
+  {Bohn},\ and\ \citenamefont {Ye}}]{Stuhl2012evap}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
   {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}},
@@ -334,7 +341,7 @@
   {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
   10.1038/nature11718} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
   }\textbf {\bibinfo {volume} {492}},\ \bibinfo {pages} {396} (\bibinfo {year}
-  {2012}{\natexlab{a}})}\BibitemShut {NoStop}%
+  {2012}{\natexlab{b}})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Pritchard}(1983{\natexlab{a}})}]{pritchard1983}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
@@ -389,19 +396,18 @@
   {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
   {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
   \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Stuhl}\ \emph
-  {et~al.}(2012{\natexlab{b}})\citenamefont {Stuhl}, \citenamefont {Yeo},
-  \citenamefont {Sawyer}, \citenamefont {Hummon},\ and\ \citenamefont
-  {Ye}}]{Stuhl2012uwave}%
+\bibitem [{\citenamefont {Sawyer}\ \emph {et~al.}(2008)\citenamefont {Sawyer},
+  \citenamefont {Stuhl}, \citenamefont {Wang}, \citenamefont {Yeo},\ and\
+  \citenamefont {Ye}}]{Sawyer2008}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
-  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo
-  {author} {\bibfnamefont {B.~C.}\ \bibnamefont {Sawyer}}, \bibinfo {author}
-  {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}}, \ and\ \bibinfo {author}
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Wang}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \ and\ \bibinfo {author}
   {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
-  10.1103/PhysRevA.85.033427} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review A}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages}
-  {033427} (\bibinfo {year} {2012}{\natexlab{b}})}\BibitemShut {NoStop}%
+  10.1103/PhysRevLett.101.203203} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
+  {pages} {203203} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zeppenfeld}\ \emph {et~al.}(2012)\citenamefont
   {Zeppenfeld}, \citenamefont {Englert}, \citenamefont {Gl{\"{o}}ckner},
   \citenamefont {Prehn}, \citenamefont {Mielenz}, \citenamefont {Sommer},
