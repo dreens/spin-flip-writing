@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{31}%
+\begin{thebibliography}{36}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -291,30 +291,20 @@
   10.1080/00268976.2013.793838} {\bibfield  {journal} {\bibinfo  {journal}
   {Molecular Physics}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages}
   {1798} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
-  {Qu{\'{e}}m{\'{e}}ner}(2013)}]{Bohn2013}%
+\bibitem [{\citenamefont {Sawyer}\ \emph
+  {et~al.}(2008{\natexlab{a}})\citenamefont {Sawyer}, \citenamefont {Stuhl},
+  \citenamefont {Wang}, \citenamefont {Yeo},\ and\ \citenamefont
+  {Ye}}]{Sawyer2008}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
-  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Qu{\'{e}}m{\'{e}}ner}},\ }\href {\doibase 10.1080/00268976.2013.783721}
-  {\bibfield  {journal} {\bibinfo  {journal} {Molecular Physics}\ }\textbf
-  {\bibinfo {volume} {111}},\ \bibinfo {pages} {1931} (\bibinfo {year}
-  {2013})}\BibitemShut {NoStop}%
-\bibitem [{Note1()}]{Note1}%
-  \BibitemOpen
-  \bibinfo {note} {The existence of the internal spin-dynamical effect was
-  known and described in the appendix of \cite {Stuhl2013}, but more thorough
-  recent investigations have demonstrated it to be of larger
-  magnitude.}\BibitemShut {Stop}%
-\bibitem [{\citenamefont {Lara}\ \emph {et~al.}(2008)\citenamefont {Lara},
-  \citenamefont {Lev},\ and\ \citenamefont {Bohn}}]{Lara2008}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Lara}}, \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont {Lev}}, \
-  and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Bohn}},\ }\href
-  {\doibase 10.1103/PhysRevA.78.033433} {\bibfield  {journal} {\bibinfo
-  {journal} {Physical Review A}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
-  {pages} {033433} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Wang}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
+  10.1103/PhysRevLett.101.203203} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
+  {pages} {203203} (\bibinfo {year} {2008}{\natexlab{a}})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph
   {et~al.}(2012{\natexlab{a}})\citenamefont {Stuhl}, \citenamefont {Yeo},
   \citenamefont {Sawyer}, \citenamefont {Hummon},\ and\ \citenamefont
@@ -328,6 +318,42 @@
   10.1103/PhysRevA.85.033427} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review A}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages}
   {033427} (\bibinfo {year} {2012}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lara}\ \emph {et~al.}(2008)\citenamefont {Lara},
+  \citenamefont {Lev},\ and\ \citenamefont {Bohn}}]{Lara2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lara}}, \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont {Lev}}, \
+  and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Bohn}},\ }\href
+  {\doibase 10.1103/PhysRevA.78.033433} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review A}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
+  {pages} {033433} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bohn}\ and\ \citenamefont
+  {Qu{\'{e}}m{\'{e}}ner}(2013)}]{Bohn2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Bohn}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Qu{\'{e}}m{\'{e}}ner}},\ }\href {\doibase 10.1080/00268976.2013.783721}
+  {\bibfield  {journal} {\bibinfo  {journal} {Molecular Physics}\ }\textbf
+  {\bibinfo {volume} {111}},\ \bibinfo {pages} {1931} (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {In fact, the only reason a molecule can remain trapped at
+  all in this configuration is thanks to the lambda doubling perturbation,
+  which connects the substates of different quantization axes and creates a
+  barrier to remaining in the same quantization axis. In a hypothetical
+  perfectly linear Stark effect molecule without this doubling, an arbitrarily
+  small stray electric field would cause complete trap loss for molecules
+  crossing the center plane of the trap.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Qu{\'{e}}m{\'{e}}ner}\ and\ \citenamefont
+  {Bohn}(2016)}]{Quemener2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Qu{\'{e}}m{\'{e}}ner}}\ and\ \bibinfo {author} {\bibfnamefont {J.~L.}\
+  \bibnamefont {Bohn}},\ }\href {\doibase 10.1103/PhysRevA.93.012704}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review A - Atomic,
+  Molecular, and Optical Physics}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {1} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph
   {et~al.}(2012{\natexlab{b}})\citenamefont {Stuhl}, \citenamefont {Hummon},
   \citenamefont {Yeo}, \citenamefont {Qu{\'{e}}m{\'{e}}ner}, \citenamefont
@@ -342,13 +368,59 @@
   10.1038/nature11718} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
   }\textbf {\bibinfo {volume} {492}},\ \bibinfo {pages} {396} (\bibinfo {year}
   {2012}{\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pritchard}(1983{\natexlab{a}})}]{pritchard1983}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {For this and other reasons, it is evident that $5\protect
+  \text { mK}$ temperatures were not actually attained. However it does seem
+  that some phase space compression was achieved for $20\protect \text { mK}$
+  evaporations.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Sawyer}\ \emph {et~al.}(2007)\citenamefont {Sawyer},
+  \citenamefont {Lev}, \citenamefont {Hudson}, \citenamefont {Stuhl},
+  \citenamefont {Lara}, \citenamefont {Bohn},\ and\ \citenamefont
+  {Ye}}]{Sawyer2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont {Lev}},
+  \bibinfo {author} {\bibfnamefont {E.~R.}\ \bibnamefont {Hudson}}, \bibinfo
+  {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Lara}}, \bibinfo {author} {\bibfnamefont
+  {J.~L.}\ \bibnamefont {Bohn}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Ye}},\ }\href {\doibase 10.1103/PhysRevLett.98.253002}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {98}},\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pritchard}(1983)}]{pritchard1983}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
   {Pritchard}},\ }\href {\doibase 10.1103/PhysRevLett.51.1336} {\bibfield
   {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
   {volume} {51}},\ \bibinfo {pages} {1336} (\bibinfo {year}
-  {1983}{\natexlab{a}})}\BibitemShut {NoStop}%
+  {1983})}\BibitemShut {NoStop}%
+\bibitem [{Note3()}]{Note3}%
+  \BibitemOpen
+  \bibinfo {note} {Soure code is available:
+  https://github.com/dreens/spin-flip-integration/}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sawyer}\ \emph
+  {et~al.}(2008{\natexlab{b}})\citenamefont {Sawyer}, \citenamefont {Stuhl},
+  \citenamefont {Lev}, \citenamefont {Ye},\ and\ \citenamefont
+  {Hudson}}]{Sawyer2008a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
+  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}},
+  \bibinfo {author} {\bibfnamefont {B.~L.}\ \bibnamefont {Lev}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Ye}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {E.~R.}\ \bibnamefont {Hudson}},\ }\href {\doibase
+  10.1140/epjd/e2008-00097-y} {\bibfield  {journal} {\bibinfo  {journal}
+  {European Physical Journal D}\ }\textbf {\bibinfo {volume} {48}},\ \bibinfo
+  {pages} {197} (\bibinfo {year} {2008}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{Note4()}]{Note4}%
+  \BibitemOpen
+  \bibinfo {note} {Microwaves applied via our free space cavity mode probe
+  couple electrically weak and strong field seeking states during deceleration.
+  The microwave wavelength of $15\protect \text { cm}$ is large compared with
+  packet size, and the resonant energy corresponds to the low electric fields
+  that all molecules experience when flying between stages.}\BibitemShut
+  {Stop}%
 \bibitem [{\citenamefont {Gonz{\'{a}}lez-F{\'{e}}rez}\ \emph
   {et~al.}(2014)\citenamefont {Gonz{\'{a}}lez-F{\'{e}}rez}, \citenamefont
   {I{\~{n}}arrea}, \citenamefont {Salas},\ and\ \citenamefont
@@ -362,6 +434,30 @@
   10.1103/PhysRevE.90.062919} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review E}\ }\textbf {\bibinfo {volume} {90}},\ \bibinfo {pages}
   {062919} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zeppenfeld}\ \emph {et~al.}(2012)\citenamefont
+  {Zeppenfeld}, \citenamefont {Englert}, \citenamefont {Gl{\"{o}}ckner},
+  \citenamefont {Prehn}, \citenamefont {Mielenz}, \citenamefont {Sommer},
+  \citenamefont {van Buuren}, \citenamefont {Motsch},\ and\ \citenamefont
+  {Rempe}}]{Zeppenfeld2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Zeppenfeld}}, \bibinfo {author} {\bibfnamefont {B.~G.~U.}\ \bibnamefont
+  {Englert}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Gl{\"{o}}ckner}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Prehn}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mielenz}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Sommer}}, \bibinfo
+  {author} {\bibfnamefont {L.~D.}\ \bibnamefont {van Buuren}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Motsch}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Rempe}},\ }\href {\doibase
+  10.1038/nature11595} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
+  }\textbf {\bibinfo {volume} {491}},\ \bibinfo {pages} {570} (\bibinfo {year}
+  {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rabi}(1936)}]{Rabi1936}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~I.}\ \bibnamefont
+  {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
+  \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bergeman}\ \emph {et~al.}(1989)\citenamefont
   {Bergeman}, \citenamefont {McNicholl}, \citenamefont {Kycia}, \citenamefont
   {Metcalf},\ and\ \citenamefont {Balazs}}]{Bergeman1989}%
@@ -383,47 +479,4 @@
   {journal} {\bibinfo  {journal} {Reports on Progress in Physics}\ }\textbf
   {\bibinfo {volume} {42}},\ \bibinfo {pages} {439} (\bibinfo {year}
   {1979})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Pritchard}(1983{\natexlab{b}})}]{Pritchard1983a}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~E.}\ \bibnamefont
-  {Pritchard}},\ }\href {\doibase 10.1103/PhysRevLett.51.1336} {\bibfield
-  {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
-  {volume} {51}},\ \bibinfo {pages} {1336} (\bibinfo {year}
-  {1983}{\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Rabi}(1936)}]{Rabi1936}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~I.}\ \bibnamefont
-  {Rabi}},\ }\href {\doibase 10.1103/PhysRev.49.324} {\bibfield  {journal}
-  {\bibinfo  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {49}},\
-  \bibinfo {pages} {324} (\bibinfo {year} {1936})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Sawyer}\ \emph {et~al.}(2008)\citenamefont {Sawyer},
-  \citenamefont {Stuhl}, \citenamefont {Wang}, \citenamefont {Yeo},\ and\
-  \citenamefont {Ye}}]{Sawyer2008}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~C.}\ \bibnamefont
-  {Sawyer}}, \bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Stuhl}},
-  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Wang}}, \bibinfo {author}
-  {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
-  10.1103/PhysRevLett.101.203203} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
-  {pages} {203203} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Zeppenfeld}\ \emph {et~al.}(2012)\citenamefont
-  {Zeppenfeld}, \citenamefont {Englert}, \citenamefont {Gl{\"{o}}ckner},
-  \citenamefont {Prehn}, \citenamefont {Mielenz}, \citenamefont {Sommer},
-  \citenamefont {van Buuren}, \citenamefont {Motsch},\ and\ \citenamefont
-  {Rempe}}]{Zeppenfeld2012}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
-  {Zeppenfeld}}, \bibinfo {author} {\bibfnamefont {B.~G.~U.}\ \bibnamefont
-  {Englert}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Gl{\"{o}}ckner}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
-  {Prehn}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mielenz}},
-  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Sommer}}, \bibinfo
-  {author} {\bibfnamefont {L.~D.}\ \bibnamefont {van Buuren}}, \bibinfo
-  {author} {\bibfnamefont {M.}~\bibnamefont {Motsch}}, \ and\ \bibinfo {author}
-  {\bibfnamefont {G.}~\bibnamefont {Rempe}},\ }\href {\doibase
-  10.1038/nature11595} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
-  }\textbf {\bibinfo {volume} {491}},\ \bibinfo {pages} {570} (\bibinfo {year}
-  {2012})}\BibitemShut {NoStop}%
 \end{thebibliography}%
