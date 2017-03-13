@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{32}%
+\begin{thebibliography}{33}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -280,17 +280,6 @@
   10.1103/PhysRevLett.75.3969} {\bibfield  {journal} {\bibinfo  {journal}
   {Physical Review Letters}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
   {pages} {3969} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Stuhl}\ \emph {et~al.}(2013)\citenamefont {Stuhl},
-  \citenamefont {Yeo}, \citenamefont {Hummon},\ and\ \citenamefont
-  {Ye}}]{Stuhl2013}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
-  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo
-  {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
-  10.1080/00268976.2013.793838} {\bibfield  {journal} {\bibinfo  {journal}
-  {Molecular Physics}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages}
-  {1798} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Sawyer}\ \emph
   {et~al.}(2008{\natexlab{a}})\citenamefont {Sawyer}, \citenamefont {Stuhl},
   \citenamefont {Wang}, \citenamefont {Yeo},\ and\ \citenamefont
@@ -305,6 +294,17 @@
   {Physical Review Letters}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
   {pages} {203203} (\bibinfo {year} {2008}{\natexlab{a}})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Stuhl}\ \emph {et~al.}(2013)\citenamefont {Stuhl},
+  \citenamefont {Yeo}, \citenamefont {Hummon},\ and\ \citenamefont
+  {Ye}}]{Stuhl2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~K.}\ \bibnamefont
+  {Stuhl}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Yeo}}, \bibinfo
+  {author} {\bibfnamefont {M.~T.}\ \bibnamefont {Hummon}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Ye}},\ }\href {\doibase
+  10.1080/00268976.2013.793838} {\bibfield  {journal} {\bibinfo  {journal}
+  {Molecular Physics}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo {pages}
+  {1798} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Stuhl}\ \emph
   {et~al.}(2012{\natexlab{a}})\citenamefont {Stuhl}, \citenamefont {Yeo},
   \citenamefont {Sawyer}, \citenamefont {Hummon},\ and\ \citenamefont
@@ -338,6 +338,11 @@
   {2013})}\BibitemShut {NoStop}%
 \bibitem [{Note1()}]{Note1}%
   \BibitemOpen
+  \bibinfo {note} {It is unclear how much of a collisional effect described
+  in~\cite {Stuhl2013} remains. This will need to be the subject of further
+  investigation.}\BibitemShut {Stop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
   \bibinfo {note} {Without the lambda doubling perturbation, which connects the
   substates of different quantization axes and provides a barrier supportive of
   remaining in the doubly dipolar substate, a perfectly linear Stark effect
@@ -366,7 +371,7 @@
   10.1038/nature11718} {\bibfield  {journal} {\bibinfo  {journal} {Nature}\
   }\textbf {\bibinfo {volume} {492}},\ \bibinfo {pages} {396} (\bibinfo {year}
   {2012}{\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{Note2()}]{Note2}%
+\bibitem [{Note3()}]{Note3}%
   \BibitemOpen
   \bibinfo {note} {For this and other reasons, it is evident that $5\protect
   \text { mK}$ temperatures were not actually attained. However it does seem
@@ -394,7 +399,7 @@
   {journal} {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo
   {volume} {51}},\ \bibinfo {pages} {1336} (\bibinfo {year}
   {1983})}\BibitemShut {NoStop}%
-\bibitem [{Note3()}]{Note3}%
+\bibitem [{Note4()}]{Note4}%
   \BibitemOpen
   \bibinfo {note} {Soure code is available:
   https://github.com/dreens/spin-flip-integration/}\BibitemShut {NoStop}%
@@ -411,7 +416,7 @@
   10.1140/epjd/e2008-00097-y} {\bibfield  {journal} {\bibinfo  {journal}
   {European Physical Journal D}\ }\textbf {\bibinfo {volume} {48}},\ \bibinfo
   {pages} {197} (\bibinfo {year} {2008}{\natexlab{b}})}\BibitemShut {NoStop}%
-\bibitem [{Note4()}]{Note4}%
+\bibitem [{Note5()}]{Note5}%
   \BibitemOpen
   \bibinfo {note} {Microwaves applied via our free space cavity mode probe
   couple electrically weak and strong field seeking states during deceleration.

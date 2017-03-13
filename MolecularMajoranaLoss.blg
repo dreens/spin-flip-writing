@@ -1,7 +1,17 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: MolecularMajoranaLoss.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/MacPorts 2013_3)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: MolecularMajoranaLoss.aux
 The style file: apsrev4-1_no_Arxiv.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: MolecularMajoranaLossNotes.bib
 Database file #2: MolecularMajoranaLoss.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
 Control: key (0) 
 Control: author (72) initials jnrlst
@@ -10,3 +20,44 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
+You've used 33 entries,
+            5845 wiz_defined-function locations,
+            1904 strings with 24830 characters,
+and the built_in function-call counts, 34727 in all, are:
+= -- 2052
+> -- 1142
+< -- 207
++ -- 356
+- -- 286
+* -- 5848
+:= -- 3251
+add.period$ -- 33
+call.type$ -- 33
+change.case$ -- 137
+chr.to.int$ -- 31
+cite$ -- 33
+duplicate$ -- 3070
+empty$ -- 2437
+format.name$ -- 658
+if$ -- 6926
+int.to.chr$ -- 3
+int.to.str$ -- 41
+missing$ -- 400
+newline$ -- 151
+num.names$ -- 84
+pop$ -- 1167
+preamble$ -- 1
+purify$ -- 160
+quote$ -- 0
+skip$ -- 1160
+stack$ -- 0
+substring$ -- 843
+swap$ -- 3180
+text.length$ -- 143
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 506
+warning$ -- 0
+while$ -- 84
+width$ -- 0
+write$ -- 296

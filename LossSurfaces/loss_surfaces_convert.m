@@ -2,7 +2,7 @@
 % I want to use MATLAB image processing to mess with a figure that I don't
 % like the coloring on.
 
-image = imread('~/Documents/OH/spin-flip-writing/Loss_Surface_Chunks_0-320_0.jpeg');
+image = imread('~/Documents/OH/spin-flip-writing/LossSurfaces/Loss_Surface_Chunks_0-320_0.jpeg');
 
 red   = image(:,:,1);
 green = image(:,:,2);
@@ -16,7 +16,7 @@ blue2  = image(:,:,3);
 imtool(image)
 
 % for comparison
-imagem = imread('~/Documents/OH/spin-flip-writing/blue-red-yellow-v2_CAD.png');
+imagem = imread('~/Documents/OH/spin-flip-writing/Geometry/blue-red-yellow-v2_CAD.png');
 imtool(imagem)
 %%
 getplane = @(r1,r2,g1,g2,b1,b2) ...
@@ -68,6 +68,49 @@ blue2(plane) = 255;
 
 
 
+getplane = @(r1,r2,g1,g2,b1,b2) ...
+    r1  < red2   & red2   < r2 & ...
+    g1  < green2 & green2 < g2 & ...
+    b1  < blue2  & blue2  < b2 ;
+
+
+%red
+plane = getplane(119,121,-1,1,-1,1);
+red2(plane) = 250;
+green2(plane) = 250;
+blue2(plane) = 0;
+
+%orange
+plane = getplane(179,181,-1,1,-1,1);
+red2(plane) = 250;
+green2(plane) = 150;
+blue2(plane) = 0;
+
+%yellow
+plane = getplane(149,151,149,151,-1,1);
+red2(plane) = 250;
+green2(plane) = 50;
+blue2(plane) = 0;
+
+%green
+plane = getplane(134,136,134,136,134,136);
+red2(plane) = 200;
+green2(plane) = 0;
+blue2(plane) = 0;
+
+%light blue
+plane = getplane(-1,1,-1,1,139,141);
+red2(plane) = 100;
+green2(plane) = 0;
+blue2(plane) = 0;
+
+%dark blue
+plane = getplane(64,66,114,116,204,206);
+red2(plane) = 0;
+green2(plane) = 0;
+blue2(plane) = 0;
+
+
 
 image2 = image;
 image2(:,:,1) = red2;
@@ -79,4 +122,4 @@ image2 = image2(250:1450,:,:);
 
 imtool(image2)
 
-imwrite(image2,'~/Documents/OH/spin-flip-writing/Loss_Surface_Chunks_recolored.PNG')
+%imwrite(image2,'~/Documents/OH/spin-flip-writing/Loss_Surface_Chunks_recolored.PNG')
