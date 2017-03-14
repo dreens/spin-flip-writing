@@ -143,15 +143,13 @@ else
     save('flabel.mat','flabel')
 end
 %regions = regionprops(rgblabel,'PixelIdxList','Area','Centroid');
-regions = regionprops(flabel,'PixelIdxList','Area');
+regions = regionprops(biglabel,'PixelIdxList','Area');
 %regions = regions([regions.Area]>0);
 
 mask = false(size(red2));
 for i=1:length(regions)
-    listpix = regions(i).PixelIdxList;
-    if length(listpix)<100
-        mask(listpix) = true;
-    end
+    listpix =
+    mask(maskregions(i).PixelIdxList) = true;
 end
 %imtool(mask)
 h = fspecial('disk',5);
