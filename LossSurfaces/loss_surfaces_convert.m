@@ -121,14 +121,18 @@ if exist('flabel.mat','file')
     flabel = flabel.flabel;
 else
     flabel = ones(size(red3),'uint64');
-    for i=1:15
+    for i=1:30
         disp(i)
-        conncomp = bwconncomp(bitget(rgblabel,i));
+        if i<=15
+            conncomp = bwconncomp(bitget(rgblabel,i));
+        else
+            conncomp = bwconncomp(~bitget(rgblabel,i-15));
+        end
         thislabelmatrix = labelmatrix(conncomp);
         numlabels = max(flabel(:));
         thismax(i) = max(thislabelmatrix(:));
-        flabel = flabel + uint64(thislabelmatrix)*numlabels;
-        if ~mod(i,5)
+        flabel = flabel + uint64(thislabelmatrix)*(numlabels+1);
+        if ~mod(i,3)
             u = unique(flabel(:));
             disp(length(u))
             for j=1:length(u)
@@ -149,7 +153,7 @@ regions = regionprops(flabel,'PixelIdxList','Area');
 mask = false(size(red2));
 for i=1:length(regions)
     listpix = regions(i).PixelIdxList;
-    if length(listpix)<100
+    if length(listpix)<10
         mask(listpix) = true;
     end
 end
@@ -173,11 +177,11 @@ image3 = image;
 image3(:,:,1) = red4;
 image3(:,:,2) = green4;
 image3(:,:,3) = blue4;
-imtool(image3)
+%imtool(image3)
 
 %some clipping
 image2 = image2(250:1450,:,:);
 
 imtool(image2)
 
-%imwrite(image2,'~/Documents/OH/spin-flip-writing/Loss_Surface_Chunks_recolored.PNG')
+imwrite(image2,'Loss_Surface_Chunks_recolored_heat.PNG')
