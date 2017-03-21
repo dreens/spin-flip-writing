@@ -1,0 +1,17 @@
+##—--------------------------------
+# What to ignore for this latex git
+##—--------------------------------
+
+# Various Latex Compilation Logs / Files:
+*.blg
+*.bbl
+*.aux
+*.dvi
+*.out
+
+
+# Some of my figures have associated MATLAB scripts:
+**.m~
+**.asv
+
+# Maybe I should ignore inkscape autosaves? No, maybe better to keep them.
