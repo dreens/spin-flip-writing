@@ -8,6 +8,7 @@
 *.aux
 *.dvi
 *.out
+*.log
 
 
 # Some of my figures have associated MATLAB scripts:
