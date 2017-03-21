@@ -10,6 +10,9 @@
 *.out
 *.log
 
+# Mac OSX Files:
+**.DS_Store
+
 
 # Some of my figures have associated MATLAB scripts:
 **.m~
