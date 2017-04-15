@@ -5,9 +5,9 @@
 %
 
 
-%% Panel 1
+%% Unperturbed Zeeman Energies for OH
 %
-% Unperturbed Zeeman Energies for OH
+%
 B = -1e-3:5e-5:0.025;
 E = 1.5e5;
 Hs = zeros(8,8,length(B));
@@ -25,7 +25,7 @@ ds = ds(:,21:end);
 dse = dse(:,21:end);
 dseo = dseo(:,21:end);
 B = B(21:end);
-%%
+%% Panel a
 h = figure;
 set(h,'Position',[50,100,700,400])
 subplot(2,3,1)
@@ -50,10 +50,11 @@ plot(Bp,dss(5,:),'Color',gray,'LineStyle','--','LineWidth',2);
 plot(Bp,dss(6,:),'Color',gray,'LineStyle','--','LineWidth',2);
 
 ylabel('Energy (mK)')
+title('E=0','FontSize',14)
 ylim([-10 30]);
 xlim([0 200])
 grid on
-%%
+%% Panel b
 subplot(2,3,2)
 hold on
 
@@ -72,12 +73,13 @@ plot(Bp,dss(6,:),'Color',gray,'LineStyle','--','LineWidth',2);
 plot(Bp,dss(1,:),'Color',blue,'LineWidth',2);
 plot(Bp,dss(2,:),'Color',red,'LineWidth',2);
 
+title('E || B','FontSize',14)
 xlabel('Magnetic Field (G)')
 ylim([-10 30]);
 xlim([0 200])
 grid on
 
-
+%% Panel c
 subplot(2,3,3)
 hold on
 ds2 = dseo-LD/2;
@@ -89,11 +91,12 @@ plot(Bp,ds2(4,:),'Color',gray,'LineWidth',2);
 plot(Bp,ds2(1,:),'Color',blue,'LineWidth',2);
 plot(Bp,ds2(2,:),'Color',red,'LineWidth',2);
 
+title('E\perp B','FontSize',14)
 ylim([-10 30]);
 xlim([0 200])
 grid on
 
-%%
+%% Panel d
 subplot(2,3,4)
 hold on
 
@@ -111,14 +114,18 @@ end
 levels = [2:2:10];
 contour(xx,zz,EE,[0.5 0.5],'Color',red);
 contour(xx,zz,EE,levels,'k');
-ylabel('Distance (\mum)')
+ylabel('Strong Axis (\mum)')
+xlabel('Weak Axis (\mum)')
+title('E=0','FontSize',14)
+
 grid on
-xr = xx(1:40:end,1:40:end);
-zr = zz(1:40:end,1:40:end);
+xr = xx(1:50:end,1:50:end);
+zr = zz(1:50:end,1:50:end);
 quiver(xr,zr,xr,-2*zr,'Color',blue)
 xlim([-100 100])
 ylim([-50 50])
 
+%% Panel e
 subplot(2,3,5)
 hold on
 
@@ -131,15 +138,48 @@ end
 contour(xx,zz,EE,[0.5 0.5],'Color',red);
 contour(xx,zz,EE,levels,'k');
 grid on
-xlabel('Distance (\mum)')
-
+xlabel('Weak Axis (\mum)')
+title('E = 150 V/cm','FontSize',14)
 uB = 9.72401e-24 * Bp * 1.4;
 dE = 1.7 * 3.34e-30 * E;
-xr = xx(1:40:end,1:40:end);
-zr = zz(1:40:end,1:40:end);
+xr = xx(1:66:end,1:50:end);
+zr = zz(1:66:end,1:50:end);
 mag = sqrt((uB*xr).^2 + (-2*uB*zr-sign(zr)*dE).^2);
 s = (mag - dE)./mag;
 s(isinf(s))=0;
 quiver(xr,zr,s.*uB.*xr,-2*uB*zr.*s-sign(zr)*dE.*s,0.75,'Color',blue)
 xlim([-100 100])
 ylim([-50 50])
+
+%% Panel f
+subplot(2,3,6)
+hold on
+blue = [0 0 170]/255;
+gray = [135 135 135]/255;
+red = [180 0 0]/255;
+
+h = 6.6267e-34;
+LD = 1.667358e9*h;
+kb = 1.3806e-23;
+
+dss = ds-LD/2;
+dss = 1e3*dss/kb;
+
+Bp = B*1e4;
+plot(Bp,dss(1,:),'Color',red,'LineWidth',2);
+plot(Bp,dss(2,:),'Color',gray,'LineWidth',2);
+plot(Bp,dss(3,:),'Color',gray,'LineWidth',2);
+plot(Bp,dss(4,:),'Color',blue,'LineWidth',2);
+plot(Bp,dss(5,:),'Color',gray,'LineStyle','-','LineWidth',2);
+plot(Bp,dss(6,:),'Color',gray,'LineStyle','-','LineWidth',2);
+plot(Bp,dss(7,:),'Color',gray,'LineStyle','-','LineWidth',2);
+plot(Bp,dss(8,:),'Color',gray,'LineStyle','-','LineWidth',2);
+
+ylabel('Energy (mK)')
+xlabel('Magnetic Field (G)')
+title('E=0','FontSize',14)
+ylim([-100 30]);
+xlim([0 200])
+grid on
+
+

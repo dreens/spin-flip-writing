@@ -19,3 +19,7 @@
 **.asv
 
 # Maybe I should ignore inkscape autosaves? No, maybe better to keep them.
+
+# I’m going to ignore .PNG’s that can be generated 
+# directly from inkscape on the command line.
+**_out.png
