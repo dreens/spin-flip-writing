@@ -3,7 +3,7 @@
 
 inkscape —-without-gui -f $PWD/Geometry/CAD_recolor_laser_panels_zoom.svg -e $PWD/Geometry/geometry_out.png
 
-inkscape —-without-gui -f $PWD/Blocking/blocking_master.svg -e $PWD/Blocking/blocking_out.png
+inkscape —-without-gui -f $PWD/Blocking/figmakeblocking.svg -e $PWD/Blocking/blocking_out.png
 
 inkscape —-without-gui -f $PWD/VWFig/tim-style-by-dave-1hz.svg -e $PWD/VWFig/vwfig_out.png
 

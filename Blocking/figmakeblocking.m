@@ -53,6 +53,8 @@ ylabel('Energy (mK)')
 title('E=0','FontSize',14)
 ylim([-10 30]);
 xlim([0 200])
+fsaxes = 14;
+set(gca,'FontSize',fsaxes)
 grid on
 %% Panel b
 subplot(2,3,2)
@@ -77,6 +79,7 @@ title('E || B','FontSize',14)
 xlabel('Magnetic Field (G)')
 ylim([-10 30]);
 xlim([0 200])
+set(gca,'FontSize',fsaxes)
 grid on
 
 %% Panel c
@@ -94,6 +97,7 @@ plot(Bp,ds2(2,:),'Color',red,'LineWidth',2);
 title('E\perp B','FontSize',14)
 ylim([-10 30]);
 xlim([0 200])
+set(gca,'FontSize',fsaxes)
 grid on
 
 %% Panel d
@@ -124,6 +128,7 @@ zr = zz(1:50:end,1:50:end);
 quiver(xr,zr,xr,-2*zr,'Color',blue)
 xlim([-100 100])
 ylim([-50 50])
+set(gca,'FontSize',fsaxes)
 
 %% Panel e
 subplot(2,3,5)
@@ -149,6 +154,7 @@ s = (mag - dE)./mag;
 s(isinf(s))=0;
 quiver(xr,zr,s.*uB.*xr,-2*uB*zr.*s-sign(zr)*dE.*s,0.75,'Color',blue)
 xlim([-100 100])
+set(gca,'FontSize',fsaxes)
 ylim([-50 50])
 
 %% Panel f
@@ -178,8 +184,9 @@ plot(Bp,dss(8,:),'Color',gray,'LineStyle','-','LineWidth',2);
 ylabel('Energy (mK)')
 xlabel('Magnetic Field (G)')
 title('E=0','FontSize',14)
-ylim([-100 30]);
+ylim([-100 20]);
 xlim([0 200])
+set(gca,'FontSize',fsaxes)
 grid on
 
 

@@ -91,7 +91,7 @@ The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit 
 %The observation was discussed briefly in the appendix of~\cite{Stuhl2013}. 
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{Blocking/blocking.png}%
+\includegraphics[width=\linewidth]{Blocking/blocking_out.png}%
 \caption{
 The blocking effect. (a), four Zeeman split lines in OH's $J=3/2$ ground manifold. An opposite parity manifold sits$100\text{ mK}$ below. The trapped state (blue) and it's spin-flip partner (red). (b) Zeeman splitting, $E||B$, $E=150\text{V/cm}$. (c) \epb. Note vastly reduced red-blue splitting. See other angles in appendix of~\cite{Stuhl2013}. (d) Energy splitting contours every 2 mK near the zero of our $2\text{ T/cm}$ trap~\cite{Stuhl2012uwave}. B-field arrows in blue. (e) Again with $E=150\text{ V/cm}$. Note drastic widening of lowest contour (red). Vector direction gives the Hund's Case X quantization axis of trapped state, $\mu_BB\pm d_EE$ above (below) the center plane. Vector magnitude gives potential energy relative to trap center. 
 \label{fig:blocking}}
@@ -159,7 +159,7 @@ We can be more quantitative by integrating the velocity distribution and the flu
 %One obvious way to avoid the loss enhancement is to simply never use electric field in a magnetic trap. This prevents loss from being enhanced compared with atoms, but doesn't remove it entirely. Another possibility is to trap with electric fields, where no spin-flip loss is possible thanks to the $\Delta=h\,\cdot\,1.67\text{ GHz}$ splitting between the weak and strong field seeking states. However this splitting also results in a significant reduction in trap gradient close to the center, very undesirable for further cooling by evaporation. Moreover, there are reductions in inelastic to benefit from in magnetic fields.~\cite{Stuhl2012evap}
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{Geometry/CAD_recolor_laser_panels.PNG}%blue-red-yellow-v2_CAD.png}%
+\includegraphics[width=\linewidth]{Geometry/geometry_out.PNG}%blue-red-yellow-v2_CAD.png}%
 \caption{
 Dual quadrupole trap embedded in Stark Decelerator. (a) The decelerator has four backbone electrodes (red) and many pin electrodes (gray). OH produced and slowed as in~\cite{Sawyer2008}, except the slowing extends nearly to zero velocity between the second to last pin pair (black), magnetized as in (c). Four pins form the electric trapping quadrupole (yellow, one omitted for clarity), the last and third to last pin pairs. Detail in (b). Trapping pins are conductive with decelerator backbone; voltage configurations achieved with existing feedthroughs but modified MOSFET setup for bipolar output. Yellow bidirectional arrows indicate translation described in text. Bias coils (light blue) and their current direction (dark blue) sit outside vacuum. LIF detection with laser (pink) and collection lens (blue). (d), trap energy along axes. $B^\prime=5\text{ T/cm}$ and $E^\prime=100 \text{ kV/cm}^2$. Trap frequencies $\nu_x=3\text{ kHz}$, $\nu_y=5\text{ kHz}$, and $\nu_z=4\text{ kHz}$.\label{fig:CAD}}
 \end{figure}
@@ -172,7 +172,7 @@ Seeking to remove the loss entirely but without trap depth or trap gradient sacr
 %According to our intuition and our phase space coupling simulations, this integrated trap represents a near best-case scenario for coupling between a pulsed decelerator and a trap and ought to provide trap-averaged temperatures below $100\text{ mK}$. In practice we do not realize any significant molecule number increase relative to our previous trap geometries and temperatures are $170\text{ mK}$. This could be related to the difficulty of conditioning the magnet surfaces, which could be micro-discharging during operation leading to heating during loading. Finer polishing of the magnetic pins should address this.
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{LossSurfaces/Loss_Surface_Chunks_recolored_heat_legend.png}%
+\includegraphics[width=\linewidth]{LossSurfaces/losssurfaces_out.png}%
 \caption{
 Surfaces where spin-flips can occur for several values of $B_\text{coil}$. Trap energy contours every $100\text{ mK}$ (gray). $B_\text{coil}$ pushes loss regions away from the trap center.
 \label{fig:LSurfs}}
@@ -181,7 +181,7 @@ Surfaces where spin-flips can occur for several values of $B_\text{coil}$. Trap 
 $B_\text{coil}$ allows a full tuning from $200\text{ s}^{-1}$ to complete removal, see Fig.~\ref{fig:WVplot}, panel (a). It does this by morphing the \epb{} surface from a pair of planes into a hyperbolic sheet which deviates spatially from the magnetic field minimum along the $z$-axis. Thanks to this deviation, for suitable magnitude of $B_\text{coil}$, $\mu_BB< d_EE$ can be avoided. In fig.~\ref{fig:LSurfs}, the surfaces where \epb{} are colored wherever the splitting there is below the hopping threshold $\kappa$. Note how $B_\text{coil}$ tunes the proximity of the loss regions to zero. The loss regions are always visible, but they are tuned so far from the trap center that molecules accessing them have already escaped the trap.
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{VWFig/tim-style-by-dave-1hz-blues.png}%
+\includegraphics[width=\linewidth]{VWFig/vwfig_out.png}%
 \caption{
 (a) Time traces for aligned pins at two bias fields, a density modulated trace, and an extended time trace. (b) At the fixed time $30 \text{ms}$, population as a function of pin translation and bias field.
 \label{fig:WVplot}}
@@ -192,7 +192,7 @@ As a further confirmation of our \epb{}  and $\mu_BB<d_EE$ model of the loss, we
 Quantitatively, we fit the family of curves shown in fig.~\ref{fig:WVplot} by performing an integration of molecule flux weighted by Landau-Zener probability and Maxwell-Boltzmann population density over the strangely twisted hyperbola of \epb. The computation is performed in COMSOL Multiphysics, accounting for the expected magnetic and electric fields from the trapping geometry with various offsets and with cloud temperature as the only free parameter~\footnote{Soure code: https://github.com/dreens/spin-flip-integration/}. The fit temperature is approximately $170\text{ mK}$. The asymmetry of the curves about the $B_\text{coil}=0$ axis comes from a slight shift of the electric quadrupole minimum caused by an intentional bending of the last pin pair to increase fluorescence collection. This offset is not a free parameter in the model, it is directly included according to the measured bending applied to the pins. The fitted temperature is larger than expected from our simulations of the geometry, despite the known defocusing and reflection losses that accompany pulsed decelerators at low speeds~\cite{Sawyer2008a}. This may be related to micro-discharges on the surfaces of the magnetic pins during the final deceleration pulse. The magnetic pins are not currently polished as well as the rest of the decelerator, but this is not a fundamental limitation and could be overcome by diamond turning of the nickel plating on the pins or some other polishing strategy.
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{MWSpec/MW-therm-dave-heat.png}%
+\includegraphics[width=\linewidth]{MWSpec/mwspec_out.png}%
 \caption{
 Microwave Thermometry. Bias field tunes the proximity of loss to the trap center. 
 \label{fig:spec}}

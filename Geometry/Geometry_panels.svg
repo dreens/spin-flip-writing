@@ -16,7 +16,7 @@
    width="2000"
    height="2000"
    viewBox="0 0 2000 2000"
-   sodipodi:docname="CAD_recolor_laser_panels.svg"
+   sodipodi:docname="Geometry_panels.svg"
    inkscape:export-filename="/Users/dreens/Documents/OH/spin-flip-writing/Geometry/Geometry_out.png"
    inkscape:export-xdpi="150.0123"
    inkscape:export-ydpi="150.0123">
@@ -62,7 +62,7 @@
      showguides="true"
      inkscape:zoom="0.40302077"
      inkscape:cx="1008.7691"
-     inkscape:cy="1127.3845"
+     inkscape:cy="1028.134"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -159,13 +159,6 @@
      id="layer3"
      inkscape:label="Top"
      transform="translate(0,200)">
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-opacity:1"
-       id="rect12363"
-       width="130"
-       height="175.09091"
-       x="883.63635"
-       y="1174.9091" />
     <g
        id="g105000"
        transform="translate(212.08789,7.689929)">
