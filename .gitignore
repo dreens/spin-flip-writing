@@ -1,4 +1,4 @@
-##—--------------------------------
+﻿##—--------------------------------
 # What to ignore for this latex git
 ##—--------------------------------
 
@@ -23,3 +23,6 @@
 # I’m going to ignore .PNG’s that can be generated 
 # directly from inkscape on the command line.
 **_out.png
+
+# These files allow syncing between latex and pdf with command click:
+*.synctex.gz

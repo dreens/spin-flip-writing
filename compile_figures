@@ -1,13 +1,9 @@
-# Export all the Figures from inkscape to PNG for latex to compile
+﻿# Export all the Figures from inkscape to PNG for latex to compile
 
 
-inkscape —-without-gui -f $PWD/Geometry/CAD_recolor_laser_panels_zoom.svg -e $PWD/Geometry/geometry_out.png
-
+inkscape —-without-gui -f $PWD/Geometry/Geometry_panels.svg -e $PWD/Geometry/geometry_out.png
 inkscape —-without-gui -f $PWD/Blocking/figmakeblocking.svg -e $PWD/Blocking/blocking_out.png
-
 inkscape —-without-gui -f $PWD/VWFig/tim-style-by-dave-1hz.svg -e $PWD/VWFig/vwfig_out.png
-
-inkscape —-without-gui -f $PWD/LossSurfaces/Loss_Surface_Chunks_recolored_legend.svg -e $PWD/LossSurfaces/losssurfaces_out.png
-
+inkscape —-without-gui -f $PWD/LossSurfaces/Loss_Surfaces_Pins.svg -e $PWD/LossSurfaces/losssurfaces_out.png
 inkscape —-without-gui -f $PWD/MWSpec/Spec_prep_Inkscape.svg -e $PWD/MWSpec/mwspec_out.png
 
