@@ -6,7 +6,7 @@
 \documentclass[%
  reprint,
 %superscriptaddress,
-groupedaddress,
+%groupedaddress,
 %unsortedaddress,
 %runinaddress,
 %frontmatterverbose, 
@@ -56,16 +56,19 @@ prl,
 \title{Molecular Spin-Flip Loss and a Dual Quadrupole Trap}%
 
 \author{David Reens}
-\altaffiliation{dave.reens@colorado.edu}%
+\thanks{Contributed equally.}
+%\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado}
+%\affiliation{Department of Physics, University of Colorado, Boulder, Colorado 80309-0440, USA}
 \author{Hao Wu}
+\thanks{Contributed equally.}
+%\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado}
+%\affiliation{Department of Physics, University of Colorado, Boulder, Colorado 80309-0440, USA}
 \author{Tim Langen}%
 \altaffiliation{Present Address: 5. Physikalisches Institut and Center for Integrated Quantum Science and Technology (IQST), Universit\"at Stuttgart, Pfaffenwaldring 57, 70569 Stuttgart, Germany}
+%\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado}
 \author{Jun Ye}
-\affiliation{%
-JILA, National Institute of Standards and Technology
-and the University of Colorado \\ Department of Physics, University
-of Colorado, Boulder, Colorado 80309-0440, USA
-}%
+\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado and\\ Department of Physics, University of Colorado, Boulder, Colorado 80309-0440, USA}
+
 
 \date{\today}% It is always \today, today,
 
@@ -92,14 +95,14 @@ Doubly dipolar molecules exhibit complex internal spin-dynamics when electric an
 %\section{Introduction}
 The ultracold regime extends toward molecules on many fronts~\cite{Carr2009}. KRb molecules have reached lattice quantum degeneracy~\cite{Moses2015} and other bialkalis continue to progress~\cite{Takekoshi2014, Park2015,Guo2016,Liu2017}. Creative and carefully engineered laser cooling strategies are tackling certain nearly vibrationally diagonal molecules~\cite{Hummon2013, Barry2014, Zhelyazkova2014, Steinecker2016, Hemmerling2016}. A diverse array of alternative strategies have succeeded to greater or lesser extents on other molecules~\cite{Doyle1998, Bethlem1999, Bochinski2003, Narevicius2008, Wiederkehr2012, Prehn2016,Liu2017a}. All of these molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density~\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}. They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for many doubly dipolar molecules due to their internal spin dynamics in mixed electric and magnetic fields. 
 
-The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the very first magnetic trapping of neutrals~\cite{Migdall1985}. Spin flips were directly observed near $50\,\mu\text{K}$ and overcome with a time-orbiting potential trap~\cite{Petrich1995} and a plugged dipole trap~\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates. In our earlier investigations, we observed loss of magnetically trapped hydroxyl radicals (OH) with applied electric field~\cite{Stuhl2012uwave}. This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J=3/2}$ ground state manifold other than the doubly weak-field seeking one of positive parity and full spin polarization, the $|f,m_J=3/2\rangle$ state, colored blue in Fig.~\ref{fig:blocking}. These other states eventually intersect levels of opposite parity at non-zero magnetic fields, where electric field can then open avoided crossings leading to trap loss. We now identify internal spin-dynamics leading to trap loss near zero magnetic field for the $|f,3/2\rangle$ state that operates even in the $50\text{ mK}$ range and below. 
+The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the very first magnetic trapping of neutrals~\cite{Migdall1985}. Spin flips were directly observed near $50\,\mu\text{K}$ and overcome with a time-orbiting potential trap~\cite{Petrich1995} and a plugged dipole trap~\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates. In our earlier investigations, we observed loss of magnetically trapped hydroxyl radicals (OH) with applied electric field~\cite{Stuhl2012uwave}. This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J=3/2}$ ground state manifold other than the doubly weak-field seeking one of positive parity and full spin polarization, the $|f,m_J=3/2\rangle$ state, colored blue in Fig.~\ref{fig:blocking}. These other states intersect levels of opposite parity at non-zero magnetic fields, where electric field can open avoided crossings and cause trap loss. We now identify internal spin-dynamics leading to trap loss near zero B-field for the $|f,3/2\rangle$ state even at $50\text{ mK}$ and more strongly below. 
 
 %We first suspected this during experiments in our previous trap geometry, a 3D permanent magnet quadrupole trap with homogeneous electric field~\cite{Stuhl2013}, but it was difficult to disentangle it from competing effects.  Our new trap geometry addresses this, but we use our previous geometry as our starting point to explain the internal spin-dynamics that lead to the enhanced loss.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{Blocking/blocking_out.png}%
 \caption{
-Four Zeeman split lines in OH's $J=3/2$ ground manifold are shown (a-c), with the trapped $|f,3/2\rangle$ state in blue and its spin-flip partner $|f,-3/2\rangle$ in red. These states are shown with no E-field (a), with $E=150\text{ V/cm}$ and $E\,$\raisebox{0.5px}{$\parallel$}$\,B$ (b), and with \epb{} (c). Note the vastly reduced red-blue splitting in the latter case. The opposite parity manifold of electrically strong field seeking substates is split by the lambda doubling energy $\Delta$ (d). Energy splitting contours are shown every $2\text{ mK}$ near the zero of a magnetic quadrupole trap for OH molecules with $2\text{ T/cm}$ gradient~\cite{Stuhl2012uwave} without E-field (e), and with $E=150\text{ V/cm}$ (f). The vectors give the quantization axis. Note the drastic widening of the lowest energy splitting contour.
+Four Zeeman split lines in OH's $J=3/2$ ground manifold are shown (a-c), with the trapped $|f,3/2\rangle$ state in blue and its spin-flip partner $|f,-3/2\rangle$ in red. These states are shown with no E-field (a), with $E=150\text{ V/cm}$ and $E\,$\raisebox{0.5px}{$\parallel$}$\,B$ (b), and with \epb{} (c). Note the vastly reduced red-blue splitting in the latter case. The opposite parity manifold of electrically strong field seeking substates is split by the lambda doubling energy $\Delta$ (d). Energy splitting contours are shown every $2\text{ mK}$ near the zero of a magnetic quadrupole trap for OH molecules~\cite{Stuhl2012uwave} without E-field (e), and with $E=150\text{ V/cm}$ (f). The vectors give the quantization axis. Note the drastic widening of the lowest energy splitting contour.
 \label{fig:blocking}}
 \end{figure}
 %B-field vectors in blue. (f) Again with $E=150\text{ V/cm}$. Note drastic widening of lowest contour (red). Vector direction gives the effective quantization axis of the trapped state, $\mu_BB\pm d_EE$ above (below) the horizontal centerline. Vector magnitude gives potential energy relative to trap center.
@@ -116,16 +119,19 @@ We can quantify this intuitive picture by diagonalizing the molecular Hamiltonia
 
 %In terms of energies, this manifests as an unusually narrow Zeeman splitting in the region where the relative field orientation changes, i.e. where the fields are orthogonal. In our focus case this occurs in a plane through the trap center, but generally it is always a 2D region since it is a level set of the continuous scalar $\phi = E\cdot B$. In the subset of this plane where $\mu_BB<<d_EE$, the Zeeman effect is not linear but cubic. We call this ``blocking", see fig.~\ref{fig:blocking}, and we say that the E-field blocks the Zeeman effect from linear to cubic. Eventually the Zeeman effect overcomes the blocking and returns to linear when $d_EE\approx\mu_BB$. The Stark effect is not blocked by the Zeeman thanks to lambda doubling, which gives a large fixed energy barrier to electric field misalignment.
 
+This observation allows us to develop a scaling law for the loss enhancement in a magnetic quadrupole trap. The Landau-Zener formula~\cite{Rubbmark1981} allows calculation of a characteristic energy splitting $\kappa$ below which spin-flips occur. $\kappa$ grows with temperature and trap gradient, and is $5\text{ MHz}$ for $50\text{ mK}$ OH in our previous magnetic quadrupole~\cite{Sawyer2008}. We can approximate the spin-flip loss rate as the molecule flux through the ellipsoid where the energy splitting equals $\kappa$. E-field widens this ellipsoid into a broad, thin disk (Fig.~\ref{fig:blocking}e-f), whose radius is found by solving for $B$ when $H_\epbm(B)=\kappa$. Squaring and dividing by the original cross section gives the enhancement factor $\eta = (d_EE/\sqrt{\kappa\Delta})^{8/3}$. Thus E-fields beyond $\sqrt{\kappa\Delta}/d_E$ lead to almost cubic enhancements in spin-flip loss for OH (Tab.~\ref{tab:rates}). This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. The data do still show enhancements in normalized low-field density for light cuts from $45-30\text{ mK}$.
+
+
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
-\begin{table}[htb]
-\caption{Enhancements and loss rates for OH with typical applied fields. Bold zero field values are equivalent to atom spin-flip loss. E-field required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}. Background loss is $2\text{ s}^{-1}$, experiment length $100\text{ ms}$.}
+\begin{table}[t]
+\caption{Enhancements and loss rates for OH with typical applied fields. Zero field values are equivalent to atomic spin-flip loss. E-field is required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}. Background loss is $2\text{ s}^{-1}$, experiment length $100\text{ ms}$.}
 \label{tab:rates}
 \begin{tabular*}{\linewidth}{l*{4}{@{\quad}c}@{\extracolsep{\fill}}l}
 \hline\hline
  & \raisebox{-1.3ex}{\shiftright{4pt}{45 mK}} & & \raisebox{-1.3ex}{\shiftright{4pt}{5 mK}} & & \\
 \raisebox{1.5ex}{$E$ (V/cm)} & $\eta$ & $\Gamma\,(s^{-1})$ & $\eta$ & $\Gamma\,(s^{-1})$ & \raisebox{1.5ex}{Purpose} \\
 \hline
-0 		&1 		& {\bf0.02} 	& 1 		& {\bf1.3} 	& Zero Field \\
+0 		&1 		& 0.02 	& 1 		& 1.3 	& Zero Field \\
 300 		& 5 		& 0.1 	& 9 		& 11 		& Evaporation \\
 550 		& 17 		& 0.3 	& 40 		& 50 		& Spectroscopy \\
 3000 	& 1000 	& 19 		& 1600 	& 2000 	& Polarizing \\
@@ -133,15 +139,13 @@ We can quantify this intuitive picture by diagonalizing the molecular Hamiltonia
 \end{tabular*}
 \end{table}
 
-This observation allows us to develop a scaling law for the loss enhancement in a magnetic quadrupole trap. The Landau-Zener formula~\cite{Rubbmark1981} allows calculation of a characteristic energy splitting $\kappa$ below which spin-flips occur. $\kappa$ grows with temperature and trap gradient, and is $5\text{ MHz}$ for $50\text{ mK}$ OH in our previous magnetic quadrupole~\cite{Sawyer2008}. We can approximate the spin-flip loss rate as the molecule flux through the ellipsoid where the energy splitting equals $\kappa$. E-field widens this ellipsoid into a broad, thin disk (Fig.~\ref{fig:blocking}e-f), whose radius is found by solving for $B$ when $H_\epbm(B)=\kappa$. Squaring and dividing by the original cross section gives the enhancement factor $\eta = (d_EE/\sqrt{\kappa\Delta})^{8/3}$. Thus E-fields beyond $\sqrt{\kappa\Delta}/d_E$ lead to almost cubic enhancements in spin-flip loss for OH (Tab.~\ref{tab:rates}). This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. The data do still show enhancements in normalized low-field density for light cuts from $45-30\text{ mK}$.
-
 %As shown in panel (f) of Fig.~\ref{fig:blocking}, E-field widens the $\kappa$ valued energy contour near the trap zero, greatly increasing the flux through this region, which morphs from a small sphere into a broad thin disk. Note also that the energy gradient near the loss region, which also contributes to the Landau-Zener hopping probability, remains nearly identical in the z-direction between panels (e) and (f). This broad thin disk is responsible for the dramatic enhancement of spin-flip loss relative to atoms. We can calculate an enhancement factor simply by comparing the cross sectional area of the disk with that of the original sphere. Solving for $B$ when $H_\epbm(B)=\kappa$ gives the disk radius, so dividing by the $E=0$ case and squaring gives the flux enhancement factor $\eta = (d_EE/\sqrt{\kappa\Delta})^{8/3}$. Thus E-fields beyond $\sqrt{\kappa\Delta}/d_E$ lead to almost cubic enhancements in spin-flip loss for OH. Rates and enhancements for typical conditions are shown in Table.~\ref{tab:rates}. With the electric field used during evaporation for RF knife purposes in~\cite{Stuhl2012evap}, spin-flip loss is negligible at $50\text{ mK}$ but relevant at $5\text{ mK}$. Thus our new understanding will modify the interpretation of the $5\text{ mK}$ endpoint data, but the data still show enhancements in normalized low-field density at $30\text{ mK}$.
 
 %, oriented with strong axis along $\vec{z}$ as in Fig.~\ref{fig:blocking}e-f. 
 
 %Those results will thus require reinterpretation considering this effect~\footnote{Spin-flip loss would have interfered with evaporation before $5\text{ mK}$ was attained. Some phase space compression does seem to have occurred at $20\text{ mK}$.}. With the goal of $\mu\text{K}$ temperatures and below, it is clear spin-flip loss must be addressed. 
 
-Generalizing beyord OH, Hund's case (a) states exhibit reduced Zeeman splittings near $B=0$ when \epb{} that are not always cubic as for OH but satisfy $H_\epbm(B)\propto (\mu_BB)^{2m_J}$. Only states with $m_J=1/2$ retain a linear Zeeman splitting, but they are either not well trapped if $J=1/2$ also, or they have avoided crossings with other states, see $|f,1/2\rangle$ for OH in gray in Fig.~\ref{fig:blocking}(c). This bears out in all test Hamiltonians we have diagonalized, and can be understood intuitively as follows: the Zeeman effect is a perturbation on a Hamiltonian whose quantization axis, which defines the $|m_J\rangle$ quantum number, has already been set by the Stark effect. Normally the Zeeman effect would linearly split states according to $|m_J\rangle$, but from its perspective the states are superpositions $|m_J\rangle\pm|-m_J\rangle$ and do not split at all to first order. Only via perturbations of the eigenbasis itself is a Zeeman splitting achieved.
+Generalizing beyond OH, Hund's case (a) states exhibit reduced Zeeman splittings near $B=0$ when \epb{} that are not always cubic as for OH but satisfy $H_\epbm(B)\propto (\mu_BB)^{2m_J}$. Only states with $m_J=1/2$ retain a linear Zeeman splitting, but they are either not well trapped if $J=1/2$ also, or they have avoided crossings with other states, see $|f,1/2\rangle$ for OH in gray in Fig.~\ref{fig:blocking}(c). This bears out in all test Hamiltonians we have diagonalized, and can be understood intuitively as follows: the Zeeman effect is a perturbation on a Hamiltonian whose quantization axis, which defines the $|m_J\rangle$ quantum number, has already been set by the Stark effect. Normally the Zeeman effect would linearly split states according to $|m_J\rangle$, but from its perspective the states are superpositions $|m_J\rangle\pm|\!-\!m_J\rangle$ and do not split at all to first order. Only via perturbations of the eigenbasis itself is a Zeeman splitting achieved.
 
 
 %the Stark effect is blind to the sign of $m_J$, but still sets the quantization axis for $m_J$, so that when the magnetic field is orthogonal to the electric, it sees the eigenfunctions it would normally split with linear efficacy as superpositions of $|m_J\rangle\pm |-m_J\rangle$ instead. These superpositions do not shift at all to first order since the linear shift for each component cancels. The magnetic field eventually splits the levels via perturbation of the eigenbasis itself, a task of higher order according to the degree of polarization, i.e. the magnitude of $m_J$, of the basis state in question.
@@ -174,7 +178,7 @@ We opt for a geometry that is distinct from these options: a pair of 2D quadrupo
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{LossSurfaces/losssurfaces_out.png}%
 \caption{
-Surfaces where \epb{} and $\mu_BB/d_EE$ is small enough for spin-flips to occur are shown for three values of \bcl. The very center of the trap is indicated; the cloud itself fits within about a $1\text{ mm}$ diameter.
+Surfaces where spin-flips can occur (\epb{}, $\mu_BB<d_EE$) are shown for three values of \bcl. The magnetic pins are shown as in Fig.~\ref{fig:CAD} for context. The very center of the trap is indicated; the cloud itself fits within about a $1\text{ mm}$ diameter.
 \label{fig:LSurfs}}
 \end{figure}
 
@@ -183,7 +187,7 @@ Adding \bcl{} only slightly rounds the magnetic trapping potential, but it morph
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{VWFig/vwfig_out.png}%
 \caption{
-Time traces (a) without bias field (black), with bias field (green dots), and with modulated density (green circles). One body fits (red) give loss rates of $200\text{ s}^{-1}$ without bias field and $2\text{ s}^{-1}$ with full bias field at long times, in agreement with our background gas pressure. At the fixed time $30 \text{ms}$, population is shown as a function of both pin translation and bias field (b), for several values of pin translation, labeled relative to perfect alignment. 
+Time traces (a) without bias field (black), with bias field (green dots), and with modulated density (green circles). One body fits (red) give loss rates of $200\text{ s}^{-1}$ without bias field and $2\text{ s}^{-1}$ with full bias field at long times, in agreement with our background gas pressure. At the fixed time $30\text{ ms}$, population is shown as a function of both pin translation and bias field (b), for several values of pin translation, labeled relative to perfect alignment. 
 \label{fig:WVplot}}
 \end{figure}
 
@@ -191,12 +195,12 @@ Time traces (a) without bias field (black), with bias field (green dots), and wi
 
 As a further confirmation of our \cmnt{\epb{}  and $\mu_BB<d_EE$} model of the loss, we translate the magnetic pins along the $\hat{x}$ direction in their mounts to alter the surface where \epb{} and compare experimental data against expectations (Fig.~\ref{fig:WVplot}b). Qualitatively, this translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B}\propto B^\prime z\hat{z}$. This means that \bcl{} no longer directly tunes the magnetic field magnitude along the z-axis. Instead, \bcl{} must first overcome the slight trapping field, translating a point of zero field along the $z$-axis and eventually out of the trap. The point of zero magnetic field has $\mu_BB<d_EE$ and lies on the $\phi=\vec{E}\cdot\vec{B}=0$ surface by definition, leading to strong loss unless it is aligned with the trap center, where $E$ is also zero. This means that without \bcl{}, the loss should actually be a local minimum; as $|B_\text{coil}|$ is increased the loss should first worsen and then improve when the zero leaves the trap. This qualitative explanation correctly predicts the observed double well structure in population verses \bcl.
 
-Quantitatively, we fit the family of curves (red, Fig.~\ref{fig:WVplot}b) by integrating molecule flux weighted by Landau-Zener probability and Maxwell-Boltzmann population over the contorted surfaces where \epb{} for each \bcl{} and pin translation. The computation is performed in COMSOL, with cloud temperature as the only free parameter~\footnote{Soure code: https://github.com/dreens/spin-flip-integration/}. The asymmetry of the curves about $B_\text{coil}=0$ comes from a slight shift of the electric quadrupole field caused by an intentional bending of the last pin pair. This bend enhances laser induced fluorescence collection, our detection technique. The fitted temperature is in the $100-200$ mK range, larger than expected from our simulations, which already account for known losses~\cite{Sawyer2008a}. This may relate to micro-discharges on the surfaces of the magnetic pins during the final deceleration pulse, since these specially manufactured pins are more difficult to polish. Various polishing strategies could overcome this limitation.
+Quantitatively, we fit the family of curves (red, Fig.~\ref{fig:WVplot}b) by integrating molecule flux weighted by Landau-Zener probability and Maxwell-Boltzmann population over the contorted surfaces where \epb{} for each \bcl{} and pin translation. The computation is performed in COMSOL, with cloud temperature as the only free parameter~\footnote{Soure code: https://github.com/dreens/spin-flip-integration/}. The asymmetry of the curves about $B_\text{coil}=0$ comes from a slight shift of the electric quadrupole field caused by an intentional bending of the last pin pair. This bend enhances laser induced fluorescence collection, our detection technique. The fitted temperature is in the $100-200\text{ mK}$ range, larger than expected from our simulations, which already account for known losses~\cite{Sawyer2008a}. This may relate to micro-discharges on the surfaces of the magnetic pins during the final deceleration pulse, since these specially manufactured pins are more difficult to polish. Various polishing strategies could overcome this limitation.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{MWSpec/mwspec_out.png}%
 \caption{
-Microwave spectroscopy at different values of \bcl. Increasing \bcl{} increases population and shifts the distribution toward higher fields. Triangles indicate the field at which a molecule can access loss regions for a given \bcl.
+Microwave spectroscopy. Increasing \bcl{} increases population and shifts its distribution toward higher fields. Triangles indicate the field at which a molecule can access loss regions for a given \bcl.
 \label{fig:spec}}
 \end{figure}
 
@@ -216,8 +220,6 @@ This absence of collisions contrasts with our earlier evaporation work~\cite{Stu
 Molecule enhanced spin-flip loss arises in mixed electric and magnetic fields due to a competition between field quantization axes where \epb{} and $\mu_BB<d_EE$. We conclusively demonstrate this effect and overcome it using our dual magnetic and electric quadrupole trap. Our explanation of the effect provides detailed predictions of how its location and magnitude ought to scale with bias field and trap alignment, which we experimentally verify. Our results correct existing predictions about molecular spin-flips in mixed fields and pave the way toward further improvements in molecule trapping and cooling.
 
 We acknowledge the Gordon and Betty Moore Foundation, the ARO-MURI, JILA PFC, and NIST for their financial support. T.L. acknowledges support from the Alexander von Humboldt Foundation through a Feodor Lynen Fellowship. We thank J.L. Bohn and S.Y.T. van de Meerakker for helpful discussions. We thank Goulven Qu\'em\'ener for his continued involvement in this research.
-
-D.R. and H.W. contributed equally.
 
 %includes uncited bib entries
 %\nocite{*}
