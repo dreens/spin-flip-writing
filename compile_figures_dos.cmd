@@ -1,4 +1,5 @@
-﻿:: Export all the Figures from inkscape to PNG for latex to compile
+:: Export all the Figures from inkscape to PNG for latex to compile
+:: To run this, double click it or navigate to the folder in CMD and type the filename.
 
 :: This does something useful according to http://steve-jansen.github.io/guides/windows-batch-scripting/part-2-variables.html:
 SETLOCAL ENABLEEXTENSIONS

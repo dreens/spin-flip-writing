@@ -1,9 +1,9 @@
-﻿# Export all the Figures from inkscape to PNG for latex to compile
+# Export all the Figures from inkscape to PNG for latex to compile
+# To run this, pipe it to bash: “cat compile_figures | bash”
 
-
-inkscape —-without-gui -f $PWD/Geometry/Geometry_panels.svg -e $PWD/Geometry/geometry_out.png
-inkscape —-without-gui -f $PWD/Blocking/figmakeblocking.svg -e $PWD/Blocking/blocking_out.png
-inkscape —-without-gui -f $PWD/VWFig/tim-style-by-dave-1hz.svg -e $PWD/VWFig/vwfig_out.png
-inkscape —-without-gui -f $PWD/LossSurfaces/Loss_Surfaces_Pins.svg -e $PWD/LossSurfaces/losssurfaces_out.png
-inkscape —-without-gui -f $PWD/MWSpec/Spec_prep_Inkscape.svg -e $PWD/MWSpec/mwspec_out.png
+inkscape -f $PWD/Geometry/Geometry_panels.svg -D -d 120 -e $PWD/Geometry/geometry_out.png
+inkscape -f $PWD/Blocking/figmakeblocking.svg -D -d 300 -e $PWD/Blocking/blocking_out.png
+inkscape -f $PWD/VWFig/tim-style-by-dave-1hz.svg -D -d 300 -e $PWD/VWFig/vwfig_out.png
+inkscape -f $PWD/LossSurfaces/Loss_Surfaces_Pins.svg -D -d 300 -e $PWD/LossSurfaces/losssurfaces_out.png
+inkscape -f $PWD/MWSpec/Spec_prep_Inkscape.svg -D -d 300 -e $PWD/MWSpec/mwspec_out.png
 
