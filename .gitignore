@@ -9,6 +9,7 @@
 *.dvi
 *.out
 *.log
+*Notes.bib
 
 # Mac OSX Files:
 **.DS_Store
