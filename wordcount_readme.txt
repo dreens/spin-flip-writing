@@ -6,9 +6,10 @@ To count words for PRL, do the following:
 3. Delete citations, tables, abstract, authors, acknowledgements, date, title.
 4. Don’t delete captions or footnotes. The “nofootinbib” flag for revtex may be of use.
 5. Save the text file, go to the shell and cat the file, pipe to “wc -c”.
-6. Add 150/(width/height) for each figure, and 13+6.5*lines for tables.
+6. Add 20+150/(width/height) for each figure, and 13+6.5*lines for tables.
 7. Check the Texshop CONSOLE for figure aspect ratios, listed as width x height.
 8. DON’T use the wordcount.sh shell script PRL recommends. It seems to have some latex version dependencies and the author is deceased.
+9. If you’re close, CTRL+F all “- “ in your file and remove them. (hyphenated words over line breaks)
 
 Try 1:
 2848 words in textedit.
@@ -33,3 +34,9 @@ Try 4: (6/4/17)
 Figures: 150/(369.2/249.8) + 150/(1247.9/952) + 150/(292.8/180.7) + 150/(348.3/535.0) + 150/(371.5/216.4) = 626
 Table: 13 + 6.5*7 = 59
 3106 + 626 + 59 = 3791 > 3750, close enough to ignore???
+
+Try 5: (6/6/17)
+3061 words in textedit
+Figures 100 + 150/(369.2/249.8) + 150/(1247.9/952) + 150/(292.8/180.7) + 150/(348.3/535.0) + 150/(371.5/216.4) = 726
+Table: 13 + 8.5*7 = 72
+3061 + 726 + 72 = 3859, more than 100 over!
