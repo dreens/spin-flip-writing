@@ -101,7 +101,7 @@ All of these molecules will require secondary strategies like evaporation or sym
 They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for many doubly dipolar molecules due to their internal spin dynamics in mixed electric and magnetic fields. 
 
 The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the very first magnetic trapping of neutrals~\cite{Migdall1985}. 
-Spin flips were directly observed near $50\,\mu\text{K}$ and overcome with a time-orbiting potential trap~\cite{Petrich1995} and a plugged dipole trap~\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates. 
+Spin flips were directly observed near $50\,\mu\text{K}$ and overcome with a time-orbiting potential trap~\cite{Petrich1995} and a plugged dipole trap~\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates.
 Motivated by the interest in dipolar molecules in mixed fields for quantum chemistry, precision measurement and many-body physics, we previously investigated loss of magnetically trapped hydroxyl radicals (OH) with applied electric field~\cite{Stuhl2012uwave}. 
 This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J\,{=}\,3/2}$ ground state manifold other than the most well trapped one (positive parity and full spin polarization, $|f,m_J\,{=}\,3/2\rangle$, blue in Fig.~\ref{fig:blocking}). 
 Due to the closely spaced parity doublet, a general feature of Hund's case (a), these states intersect opposite parity states at non-zero B-fields, where E-field can open avoided crossings and cause trap loss.
@@ -132,37 +132,63 @@ Finally, in~\cite{Bohn2013} it was correctly noted that Hund's case (a) molecule
 The states of the molecule were shown to align with one of the two quantization axes given by the vectors $\mu_\text{eff}\vec{B}\,{\pm}\, d_\text{eff}\vec{E}$, $\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields. 
 It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe the loss is actually enhanced.
 
+% Outline for this section...
+% 1. Intuition
+% 2. Energies, Cubic B-dependence, eEDM literature.
+% 3. P_LZ, flux calculation, ref 29
+% 4. Generalization
+
+We begin with an intuitive explanation of the loss enhancement based on molecular orientation.
 Consider a magnetic quadrupole trap, where a weak-field seeking molecule remains trapped insofar as it adiabatically follows the field direction. 
 When molecules pass near the trap center, they experience a rotating field direction, causing spin-flips. 
 When electric field is added, it dominates in the trap center where the magnetic field is weakest. 
-Quantization is maintained but the quantization axis does not rotate with the magnetic field. 
+As correctly noted in~\cite{Bohn2013}, this causes a quantization axis to be maintained, either of $\mu_\text{eff}\vec{B}\,{\pm}\, d_\text{eff}\vec{E}$.
+Now suppose a molecule initially follows the sum quantization axis and is in a region where $E$ and $B$ are nearly parallel before passing by the trap center.
+After passing the trap center, $B$ rotates nearly $180^\circ$, so that $E$ and $B$ are nearly anti-parallel. 
+Now the length of the sum quantization axis, which is proportional to the field induced energy shift of the molecule, actually decreases with increasing $|B|$.
 Further away from the trap center the molecule is then magnetically strong field seeking and is lost. 
-To avoid loss, the molecule must switch from the vector sum quantization axis to the vector difference quantization axis, so as to remain magnetically weak field seeking despite the change in relative orientation of the fields. 
-To be more precise, we define the relative orientation of the fields as the sign of $\phi\,{=}\,\vec{E}\cdot\vec{B}$. 
-When $\phi$ is negative (positive), the trapped state must have the vector difference (sum) quantization axis, so that an increase in magnitude of the magnetic field increases its energy. 
-Orientation changes whenever $\phi$ changes sign, i.e. where $\phi\,{=}\,0$ which means \epb. 
-This happens in a 2D region, since $\phi\,{=}\,0$ is a contour level of the 3D scalar valued function $\phi$. 
+To be more general, we define the relative orientation of the fields as the sign of $\phi\,{=}\,\vec{E}\cdot\vec{B}$. 
+When $\phi$ is negative, the trapped state must have the vector difference quantization axis, and vice versa, so that an increase in magnitude of the magnetic field increases internal energy. 
+Whenever $\phi$ changes sign, i.e. where $\phi\,{=}\,0$ and \epb, there will be a chance of spin-flip associated with the molecule's propensity to maintain its quantization axis rather than remain on the highest energy doubly weak field seeking branch.
+Since $\phi$ is a continuous scalar defined in 3D, $\phi\,{=}\,0$ is one of it's contour levels and thus always corresponds to a 2D surface; in the case of a magnetic quadrupole with homogeneous E it is a plane.
 
-We can quantify by diagonalizing the molecular Hamiltonian in mixed fields to find the energy splitting between the well trapped substate and its spin-flip partner (Fig.~\ref{fig:blocking}a-c). 
-The preceding quantization axis discussion suggests that spin-flips occur when crossing the $\phi\,{=}\,0$ planar region, so we expect a correspondingly reduced energy splitting there, since this splitting controls the likelihood of spin-flips along a molecule's trajectory via the Landau-Zener formula. 
-This is indeed the case; compare panels (b-c). In fact, by series expanding the exact eigenenergies of OH, we find $H_\epbm(B)\,{\approx}\,(\mu_\text{eff}B)^3\Delta^2/(d_\text{eff}E)^4$, $\Delta$ the lambda doubling, $B\,{=}\,|\vec{B}|$, and $E\,{=}\,|\vec{E}|$. 
-The Zeeman splitting is no longer linear, but cubic. 
-This means the energy splitting will be small in a much larger region surrounding the zero of a magnetic quadrupole trap than otherwise (Fig.~\ref{fig:blocking}e-f).
+This intuition is in agreement with a more rigorous analysis of the energy splittings between the trapped state and its spin-flip partner. 
+By exactly diagonalizing the approximate eight state ground molecular Hamiltonian for OH, subtracting the relevant state energies and Taylor expanding, we find:
+\begin{equation}
+H(B_\perp,B_{||},E) = (\mu_\text{eff}B_\perp)^3\Lambda^2/(d_\text{eff}E)^4 + \mu_\text{eff}B_{||}
+\end{equation}
+Here the magnetic field is considered in parallel and perpendicular components relative to the electric field, and $\Lambda$ is the lambda doubling.
+The relevant splitting between spin flip partner states reaches a deep minimum whenever $B_{||}$ goes to zero and \epb, where the remaining Zeeman splitting is reduced from linear to cubic in magnetic field (Fig.~\ref{fig:blocking}a-c).
+This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
+However, in the case of applying mixed fields during trapping, this suppression is not beneficial but rather detrimental, because the reduced splitting greatly expands the region in which spin-flips can occur (Fig.~\ref{fig:blocking}e-f).
+The extent of the loss enhancement is best addressed as discussed below, but a reasonable scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
+For $\kappa$ the energy scale of hops without any application of field, electric field enhances the loss rate by $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
 
-We can develop a scaling law for the loss enhancement this causes: a molecule of thermally average velocity $v$ passing close enough to the trap center to have an energy splitting below $\kappa\,{=}\,\sqrt{\hbar \dot{H}}$, $\dot{H}$ the rate of approach of the energy levels $2\mu_\text{eff}B'v$ and $B'$ the trap gradient, will flip with probability at least $1/e$. 
-For $50\text{ mK}$ OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008},  $\kappa$ is $5\text{ MHz}$. 
-The region near the trap center where the splitting is below $\kappa$ is initially an ellipsoid with radii $\kappa/(\mu_\text{eff}B')$, but broadens in the two directions where \epb{} by the factor one obtains by setting $H_\epbm(B)\,{=}\,\kappa$ and solving for $B$. 
-The resulting increase in flux through the ellipsoid comes by squaring, $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$. 
-Thus, E-fields beyond $\sqrt{\kappa\Delta}/d_\text{eff}$ lead to almost cubic enhancements in spin-flip loss for OH (Tab.~\ref{tab:rates}). 
-This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. 
-We do find enhancements in normalized density at low fields for shallow RF knife cuts from $55-30\text{ mK}$.
+
+We can better quantify the extent of the expansion by considering molecular trajectories in light of the Landau Zener formula:
+\begin{equation}
+P_/text{hop}=\exp{-\Delta^2/\hbar\dot{H}}
+\end{equation}
+Which relates the probability of diabatically hopping between two states $P_/text{hop}$ to the energetic coupling between the states $\Delta$ and the rate of approach of the energy levels $\dot{H}$. 
+Any molecules whose trajectory passes through the \epb surface experience a minimum energy splitting $\Delta$ at the point of intersection with the plane.
+The rate of approach of the levels $\dot{H}$ near this intersection is given simply by the projection of the molecule velocity on the normal to the plane, which dominates over the parallel contribution except for molecules moving almost entirely in that direction, an unlikely situation.
+Moreover, although the Landau-Zener formula assumes infinitely linear energy level approach before and after a crossing, the very small cubically suppressed energy gap at the crossing is dominated by the average energy of a trapped molecule, so that to a good approximation its velocity hardly changes in the regime where the energy splitting is small.
+With these simplifying observations, it becomes possible to approximate the hopping probability for a molecule knowing only its crossing point and orthogonal velocity.
+By assuming a thermal distribution, the Landau Zener probability can be numerically integrated over the instantaneous spatial distribution in the plane and the Maxwellian velocity distribution orthogonal to the plane to obtain a spin-flip loss flux out of the trap.
+We perform such integrations for OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
+The results lead to important modifications of our interpretation of previous work, which we discuss further in the supplementary materials.
+
+%Notably, these calculations give a threefold larger magnitude of spin-flip losses than that which appears in an appendix of~\cite{Stuhl2013}. 
+%There an admittedly rough molecular spin-flip loss rate is approximated by applying the Landau-Zener formula not to a flux of general molecules but to a particular class of specific orbits chosen for calculational simplicity. 
+%This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. 
+%We do find enhancements in normalized density at low fields for shallow RF knife cuts from $55-30\text{ mK}$.
 
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
 \begin{table}[t]
 \caption{
 Enhancements ($\eta$) and loss rates ($\Gamma$) for OH with typical applied fields. 
 Zero field values are equivalent to atomic spin-flip loss. 
-E-field is required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}. Background loss is $2\text{ s}^{-1}$, experiment length $100\text{ ms}$.
+E-field is required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}, or applied for polarization of the molecules to study collisions~\cite{Stuhl2013}. Background loss is $2\text{ s}^{-1}$, experiment length $100\text{ ms}$.
 }
 \label{tab:rates}
 \begin{tabular*}{\linewidth}{l*{4}{@{\quad}c}@{\extracolsep{\fill}}l}
@@ -186,13 +212,14 @@ Only via perturbations of the eigenbasis itself does a Zeeman splitting emerge.
 
 Beyond Hund's case (a), any state exhibiting competition between E-fields and B-fields for alignment of the molecule will be susceptible. 
 One way to avoid competition is for the fields to couple to unrelated parts of the Hamiltonian, which happens to a limited extent for Hund's case (b) states without electron orbital angular momentum ($\Sigma$ states, $\Lambda\,{=}\,0$)~\cite{Bohn2013}. 
-In these states, which include most laser-cooled and bialkali molecules thus far, the E-fields and B-fields couple to rotation and spin respectively, which are only related by the spin-rotation coupling constant $\gamma$. 
-Where the field-induced shifts are large compared with $\gamma$, they stop competing, and both lead to linear energy shifts regardless of the magnitude of the other. 
-This means that the cross sectional area of loss regions is enhanced by $(\gamma/\kappa)^2$ but is then bounded. 
-Typical molecules have $\gamma$ in the tens of MHz~\cite{Quemener2016}, and $\kappa$ much lower than the $5\text{ MHz}$ for our warm and very tightly confined OH; so spin-flip loss enhancement remains important. 
-In some cases, e.g. for YO~\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states avoid spin-flip loss entirely. 
-These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation.
-
+In these states, which include most laser-cooled and bialkali molecules thus far, the E-fields and B-fields couple to rotation and spin respectively, which are only related by the spin-rotation coupling constant $\gamma$.
+Unfortunately $\gamma$ is usually in the tens of MHz, enough that molecular spin-flip loss remains quite significant.
+%Where the field-induced shifts are large compared with $\gamma$, they stop competing, and both lead to linear energy shifts regardless of the magnitude of the other. 
+%This means that the cross sectional area of loss regions is enhanced by $(\gamma/\kappa)^2$ but is then bounded. 
+%Typical molecules have $\gamma$ in the tens of MHz~\cite{Quemener2016}, and $\kappa$ much lower than the $5\text{ MHz}$ for our warm and very tightly confined OH; so spin-flip loss enhancement remains important. 
+The inclusion of hyperfine requires a careful case-by-case investigation. For OH, it would initially seem to add an extra splitting that could protect from spin-flips, but in fact the lossy plane is only shifted slightly away from \epb but retains the same area.
+For YO~\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states avoid spin-flip loss entirely. 
+These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation. Although our focus has been spin-flips in magnetic traps, spin-flips in electric traps are also possible, (cite meijer).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %  PIN TRAP GEOMETRY
