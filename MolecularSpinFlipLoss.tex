@@ -159,27 +159,11 @@ H(B_\perp,B_{||},E) = (\mu_\text{eff}B_\perp)^3\Lambda^2/(d_\text{eff}E)^4 + \mu
 \end{equation}
 Here the magnetic field is considered in parallel and perpendicular components relative to the electric field, and $\Lambda$ is the lambda doubling.
 The relevant splitting between spin flip partner states reaches a deep minimum whenever $B_{||}$ goes to zero and \epb, where the remaining Zeeman splitting is reduced from linear to cubic in magnetic field (Fig.~\ref{fig:blocking}a-c).
-This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
+This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community\cite{Player1970,Hudson2002}, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
 However, in the case of applying mixed fields during trapping, this suppression is not beneficial but rather detrimental, because the reduced splitting greatly expands the region in which spin-flips can occur (Fig.~\ref{fig:blocking}e-f).
 The extent of the loss enhancement is best addressed as discussed below, but a reasonable scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
 For $\kappa$ the energy scale of hops without any application of electric field, electric field enhances the loss rate by $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
 
-
-We can better quantify the extent of the expansion by considering molecular trajectories in light of the Landau Zener formula:
-\begin{equation}
-P_\text{hop}=e^{-\Delta^2/\hbar\dot{H}}
-\end{equation}
-Which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\Delta$ and the rate of approach of the energy levels $\dot{H}$. 
-Any molecules whose trajectory passes through the \epb surface experience a minimum energy splitting $\Delta$ at the point of intersection with the plane.
-The rate of approach of the levels $\dot{H}$ near this intersection is given simply by the projection of the molecule velocity on the normal to the plane, which dominates over the parallel contribution except for molecules moving almost entirely in that direction, an unlikely situation.
-Moreover, although the Landau-Zener formula assumes infinitely linear energy level approach before and after a crossing, the cubically suppressed energy gap at the crossing is much less than the average energy of a trapped molecule, so that to a good approximation its velocity hardly changes in the regime where the energy splitting is small.
-With these simplifying observations, it becomes possible to approximate the hopping probability for a molecule knowing only its crossing point and orthogonal velocity.
-By assuming a thermal distribution, the Landau Zener probability can be numerically integrated over the instantaneous spatial distribution in the plane and the Maxwellian velocity distribution orthogonal to the plane to obtain a spin-flip loss flux out of the trap.
-We perform such integrations for OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
-%The results lead to important modifications of our interpretation of previous work, which we discuss further in the supplementary materials.
-
-%This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. 
-%We do find enhancements in normalized density at low fields for shallow RF knife cuts from $55-30\text{ mK}$.
 
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
 \begin{table}[t]
@@ -203,8 +187,25 @@ E-field is required during evaporation and spectroscopy to open avoided crossing
 \end{table}
 
 
-Unfortunately, experimental verification of this model and these loss-flux calculations is not possible in a magnetic quadrupole trap with superimposed electric field because of an important competing effect: the enhanced field dependent collision cross-section. 
-Furthermore, our prior results on the collisional effect~\cite{Stuhl2013} might actually be totally explained by the enhanced spin-flip loss, which makes experimental verification especially important.
+We can better quantify the extent of the expansion by considering molecular trajectories in light of the Landau Zener formula:
+\begin{equation}
+P_\text{hop}=e^{-\Delta^2/\hbar\dot{H}}
+\end{equation}
+Which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\Delta$ and the rate of approach of the energy levels $\dot{H}$. 
+Any molecules whose trajectory passes through the \epb surface experience a minimum energy splitting $\Delta$ at the point of intersection with the plane.
+The rate of approach of the levels $\dot{H}$ near this intersection is given simply by the projection of the molecule velocity on the normal to the plane, which dominates over the parallel contribution except for molecules moving almost entirely in that direction, an unlikely situation.
+Moreover, although the Landau-Zener formula assumes infinitely linear energy level approach before and after a crossing, the cubically suppressed energy gap at the crossing is much less than the average energy of a trapped molecule, so that to a good approximation its velocity hardly changes in the regime where the energy splitting is small.
+With these simplifying observations, it becomes possible to approximate the hopping probability for a molecule knowing only its crossing point and orthogonal velocity.
+By assuming a thermal distribution, the Landau Zener probability can be numerically integrated over the instantaneous spatial distribution in the plane and the Maxwellian velocity distribution orthogonal to the plane to obtain a spin-flip loss flux out of the trap.
+We perform such integrations for OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
+%The results lead to important modifications of our interpretation of previous work, which we discuss further in the supplementary materials.
+
+%This new understanding modifies our interpretation of evaporation data for OH~\cite{Stuhl2012evap}, especially at $5\text{ mK}$ where the loss rate is significantly enhanced by the $E$-fields used for RF knife purposes. 
+%We do find enhancements in normalized density at low fields for shallow RF knife cuts from $55-30\text{ mK}$.
+
+
+Unfortunately, experimental verification of this model and these loss-flux calculations is difficult in a magnetic quadrupole trap with superimposed electric field because of an important competing effect: the enhanced field dependent collision cross-section. 
+Furthermore, our prior results on the collisional effect~\cite{Stuhl2013} might be largely explained by the enhanced spin-flip loss, which makes experimental verification especially important.
 Alarmed by this possibility, we developed a new trap where the enhanced molecular spin-flip loss can be conclusively experimentally demonstrated without any convolved collisional effects, and where our loss-flux calculations could be clearly tested.
 
 
@@ -310,20 +311,8 @@ An intuitive explanation for the intriguing double well structure in population 
 %Although the spin-flips we have discussed connect $|f,3/2\rangle$ to $|f,-3/2\rangle$, the latter experiences various avoided crossings due to the large electric confinement fields and remains weakly trapped.  
 %Its field-dressed state character varies, transitioning to $|e,3/2\rangle$ at larger B-fields (Fig.~\ref{fig:blocking}d). 
 
-With loss removed, we observe a population trend whose initially fast decay rate decreases over time (Fig.~\ref{fig:WVplot}a, green dots), suggesting collisions. 
-To test this, we implement a five-fold reduction in initial population~\footnote{Microwaves couple opposite parities during deceleration, giving a uniform loss probability across the molecular distribution.} and scale the resulting trend by five (green circles). 
-If collisions had contributed, this new trend would show less decay, but we observe no significant change. 
-This absence of collisions differs from our earlier work~\cite{Stuhl2012evap}, which as we have mentioned shows signatures of evaporation for shallow cuts. 
-This could be attributed to a significantly higher initial temperature and correspondingly lower density, reduced molecule number, or differences in trap geometry and loading. 
-An alternative hypothesis for the population trend is the existence of chaotic trap orbits with long escape times~\cite{Gonzalez-Ferez2014}.
-Moving forward, we aim to increase the density by means of several improvements~\cite{Even2015,Segev2017}.
-
-Generalizing beyond OH, Hund's case (a) states exhibit reduced Zeeman splittings near $B\,{=}\,0$ when \epb{} that are not always cubic as for OH but satisfy $H_\epbm(B)\,{\propto}\,(\mu_\text{eff}B)^{2m_J}$.
-This can be understood as follows: the Zeeman effect is a perturbation on a Hamiltonian whose quantization axis, which defines the $|m_J\rangle$ quantum number, has already been set by the Stark effect. 
-Normally the Zeeman effect would linearly split states according to $|m_J\rangle$, but from its perspective the states are superpositions $|m_J\rangle\,{\pm}\,|\!-\!m_J\rangle$ and do not split at all to first order. 
-Only via perturbations of the eigenbasis itself does a Zeeman splitting emerge.
-
-Beyond Hund's case (a), any state exhibiting competition between E-fields and B-fields for alignment of the molecule (or atom even, at very large electric fields) will be susceptible. 
+With strong experimental confirmation of the molecular spin-flip loss enhancement, we can move on to generalize beyond OH.
+Hund's case (a) states are most susceptible in the sense that smaller electric fields are sufficient to cause a significant problem, but with enough electric field any state exhibiting competition between E-fields and B-fields for alignment of the molecule or atom will be susceptible. 
 One way to avoid competition is for the fields to couple to unrelated parts of the Hamiltonian, which happens to a limited extent for Hund's case (b) states without electron orbital angular momentum ($\Sigma$ states, $\Lambda\,{=}\,0$)~\cite{Bohn2013}. 
 In these states, which include most laser-cooled and bialkali molecules thus far, the E-fields and B-fields couple to rotation and spin respectively, which are only related by the spin-rotation coupling constant $\gamma$.
 Since $\gamma$ is usually in the tens of MHz~\cite{Quemener2016}, molecular spin-flip loss remains quite significant.
@@ -331,19 +320,29 @@ The inclusion of hyperfine requires a careful case-by-case investigation. For OH
 For YO~\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states avoid spin-flip loss entirely. 
 These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation. %Although our focus has been spin-flips in magnetic traps, spin-flips in electric traps are also possible, (cite meijer).
 
-We can generalize to arbitrary geometries and consider methods to suppress the loss using a simple strategy: avoid $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ where \epb.
-Certainly avoiding  one field avoids any of these challenges, but the ability to utilize 
-One way to achieve this is to trap with E-field and superpose B-field.
+We can also generalize to arbitrary geometries with a simple loss suppression strategy: avoid $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ where \epb.
+This is maximally violated by the magnetic quadrupole, where in a suitably small region even the smallest stray electric field dominates the magnetic.
+One trivial tactic would be to use only one field, but we note that one of the main attractions of working with dipolar species is to utilize both.
+Another way is to trap with E-field and superpose B-field.
 Unlike the Zeeman effect, the Stark effect is never linear, and some zero field parity splitting always prevents the orientation reversing spin-flips that we have been discussing for magnetic traps. 
-However, this same splitting pushes all states with the same sign of $m_J$ very close to one another, leading to a different type of loss which Meijer et al conclusively demonstrate and suppress.
+However, this same splitting pushes all states with the same sign of $m_J$ very close to one another, leading to a different type of loss \cite{Wall2010}.
+Intriguingly, this kind of electric trap loss is not necessarily worsened by the addition of magnetic field but can be totally mitigated by it \cite{Meek2011}.
 Another option is to trap with both fields and keep zeros precisely overlapped. 
-This was realized for OH with a superposed magnetic quadrupole and electric hexapole~\cite{Sawyer2007}. 
-Such a scheme prevents loss enhancement, but does not remove it entirely. 
-Another possibility is to use one field only, but any experiment which aims to make use of the doubly dipolar nature of molecules cannot accept this compromise. 
+This was realized for OH with a superposed magnetic quadrupole and electric hexapole~\cite{Sawyer2007}.
 
-Molecule enhanced spin-flip loss arises in mixed electric and magnetic fields due to a competition between field quantization axes where \epb{} and $\mu_\text{eff}B\,{<}\,d_\text{eff}E$. 
-We conclusively demonstrate this effect and overcome it using our dual magnetic and electric quadrupole trap. 
-Our explanation of the effect provides detailed predictions of how its location and magnitude ought to scale with bias field and trap alignment, which we experimentally verify. 
+The present trap, in addition to providing our desired experimental testing ground for molecular spin-flip loss, also manages to provide large $5\,\text{T/cm}$ trap-gradients useful for maintaining high densities and collision rates.
+Moreover, with loss removed, we observe a population trend whose initially fast decay rate decreases over time (Fig.~\ref{fig:WVplot}a, green dots), suggesting collisions.
+To test this, we implement a five-fold reduction in initial population~\footnote{Microwaves couple opposite parities during deceleration, giving a uniform loss probability across the molecular distribution.} and scale the resulting trend by five (green circles). 
+If collisions had contributed, this new trend would show less decay, but we observe no significant change. 
+This absence of collisions differs from our earlier work~\cite{Stuhl2012evap}, but could be attributed to the significantly higher initial temperature in this trap. 
+However, the results of this paper introduce a need for new interpretation of other aspects of this evaporation work, since the electric fields used for the RF knife ought to have caused a significant effect to the distribution.
+We discuss the implications further in supplementary materials.
+An alternative hypothesis for the population trend is the existence of chaotic trap orbits with long escape times~\cite{Gonzalez-Ferez2014}.
+Moving forward, we aim to increase the density by means of several improvements~\cite{Even2015,Segev2017}.
+
+Molecule enhanced spin-flip loss arises in mixed electric and magnetic fields due to a competition between field quantization axes.
+We conclusively demonstrate and suppress this effect using our dual magnetic and electric quadrupole trap, which is also an ideal setting for further progress in collisional physics thanks to its large trap gradient.
+Our calculation of the magnitude of spin-flip loss via flux through surfaces where \epb{} enables detailed predictions of how its location and magnitude ought to scale with bias field and trap alignment, which we experimentally verify.
 Our results correct existing predictions about molecular spin-flips in mixed fields and pave the way toward further improvements in molecule trapping and cooling.
 
 \begin{acknowledgments}
