@@ -81,8 +81,7 @@ prl,
 \begin{abstract}
 Doubly dipolar molecules exhibit complex internal spin-dynamics when electric and magnetic fields are both applied. 
 Near magnetic trap minima, these spin-dynamics lead to enhancements in Majorana spin-flip transitions by many orders of magnitude relative to atoms, and are thus an important obstacle for progress in molecule trapping and cooling. 
-The effect is strongest for Hund's case (a) states and is significant for Hund's case (b) as well. 
-We study these internal spin-dynamics with OH molecules and devise a trap geometry where spin-flip loss can be tuned from over $200 \text{ s}^{-1} $ to below our $2\text{ s}^{-1}$ vacuum limited loss rate with only a simple external bias coil and with no sacrifice of trap strength.
+We conclusively demonstrate and address this with OH molecules in a trap geometry where spin-flip losses can be tuned from over $200 \text{ s}^{-1} $ to below our $2\text{ s}^{-1}$ vacuum limited loss rate with only a simple external bias coil and with minimal impact on trap depth and gradient.
 \end{abstract}
 
 
@@ -127,7 +126,8 @@ These internal spin-dynamics are subtle, having eluded three previous investigat
 It was concluded that no significant loss enhancement due to electric field would be evident. 
 This is true only for the approximate $^2\Pi_{1/2}$ Hamiltonian used in that study. 
 In~\cite{Stuhl2013} E-fields were applied in our magnetic quadrupole trap to study E-field induced collisions. 
-Although an initial approximation was made of the spin-dynamical effect, subsequent investigations have revealed it to be a threefold underestimate, enough to render deconvolution of any remaining collisional effect difficult. 
+Although an initial approximation was made of the spin-dynamical effect, subsequent investigations have revealed it to be a threefold underestimate, enough to render deconvolution of any remaining collisional effect difficult.
+The specific implications for these previous results are discussed further in supplementary materials.
 Finally, in~\cite{Bohn2013} it was correctly noted that Hund's case (a) molecules maintain a quantization axis in mixed fields. 
 The states of the molecule were shown to align with one of the two quantization axes given by the vectors $\mu_\text{eff}\vec{B}\,{\pm}\, d_\text{eff}\vec{E}$, $\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields. 
 It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe the loss is actually enhanced.
@@ -148,19 +148,19 @@ After passing the trap center, $B$ rotates nearly $180^\circ$, so that $E$ and $
 Now the length of the sum quantization axis, which is proportional to the field induced energy shift of the molecule, actually decreases with increasing $|B|$.
 Further away from the trap center the molecule is then magnetically strong field seeking and is lost. 
 To be more general, we define the relative orientation of the fields as the sign of $\phi\,{=}\,\vec{E}\cdot\vec{B}$. 
-When $\phi$ is negative, the trapped state must have the vector difference quantization axis, and vice versa, so that an increase in magnitude of the magnetic field increases internal energy. 
-Whenever $\phi$ changes sign, i.e. where $\phi\,{=}\,0$ and \epb, there will be a chance of spin-flip associated with the molecule's propensity to maintain its quantization axis rather than remain on the highest energy doubly weak field seeking branch.
+When $\phi$ is negative, the trapped state must have the vector difference quantization axis, and vice versa, so that an increase in magnitude of the magnetic field increases its potential energy. 
+Whenever $\phi$ changes sign, i.e. where $\phi\,{=}\,0$ and \epb, there will be a chance of spin-flip associated with the molecule's propensity to maintain its quantization axis rather than remain in the well-trapped state.
 Since $\phi$ is a continuous scalar defined in 3D, $\phi\,{=}\,0$ is one of it's contour levels and thus always corresponds to a 2D surface; in the case of a magnetic quadrupole with homogeneous E it is a plane.
 
 This intuition is in agreement with a more rigorous analysis of the energy splittings between the trapped state and its spin-flip partner. 
 By exactly diagonalizing the approximate eight state ground molecular Hamiltonian for OH, subtracting the relevant state energies and Taylor expanding, we find:
 \begin{equation}
-H(B_\perp,B_{||},E) = (\mu_\text{eff}B_\perp)^3\Lambda^2/(d_\text{eff}E)^4 + \mu_\text{eff}B_{||}
+H(\mathcal{B}_\perp,\mathcal{B}_{||},\mathcal{E}) = \mathcal{B}_{||} + \mathcal{B}_\perp^3\frac{\Delta^2}{\mathcal{E}^4} + \mathcal{O}(\mathcal{B}_{||}^2,\mathcal{B}_\perp^4)
 \end{equation}
-Here the magnetic field is considered in parallel and perpendicular components relative to the electric field, and $\Lambda$ is the lambda doubling.
+Here $\mathcal{B}\,{=}\,\mu_\text{eff}\vec{B}$ and $\mathcal{E}\,{=}\,d_\text{eff}\vec{E}$, the magnetic field is considered in parallel and perpendicular components relative to the electric field, and $\Delta$ is the lambda doubling.
 The relevant splitting between spin flip partner states reaches a deep minimum whenever $B_{||}$ goes to zero and \epb, where the remaining Zeeman splitting is reduced from linear to cubic in magnetic field (Fig.~\ref{fig:blocking}a-c).
 This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community\cite{Player1970,Hudson2002}, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
-However, in the case of applying mixed fields during trapping, this suppression is not beneficial but rather detrimental, because the reduced splitting greatly expands the region in which spin-flips can occur (Fig.~\ref{fig:blocking}e-f).
+However, in the case of applying mixed fields during trapping, this suppression is not beneficial but rather detrimental, and the reduced splitting creates a broad plane in which spin-flips can occur (Fig.~\ref{fig:blocking}e-f).
 The extent of the loss enhancement is best addressed as discussed below, but a reasonable scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
 For $\kappa$ the energy scale of hops without any application of electric field, electric field enhances the loss rate by $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
 
@@ -189,14 +189,12 @@ E-field is required during evaporation and spectroscopy to open avoided crossing
 
 We can better quantify the extent of the expansion by considering molecular trajectories in light of the Landau Zener formula:
 \begin{equation}
-P_\text{hop}=e^{-\Delta^2/\hbar\dot{H}}
+P_\text{hop}=e^{-\delta^2/\hbar\dot{H}}
 \end{equation}
-Which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\Delta$ and the rate of approach of the energy levels $\dot{H}$. 
-Any molecules whose trajectory passes through the \epb surface experience a minimum energy splitting $\Delta$ at the point of intersection with the plane.
-The rate of approach of the levels $\dot{H}$ near this intersection is given simply by the projection of the molecule velocity on the normal to the plane, which dominates over the parallel contribution except for molecules moving almost entirely in that direction, an unlikely situation.
-Moreover, although the Landau-Zener formula assumes infinitely linear energy level approach before and after a crossing, the cubically suppressed energy gap at the crossing is much less than the average energy of a trapped molecule, so that to a good approximation its velocity hardly changes in the regime where the energy splitting is small.
-With these simplifying observations, it becomes possible to approximate the hopping probability for a molecule knowing only its crossing point and orthogonal velocity.
-By assuming a thermal distribution, the Landau Zener probability can be numerically integrated over the instantaneous spatial distribution in the plane and the Maxwellian velocity distribution orthogonal to the plane to obtain a spin-flip loss flux out of the trap.
+Which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\delta$ and the rate of approach of the energy levels $\dot{H}$. 
+Any molecules whose trajectory passes through the \epb{} surface experience a minimum energy splitting $\delta$ at the point of intersection with the plane.
+To a good approximation, the hopping probability for a molecule can be computed knowing only its crossing point and orthogonal velocity, and the Landau-Zener loss flux through the plane can be numerically integrated.
+This loss-flux integration is an important improvement relative to our previous work~\cite{Stuhl2013}, as discussed further in our supplementary.
 We perform such integrations for OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
 %The results lead to important modifications of our interpretation of previous work, which we discuss further in the supplementary materials.
 
@@ -283,8 +281,8 @@ Fits (red) are calculated by integrating the molecule flux of a thermal ensemble
 \label{fig:WVplot}}
 \end{figure}
 
-In order to stringently verify our calculations of loss by integration of molecule fluxes across \epb surfaces, we perform these calculations for a diverse collection of loss surfaces obtained by translation of the magnetic pins in their mounts. 
-This translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B}\propto B^\prime z\hat{z}$, which dramatically alters the \epb surfaces and the magnitude of the fields and the hopping probability across them.
+In order to stringently verify our calculations of loss by integration of molecule fluxes across \epb{} surfaces, we perform these calculations for a diverse collection of loss surfaces obtained by translation of the magnetic pins in their mounts. 
+This translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B}\propto B^\prime z\hat{z}$, which dramatically alters the \epb{} surfaces and the magnitude of the fields and the hopping probability across them.
 We perform this same translation in situ, and obtain a striking agreement (Fig.~\ref{fig:WVplot}b). 
 This is particularly remarkable given that this direct integral calculation assumes a purely thermal distribution and doesn't involve the computation of any actual trajectories.
 The fits are performed using only temperature as a free parameter, which enters the calculation via the thermal distribution used for integration, and fits to $170\,{\pm}\,20\text{ mK}$.~\footnote{Calculation performed in COMSOL: \href{https://github.com/dreens/spin-flip-integration/}{Source Code}}.
@@ -314,10 +312,10 @@ An intuitive explanation for the intriguing double well structure in population 
 With strong experimental confirmation of the molecular spin-flip loss enhancement, we can move on to generalize beyond OH.
 Hund's case (a) states are most susceptible in the sense that smaller electric fields are sufficient to cause a significant problem, but with enough electric field any state exhibiting competition between E-fields and B-fields for alignment of the molecule or atom will be susceptible. 
 One way to avoid competition is for the fields to couple to unrelated parts of the Hamiltonian, which happens to a limited extent for Hund's case (b) states without electron orbital angular momentum ($\Sigma$ states, $\Lambda\,{=}\,0$)~\cite{Bohn2013}. 
-In these states, which include most laser-cooled and bialkali molecules thus far, the E-fields and B-fields couple to rotation and spin respectively, which are only related by the spin-rotation coupling constant $\gamma$.
+In these states, which include most laser-cooled molecules thus far, the E-fields and B-fields couple to rotation and spin respectively, which are only related by the spin-rotation coupling constant $\gamma$.
 Since $\gamma$ is usually in the tens of MHz~\cite{Quemener2016}, molecular spin-flip loss remains quite significant.
-The inclusion of hyperfine requires a careful case-by-case investigation. For OH, it would initially seem to add an extra splitting that could protect from spin-flips, but in fact the lossy plane is only shifted slightly away from \epb but retains the same area.
-For YO~\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states avoid spin-flip loss entirely. 
+The inclusion of hyperfine requires a careful case-by-case investigation. For OH, it would initially seem to add an extra splitting that could protect from spin-flips, but in fact the lossy plane is only shifted slightly away from \epb{} but retains the same area.
+For YO~\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states can avoid spin-flip loss entirely when E-field is applied. 
 These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation. %Although our focus has been spin-flips in magnetic traps, spin-flips in electric traps are also possible, (cite meijer).
 
 We can also generalize to arbitrary geometries with a simple loss suppression strategy: avoid $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ where \epb.
