@@ -57,7 +57,7 @@ prl,
 
 %\preprint{APS/123-QED}
 
-\title{Implications for Earlier Results}%
+\title{Supplementary Information}%
 
 %\author{David Reens}
 %\thanks{Contributed equally. Email dave.reens@colorado.edu or hao.wu@colorado.edu.}
@@ -81,18 +81,19 @@ prl,
 %     COPY FROM WORD DOC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The present study on the role of mixed fields for spin-flip loss introduces important modifications to previously published work, especially references~\cite{Stuhl2012evap,Stuhl2013} which study collisional processes in OH molecules in a spin-flip prone geometry. 
-Both of these results are considerably weakened by our present results, but perhaps not entirely overturned. 
+The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2012evap,Stuhl2013}.
+During these investigations, it became evident that a significant portion of the effects attributed to collisions could be attributed to spin-flip losses.
 In what follows we provide the interested reader with our current best understanding of the situation.
 
 We begin with reference~\cite{Stuhl2013} on E-field induced inelastic collisions. 
-During their data analysis, the authors uncovered and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution. 
-An appendix of~\cite{Stuhl2013} explains this well. 
-Since then, in addition to further exploring the generality of the effect and conclusively demonstrating and overcoming it in a dedicated system as described in the main text, we have made an important correction to the mathematics in the appendix of~\cite{Stuhl2013}.
+The authors identifed and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
+An appendix of~\cite{Stuhl2013} explains this well.
+Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important improvement to the mathematics in the appendix of~\cite{Stuhl2013}.
+This improvement, a flux-based integral of the loss rate, prompted our decision to rigorously demonstrate and overcome molecular enhanced spin-flip loss for the first time in a dedicated trap, as described in the main text.
 
-We make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters ($v_z$ in the main text and $v_\vartheta$ in~\cite{Stuhl2013} are mathematically equivalent where \epb{}), and a thermalized Maxwell-Boltzmann distribution.
+Relative to the approach taken in the appendix of~\cite{Stuhl2013}, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters ($v_z$ in the main text and $v_\vartheta$ in~\cite{Stuhl2013} are mathematically equivalent where \epb{}), and the population is a thermalized Maxwell-Boltzmann distribution.
 The correction relates to the next step, where an integral calculation for the loss rate is performed.
-In~\cite{Stuhl2013} the integration spans the entire spatial distribution, weighted by the frequency of crossing of the center plane:
+In~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
 \begin{equation}
 \Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2n(r)dr\!\int\displaylimits_0^\infty \!n(v_\vartheta)dv_\vartheta\left( \frac{v_\vartheta}{\pi r} P_\text{hop}(r,v_\vartheta)\right)
 \end{equation}
@@ -101,19 +102,19 @@ Likewise $n(v_\vartheta)$ is the usual normalized Maxwellian velocity distributi
 Implicit in this integration is the simplifying assumption that molecules at a given radius $r$ at a given instant will cross the center plane with a frequency of $v_\vartheta/\pi r$.
 Though not a bad place to start, this approximation is rather rough given that molecules are certainly not following circular orbits of constant $v_\vartheta$ but are in general following some unusual trap motion.
 Moreover, the strong-weak asymmetry of the trap is not treated.
-Instead, we perform an integration of flux through the loss plane directly:
+Our improvement is to perform an integration of flux through the loss plane directly:
 \begin{equation}
 \Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right)
 \end{equation}
-Here the distributions are as before, but the radial distribution is integrated over the central plane, hence the $2\pi r$ Jacobean, and the hopping probability integrand is multiplied by the velocity $v_z$ since it is a flux.
+Here the same distributions are used, but the spatial distribution is integrated over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by the velocity $v_z$ to give a flux.
 Under the same simplifying assumptions, this flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency.
-Although the two integrals differ significantly in their conception, mathematically the changes to the integrand and the Jacobeans cancel one another out and the difference reduces to precisely an overall scaling factor of $\pi$. 
+Although the two integrals differ significantly in their conception, mathematically the changes to the integrand and the Jacobean reduce to precisely an overall scaling factor of $\pi$.
 
-The influence of this on the deconvolution procedure is subtle, and requires getting a bit deeper into the extraction of two-body loss rates from the data. 
+The influence of this on the deconvolution procedure relates to the details of the two-body fitting routine. 
 One plus two body fits were performed to various decay trap curves, with the one body component fixed to the value expected due to vacuum scattering and spin-flip loss.
 An example of  such decay curves is shown in fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
 The problem is that with the stronger spin-flip loss, it seems no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
-Rather, if the loss rate is faster than any thermalization rate, the volume of phase space corresponding to molecules with orbits that intersect the loss region is eventually depleted, while the rest of the phase space remains as is.
+Rather, if the loss rate is faster than the thermalization rate, the volume of phase space corresponding to molecules with orbits that intersect the loss region is eventually depleted, while the rest of the phase space remains as is.
 This means that the spin-flip loss can actually masquerade as a two-body population curve, since it can lead to a loss rate that decreases over time.
 
 \begin{figure}[tb]
@@ -125,10 +126,11 @@ This means that the spin-flip loss can actually masquerade as a two-body populat
 \label{fig:eil}
 \end{figure}
 
-We can perform purely single particle simulations to investigate this, and we obtain curves such as shown above the time dependent experiment data points in fig.~\ref{fig:eil}(a).
+We can perform purely single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in fig.~\ref{fig:eil}(a).
 The simulations do predict a loss rate that turns off over time, and they do a decent job matching the magnitude of the loss induced by the electric field.
 We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the data obtained from this single particle spin-flip loss simulation, see fig.~\ref{fig:eil}(b). 
-This suggests that the effect attributed to two-body collisions could be explained almost entirely by spin-flip losses.
+This suggests that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
+Of course there are notable differences, such as in the initial rate of decay in fig.~\ref{fig:eil}(a) 
 One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement between simulation and experiment.
 Unfortunately there are many challenges in the quantitative application of simulations such as these, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
 We think the best path forward is to perform future collisional studies with the single-particle effect removed, as described in the main text.
