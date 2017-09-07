@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,11 +35,11 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1285"
-     inkscape:window-height="760"
+     inkscape:window-width="1280"
+     inkscape:window-height="756"
      id="namedview7866"
      showgrid="false"
-     inkscape:zoom="1.0373832"
+     inkscape:zoom="1.0299065"
      inkscape:cx="301.5"
      inkscape:cy="267.5"
      inkscape:window-x="0"
@@ -221,7 +221,8 @@
   </defs>
   <g
      id="g6710"
-     style="color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none">
+     style="color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+     transform="matrix(1,0,0,0.91611812,0,3.3552753)">
     <line
        id="line6662"
        y1="306"
@@ -392,7 +393,8 @@
        y2="44.68" />
   </g>
   <g
-     id="g8718">
+     id="g8718"
+     transform="translate(0,-24)">
     <g
        transform="translate(78,312)"
        style="font-size:10px;font-family:'Helvetica Neue';color-interpolation:linearRGB;fill:#262626;stroke:#262626;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
@@ -520,7 +522,7 @@
   <g
      id="g6758"
      style="font-size:11px;font-family:'Helvetica Neue';color-interpolation:linearRGB;fill:#262626;stroke:#262626;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     transform="translate(291.664,330)">
+     transform="translate(291.664,306)">
     <text
        id="text6756"
        style="stroke:none"
@@ -534,25 +536,18 @@
      id="g8693">
     <line
        id="line6760"
-       y1="306"
+       y1="283.68741"
        x2="78"
        x1="78"
-       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none"
+       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        y2="40" />
     <line
        id="line6762"
-       y1="306"
+       y1="283.68741"
        x2="546"
        x1="546"
-       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none"
+       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        y2="40" />
-    <line
-       id="line6764"
-       y1="306"
-       x2="82.68"
-       x1="78"
-       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none"
-       y2="306" />
     <line
        id="line6766"
        y1="279.39999"
@@ -623,13 +618,6 @@
        x1="78"
        style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none"
        y2="40" />
-    <line
-       id="line6786"
-       y1="306"
-       x2="541.32001"
-       x1="546"
-       style="color-interpolation:linearRGB;fill:none;stroke:#262626;stroke-width:1;stroke-linejoin:round;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision;stroke-miterlimit:10;stroke-dasharray:none"
-       y2="306" />
     <line
        id="line6788"
        y1="279.39999"
@@ -706,14 +694,7 @@
     <g
        transform="matrix(1.3333333,0,0,1.3333333,75.77888,306.015)"
        style="font-size:10px;font-family:'Helvetica Neue';color-interpolation:linearRGB;fill:#262626;stroke:#262626;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-       id="g6812">
-      <text
-         x="-10"
-         xml:space="preserve"
-         y="3.5"
-         style="stroke:none"
-         id="text6810">-2</text>
-    </g>
+       id="g6812" />
     <g
        transform="matrix(1.3333333,0,0,1.3333333,76.00888,279.62051)"
        style="font-size:10px;font-family:'Helvetica Neue';color-interpolation:linearRGB;fill:#262626;stroke:#262626;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
@@ -1119,10 +1100,10 @@
        style="fill:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none" />
     <circle
        id="circle6938"
-       cy="162.8335"
-       cx="119.97194"
-       r="3.74"
-       style="fill:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none" />
+       cy="163.11548"
+       cx="120.07448"
+       r="4.5253997"
+       style="fill:none;stroke-width:2.20000005;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none" />
     <circle
        id="circle6940"
        cy="131.4375"
@@ -2178,8 +2159,8 @@
     <path
        inkscape:connector-curvature="0"
        id="path7334"
-       style="fill:none;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none"
-       d="m 119.1643,98.5032 5.6568,5.6568 m -5.6568,0 5.6568,-5.6568" />
+       style="fill:none;stroke-width:2.20000005;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none"
+       d="m 118.2281,97.567 7.5292,7.5292 m -7.5292,0 7.5292,-7.5292" />
     <path
        inkscape:connector-curvature="0"
        id="path7336"
