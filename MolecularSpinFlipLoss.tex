@@ -93,8 +93,8 @@ We conclusively demonstrate and address this with OH molecules in a trap geometr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The ultracold regime extends toward molecules on many fronts~\cite{Carr2009}. 
-KRb molecules have reached lattice quantum degeneracy~\cite{Moses2015} and other bialkalis continue to progress~\cite{Takekoshi2014, Park2015,Guo2016,Liu2017}. 
-Creative and carefully engineered laser cooling strategies are tackling certain nearly vibrationally diagonal molecules~\cite{Stuhl2008,Shuman2010,Hummon2013, Barry2014, Zhelyazkova2014, Steinecker2016, Hemmerling2016}. 
+Since the earlier condensation of homogeneous alkali dimers~\cite{Greiner2003,Zwierlein2003,Jochim2003}, KRb molecules have reached lattice quantum degeneracy~\cite{Moses2015} and other heterogeneous bialkalis continue to progress~\cite{Takekoshi2014, Park2015,Guo2016,Liu2017,Rvachov2017}. 
+Creative and carefully engineered laser cooling strategies are tackling certain nearly vibrationally diagonal molecules~\cite{Stuhl2008,Hummon2013, Barry2014, Zhelyazkova2014, Hemmerling2016, Truppe2017}. 
 A diverse array of alternative strategies have succeeded to greater or lesser extents on other molecules~\cite{Doyle1998, Bethlem1999, Bochinski2003, Narevicius2008, Wiederkehr2012, Prehn2016,Liu2017a}. 
 All of these molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density~\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}. 
 They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for many doubly dipolar molecules due to their internal spin dynamics in mixed electric and magnetic fields. 
@@ -104,7 +104,7 @@ Spin flips were directly observed near $50\,\mu\text{K}$ and overcome with a tim
 Motivated by the interest in dipolar molecules in mixed fields for quantum chemistry, precision measurement and many-body physics, we previously investigated loss of magnetically trapped hydroxyl radicals (OH) with applied electric field~\cite{Stuhl2012uwave}. 
 This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J\,{=}\,3/2}$ ground state manifold other than the most well trapped one (positive parity and full spin polarization, $|f,m_J\,{=}\,3/2\rangle$, blue in Fig.~\ref{fig:blocking}). 
 Due to the closely spaced parity doublet, a general feature of Hund's case (a), these states intersect opposite parity states at non-zero B-fields, where E-field can open avoided crossings and cause trap loss.
-We now identify internal spin-dynamics leading to trap loss near $B\,{=}\,0$ even for the most well trapped state and even at $50\text{ mK}$.
+We now identify internal spin-dynamics leading to trap loss near $B\,{=}\,0$ even for the most well trapped state and as warm as $50\text{ mK}$.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{blocking_out.png}%
@@ -126,11 +126,11 @@ These internal spin-dynamics are subtle, having eluded three previous investigat
 It was concluded that no significant loss enhancement due to electric field would be evident. 
 This is true only for the approximate $^2\Pi_{1/2}$ Hamiltonian used in that study. 
 In~\cite{Stuhl2013} E-fields were applied in our magnetic quadrupole trap to study E-field induced collisions. 
-Although an initial approximation was made of the spin-dynamical effect, subsequent investigations have revealed it to be a threefold underestimate, enough to render deconvolution of any remaining collisional effect difficult.
+Although an initial approximation was made of the spin-dynamical effect, subsequent investigations have revealed it to be a threefold underestimate, enough to render deconvolution of a remaining collisional effect difficult.
 The specific implications for these previous results are discussed further in supplementary materials.
 Finally, in~\cite{Bohn2013} it was correctly noted that Hund's case (a) molecules maintain a quantization axis in mixed fields. 
 The states of the molecule were shown to align with one of the two quantization axes given by the vectors $\mu_\text{eff}\vec{B}\,{\pm}\, d_\text{eff}\vec{E}$, $\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields. 
-It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe the loss is actually enhanced.
+It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe, the loss is actually enhanced.
 
 % Outline for this section...
 % 1. Intuition
@@ -144,13 +144,14 @@ When molecules pass near the trap center, they experience a rotating field direc
 When electric field is added, it dominates in the trap center where the magnetic field is weakest. 
 As correctly noted in~\cite{Bohn2013}, this causes a quantization axis to be maintained, either of $\mu_\text{eff}\vec{B}\,{\pm}\, d_\text{eff}\vec{E}$.
 Now suppose a molecule initially follows the sum quantization axis and is in a region where $E$ and $B$ are nearly parallel before passing by the trap center.
-After passing the trap center, $B$ rotates nearly $180^\circ$, so that $E$ and $B$ are nearly anti-parallel. 
+After passing the trap center, $B$ rotates almost $180^\circ$, so that $E$ and $B$ are nearly anti-parallel. 
 Now the length of the sum quantization axis, which is proportional to the field induced energy shift of the molecule, actually decreases with increasing $|B|$.
 Further away from the trap center the molecule is then magnetically strong field seeking and is lost. 
 To be more general, we define the relative orientation of the fields as the sign of $\phi\,{=}\,\vec{E}\cdot\vec{B}$. 
 When $\phi$ is negative, the trapped state must have the vector difference quantization axis, and vice versa, so that an increase in magnitude of the magnetic field increases its potential energy. 
 Whenever $\phi$ changes sign, i.e. where $\phi\,{=}\,0$ and \epb, there will be a chance of spin-flip associated with the molecule's propensity to maintain its quantization axis rather than remain in the well-trapped state.
 Since $\phi$ is a continuous scalar defined in 3D, $\phi\,{=}\,0$ is one of it's contour levels and thus always corresponds to a 2D surface; in the case of a magnetic quadrupole with homogeneous E it is a plane.
+This contrasts with atomic spin-flip loss, which does not favor a particular plane but occurs in a small ellipsoidal region near to the trap center.
 
 This intuition is in agreement with a more rigorous analysis of the energy splittings between the trapped state and its spin-flip partner. 
 By exactly diagonalizing the approximate eight state ground molecular Hamiltonian for OH, subtracting the relevant state energies and Taylor expanding, we find:
@@ -159,10 +160,12 @@ H(\mathcal{B}_\perp,\mathcal{B}_{||},\mathcal{E}) = \mathcal{B}_{||} + \mathcal{
 \end{equation}
 Here $\mathcal{B}\,{=}\,\mu_\text{eff}\vec{B}$ and $\mathcal{E}\,{=}\,d_\text{eff}\vec{E}$, the magnetic field is considered in parallel and perpendicular components relative to the electric field, and $\Delta$ is the lambda doubling.
 The relevant splitting between spin flip partner states reaches a deep minimum whenever $B_{||}$ goes to zero and \epb, where the remaining Zeeman splitting is reduced from linear to cubic in magnetic field (Fig.~\ref{fig:blocking}a-c).
-This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community\cite{Player1970,Hudson2002}, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
+This reduction in the Zeeman splitting from linear to cubic is in fact a well known phenomenon in the precision measurement community~\cite{Player1970,Hudson2002}, and experimentalists have exploited it for the suppression of unwanted influence from magnetic fields in measurements of the electron electric dipole moment.
 However, in the case of applying mixed fields during trapping, this suppression is not beneficial but rather detrimental, and the reduced splitting creates a broad plane in which spin-flips can occur (Fig.~\ref{fig:blocking}e-f).
-The extent of the loss enhancement is best addressed as discussed below, but a reasonable scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
-For $\kappa$ the energy scale of hops without any application of electric field, electric field enhances the loss rate by $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
+The extent of the loss enhancement caused by electric field is best addressed as discussed below, but a rough scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
+%For $\kappa$ the energy scale of hops without any application of electric field, electric field enhances the loss rate by $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
+This yields an enhancement $\eta \,{=}\, (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$. 
+Here we have defined $\kappa$ as the energy scale of spin-flips in the non-enhanced case- it depends in general on trap gradient and temperature.
 
 
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
@@ -204,7 +207,7 @@ We perform such integrations for OH in our previous $2\text{ T/cm}$ magnetic qua
 
 Unfortunately, experimental verification of this model and these loss-flux calculations is difficult in a magnetic quadrupole trap with superimposed electric field because of an important competing effect: the enhanced field dependent collision cross-section. 
 Furthermore, our prior results on the collisional effect~\cite{Stuhl2013} might be largely explained by the enhanced spin-flip loss, which makes experimental verification especially important.
-Alarmed by this possibility, we developed a new trap where the enhanced molecular spin-flip loss can be conclusively experimentally demonstrated without any convolved collisional effects, and where our loss-flux calculations could be clearly tested.
+In light of this, we developed a new trap where the enhanced molecular spin-flip loss can be conclusively experimentally demonstrated without any convolved collisional effects, and where our loss-flux calculations could be clearly tested.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -250,7 +253,7 @@ We achieve these fields in a geometry that matches our Stark decelerator~\cite{B
 %While this successfully prevents spin-flip loss, axial and radial trapping interfere, resulting in significantly lower trap depths than for a 3D quadrupole. 
 %We thwart this interference by using electric field for the third direction. 
 This geometry has \epb{} in both the $x\,{=}\,0$ and $y\,{=}\,0$ planes, and $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ in a large cylinder surrounding the $z$-axis- a perfect recipe for large spin-flip losses.
-However, by adding a small magnetic field $\vec{B}\,{=}\,B_\text{coil}\hat{z}$ along the centerline of the magnetic quadrupole with an external bias coil, a dramatic change can be made to the surfaces where \epb with only a tiny change to the trapping potential.
+However, by adding a small magnetic field $\vec{B}\,{=}\,B_\text{coil}\hat{z}$ along the centerline of the magnetic quadrupole with an external bias coil, a dramatic change can be made to the surfaces where \epb{} with only a tiny change to the trapping potential.
 
 
 \begin{figure}[tb]
@@ -262,10 +265,8 @@ The purple star marks the trap center, to which molecules are confined within a 
 \label{fig:LSurfs}}
 \end{figure}
 
-\bcl{} morphs the \epb{} surface from a pair of planes into a hyperbolic sheet, pushing it away from the $z$-axis where the magnetic field is smallest:
-\begin{equation}
-\vec{E}\cdot\vec{B}=B'E'xy - B_\text{coil}E'z=0\Rightarrow x\cdot y\,{=}\, z\cdot B_\text{coil}/B'
-\end{equation}
+\bcl{} morphs the \epb{} surface from a pair of planes into a hyperbolic sheet, pushing it away from the $z$-axis where the magnetic field is smallest. 
+Algebraically, \epb{} occurs when $\vec{E}\,{\cdot}\,\vec{B}\,{=}\,B'E'xy\,{-}\,B_\text{coil}E'z\,{=}\,0$ and hence $x\,{\cdot}\,y\,{=}\, z\,{\cdot}\,B_\text{coil}/B'$.
 In Fig.~\ref{fig:LSurfs}, the surfaces where \epb{} for several \bcl{} magnitudes are calculated wherever the splitting there is small enough that a molecule of thermally average velocity orthogonal to the surface would have a 1/e or greater hopping probability.
 The loss regions ought to be tuned far enough from the trap center that molecules cannot access them.
 This is indeed what we observe, note the striking difference in trap lifetimes in Fig.~\ref{fig:WVplot}a.
@@ -283,8 +284,8 @@ Fits (red) are calculated by integrating the molecule flux of a thermal ensemble
 
 In order to stringently verify our calculations of loss by integration of molecule fluxes across \epb{} surfaces, we perform these calculations for a diverse collection of loss surfaces obtained by translation of the magnetic pins in their mounts. 
 This translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B}\propto B^\prime z\hat{z}$, which dramatically alters the \epb{} surfaces and the magnitude of the fields and the hopping probability across them.
-We perform this same translation in situ, and obtain a striking agreement (Fig.~\ref{fig:WVplot}b). 
-This is particularly remarkable given that this direct integral calculation assumes a purely thermal distribution and doesn't involve the computation of any actual trajectories.
+We perform this same translation in situ, and obtain a reasonable agreement (Fig.~\ref{fig:WVplot}b). 
+This is particularly noteworthy given that this direct integral calculation assumes a purely thermal distribution and doesn't involve the computation of any actual trajectories.
 The fits are performed using only temperature as a free parameter, which enters the calculation via the thermal distribution used for integration, and fits to $170\,{\pm}\,20\text{ mK}$.~\footnote{Calculation performed in COMSOL: \href{https://github.com/dreens/spin-flip-integration/}{Source Code}}.
 An intuitive explanation for the intriguing double well structure in population verses \bcl{} is that \bcl{} first translates the magnetic zero along the z-axis, overlapping it with larger electric fields at first before moving it out of the trap.
 
@@ -321,20 +322,21 @@ These states are characterized by significant electron-spin-to-nuclear-spin dipo
 We can also generalize to arbitrary geometries with a simple loss suppression strategy: avoid $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ where \epb.
 This is maximally violated by the magnetic quadrupole, where in a suitably small region even the smallest stray electric field dominates the magnetic.
 One trivial tactic would be to use only one field, but we note that one of the main attractions of working with dipolar species is to utilize both.
-Another way is to trap with E-field and superpose B-field.
-Unlike the Zeeman effect, the Stark effect is never linear, and some zero field parity splitting always prevents the orientation reversing spin-flips that we have been discussing for magnetic traps. 
-However, this same splitting pushes all states with the same sign of $m_J$ very close to one another, leading to a different type of loss \cite{Wall2010}.
-Intriguingly, this kind of electric trap loss is not necessarily worsened by the addition of magnetic field but can be totally mitigated by it \cite{Meek2011}.
-Another option is to trap with both fields and keep zeros precisely overlapped. 
-This was realized for OH with a superposed magnetic quadrupole and electric hexapole~\cite{Sawyer2007}.
+Another way is to use an electrostatic trap and superpose a homogeneous magnetic B-field.
+This specific strategy has been investigated~\cite{Meek2011}.
+In electrostatic traps, some zero field parity splitting always prevents the orientation reversing spin-flips that we have been discussing for magnetic traps. 
+However, this same splitting pushes all states with the same sign of $m_J$ very close to one another, leading to loss via Landau-Zener transitions other than the $m_J$ to $-m_J$ spin-flip~\cite{Wall2010}.
+Intriguingly, the addition of magnetic field does not necessarily worsen the loss and can actually suppress it \cite{Meek2011}.
+%Another option is to trap with both fields and keep zeros precisely overlapped. 
+%This was realized for OH with a superposed magnetic quadrupole and electric hexapole~\cite{Sawyer2007}.
 
 The present trap, in addition to providing our desired experimental testing ground for molecular spin-flip loss, also manages to provide large $5\,\text{T/cm}$ trap-gradients useful for maintaining high densities and collision rates.
 Moreover, with loss removed, we observe a population trend whose initially fast decay rate decreases over time (Fig.~\ref{fig:WVplot}a, green dots), suggesting collisions.
 To test this, we implement a five-fold reduction in initial population~\footnote{Microwaves couple opposite parities during deceleration, giving a uniform loss probability across the molecular distribution.} and scale the resulting trend by five (green circles). 
 If collisions had contributed, this new trend would show less decay, but we observe no significant change. 
-This absence of collisions differs from our earlier work~\cite{Stuhl2012evap}, but could be attributed to the significantly higher initial temperature in this trap. 
-However, the results of this paper introduce a need for new interpretation of other aspects of this evaporation work, since the electric fields used for the RF knife ought to have caused a significant effect to the distribution.
-We discuss the implications further in supplementary materials.
+This seeming lack of collisions differs from our earlier work~\cite{Stuhl2012evap}, but could relate to the warmer initial temperature of $170\text{ mK}$. 
+The results of this paper are important for this evaporation work, since the electric fields used for the RF knife ought to have caused a significant spin-flip loss effect, especially at low temperatures.
+We discuss this further in supplementary materials.
 An alternative hypothesis for the population trend is the existence of chaotic trap orbits with long escape times~\cite{Gonzalez-Ferez2014}.
 Moving forward, we aim to increase the density by means of several improvements~\cite{Even2015,Segev2017}.
 
