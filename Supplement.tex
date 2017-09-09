@@ -58,35 +58,14 @@ prl,
 %\preprint{APS/123-QED}
 
 \title{Supplementary Information}%
-
-%\author{David Reens}
-%\thanks{Contributed equally. Email dave.reens@colorado.edu or hao.wu@colorado.edu.}
-
-%\author{Hao Wu}
-%\thanks{Contributed equally. Email dave.reens@colorado.edu or hao.wu@colorado.edu.}
-
-%\author{Tim Langen}%
-%\altaffiliation{Present Address: 5. Physikalisches Institut and Center for Integrated Quantum Science and Technology (IQST), Universit\"at Stuttgart, Pfaffenwaldring 57, 70569 Stuttgart, Germany}
-
-%\author{Jun Ye}
-%\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado and\\ Department of Physics, University of Colorado, Boulder, Colorado 80309-0440, USA}
-
-
-%\date{\today}
-
 \maketitle
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COPY FROM WORD DOC
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2012evap,Stuhl2013}.
+The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2013,Stuhl2012evap}.
 It has become evident that a significant portion of the effects attributed to collisions could in fact be attributed to spin-flip losses.
 In what follows we provide the interested reader with our current best understanding of the situation.
 
 We begin with reference~\cite{Stuhl2013} on E-field induced inelastic collisions. 
-The authors identifed and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
+The authors identified and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
 An appendix of~\cite{Stuhl2013} explains this well.
 Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important correction to the mathematics in the appendix of~\cite{Stuhl2013}.
 
@@ -100,9 +79,9 @@ Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^
 Likewise $n(v_\vartheta)$ is the usual normalized Maxwellian velocity distribution. 
 Implicit in this integration is the simplifying assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\vartheta/\pi r$.
 Though not a bad place to start, this approximation is rather rough given that molecules are certainly not following circular orbits of constant $v_\vartheta$ but are in general following some unusual trap motion.
-Our corection is to perform an integration of flux through the loss plane directly:
+Our correction is to perform an integration of flux through the loss plane directly:
 \begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right)
+\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right)
 \end{equation}
 Here the same distributions are used, but the spatial distribution is integrated over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by the velocity $v_z$ to give a flux.
 The coordinates $z$ and $\vartheta$ are mathematically equivalent in the central plane, but $z$ is more appropriate given that integration is no longer spanning the $\vartheta$ direction.
@@ -118,22 +97,16 @@ If thermalization is slow enough, spin-flip loss can actually masquerade as a tw
 
 
 \begin{figure}
-\includegraphics[width=\linewidth]{SuppFigs/eil_out.png} 
+\includegraphics[width=\linewidth]{SuppFigs/combo_out.png} 
 \label{fig:eil}
-\newline
-\includegraphics[width=\linewidth]{SuppFigs/beta_out.png} 
-\label{fig:beta}
-
-\caption{Experimental E-field induced loss data with an attempted overlap to spin-flip loss simulations. (b) Two body fits from~\cite{Stuhl2013} with overlapped spin flip loss single particle simulation in red stars.}
-
+\caption{Experimental E-field induced loss data with an attempted overlap to spin-flip loss simulations. (b) Two body fits from~\cite{Stuhl2013} with spin flip loss single particle simulation in red.}
 \end{figure}
-
 
 We can perform purely single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in fig.~\ref{fig:eil}(a).
 The simulations do predict a loss rate that turns off over time, and they do a decent job matching the magnitude of the loss induced by the electric field.
 We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the data obtained from this single particle spin-flip loss simulation, see fig.~\ref{fig:eil}(b). 
 This suggests that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
-Of course there are notable differences, such as in the initial rate of decay in fig.~\ref{fig:eil}(a).
+Of course there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment.
 One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement between simulation and experiment.
 Unfortunately there are many challenges in the quantitative application of simulations such as these, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
 We think the best path forward is to perform future collisional studies with the single-particle effect removed, as described in the main text.
@@ -145,15 +118,14 @@ Regarding the fits, an important correction has been discovered and is discussed
 This correction results in a $15\%$ increase in the magnetic dipole moment used to interpret spectroscopy, and thus to the magnetic field at a particular microwave frequency. 
 The data show a sudden suppression below $480\text{ G}$, consistent with the hypothesis of a suppressed population only if this is the location of a certain avoided crossing, but with the magnetic dipole moment correction the crossing is actually located closer to $400\text{ G}$.
 Without this, the fits used to calculate temperature under the suppression hypothesis are no longer trustworthy. 
-
-Without the suppression hypothesis, the temperatures fit in figure 3 of~\cite{Stuhl2012evap} are not reliable, which is the same conclusion supported by the enhanced magnitude of spin-flip losses we are reporting.
+Without the suppression hypothesis, the temperatures fit in figure 3 of~\cite{Stuhl2012evap} are not reliable, and this is the same conclusion supported by the enhanced magnitude of spin-flip losses we are reporting.
 At the temperatures fitted to those spectra, the spin-flip loss caused by the E-field used during evaporation are large enough to significantly influence the population, see the table in the main text.
 Nonetheless, without fitting any temperatures, it is still possible to use normalized spectra to look for enhancements in density caused by the evaporation.
 The normalization simply rescales the trace so that the area beneath adds up to the observed total population by laser induced fluorescence. 
 Without it, spectroscopies of smaller populations yield distributions with enclosed areas that are decreased much more than the actual population.
 All of the evaporation traces in figure 3 of~\cite{Stuhl2012evap} show density enhancements in the region near $500\text{ G}$, but a further correction changes this.
 By more carefully investigating the usage of microwave chirp rates and powers, we confirmed that what was previously interpreted as an offset of some kind was in fact an "oort cloud" persisting at larger fields~\cite{Inguscio1999}.
-After this, only figure 3c of~\cite{Sthul2012evap} shows an enhancement, but it does so very clearly and repeatably as in fig.~\ref{fig:normenhance}.
+After this, only figure 3c of~\cite{Stuhl2012evap} shows an enhancement, but it does so very clearly and repeatably as in fig.~\ref{fig:normenhance}.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{SuppFigs/specfb_out.png}%
@@ -175,7 +147,11 @@ This is indeed what we consistently observe, at the 5\% level, see fig.~\ref{fig
 %At this rate, only $1\%$ of molecules collide during a $100\text{ ms}$ experiment, and only a fraction of those collisions would result in cooling. 
 %Nonetheless, there are uncertainties with the calibration, and it is possible that some decline in system performance could be involved, since we have a record of decreased voltage conditioning performance in our decelerator.
 
-In conclusion, the collisional results in~\cite{Stuhl2012evap,Stuhl2013} are significantly weakened by spin-flip losses and other modifications to our understanding. The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect. Spectroscopic comparisons and evaporation subtractions do suggest a slight evaporative effect, and the development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system described in the main text.
+In conclusion, the roles of collisional effects in~\cite{Stuhl2013,Stuhl2012evap} are reduced by spin-flip losses and other modifications to our understanding.
+%The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect. 
+%There are some remaining discrepancies between simulations and experiments of electric field induced loss which may relate to collisions.
+Despite the effect of spin-flip losses and some other discoveries, spectroscopic comparisons and evaporation subtractions still point to an evaporative effect. 
+The development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system described in the main text.
 
 %includes uncited bib entries
 %\nocite{*}
