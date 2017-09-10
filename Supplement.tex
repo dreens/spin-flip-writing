@@ -17,8 +17,8 @@
 %bibnotes,
  amsmath,amssymb,
  aps,
-prl,
-%pra,
+%prl,
+pra,
 %prb,
 %rmp,
 %prstab,
@@ -61,13 +61,14 @@ prl,
 \maketitle
 
 The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2013,Stuhl2012evap}.
-It has become evident that a significant portion of the effects attributed to collisions could in fact be attributed to spin-flip losses.
+These investigations have revealed that an important fraction of the effects attributed to collisions are in fact attributable to spin-flip losses.
 In what follows we provide the interested reader with our current best understanding of the situation.
 
+\section{Electric Field Induced Collisions}
 We begin with reference~\cite{Stuhl2013} on electric field induced inelastic collisions. 
 The authors identified and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
 An appendix of~\cite{Stuhl2013} explains this well.
-Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important correction to the mathematics in the appendix of~\cite{Stuhl2013}.
+Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important improvement to the mathematics in the appendix of~\cite{Stuhl2013}.
 
 Relative to the approach taken in the appendix of~\cite{Stuhl2013}, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters, and the population is a thermalized Maxwell-Boltzmann distribution.
 Our correction relates to the next step, where an integral calculation for the loss rate is performed.
@@ -88,43 +89,45 @@ The coordinates $z$ and $\vartheta$ are mathematically equivalent in the central
 This flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency.
 Although the two integrals differ significantly in their conception, mathematically the changes to the integrand and the Jacobean reduce to precisely an overall scaling factor of $\pi$.
 
+\begin{figure}
+\includegraphics[width=\linewidth]{SuppFigs/combo_out.png} 
+\caption{Experimental electric field induced loss data with an attempted overlap to spin-flip loss simulations. The case of no electric field (black, solid) is compared to electric fields of in $3\text{ kV/cm}$ turned on after a wait time indicated in the legend. (b) Two body fits from~\cite{Stuhl2013} to experimental data like that in (a) but at various electric fields. The blue data points and shaded region are repeated from Fig.~3 of~\cite{Stuhl2013}, where the shading indicates the variation that would be brought about by changes in the single particle effect by a factor of two in either direction. Even though we discover a factor of only three, the spin flip loss simulation (thick red solid line) matches the data within errorbars.\label{fig:eil}}
+\end{figure}
+
 The influence of this on the deconvolution procedure relates to the details of the two-body fitting routine.
 One plus two body fits were performed to various decay trap curves, with the one body component fixed to the value expected due to vacuum scattering and spin-flip loss.
 An example of  such decay curves is shown in Fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
-The problem is that with the stronger spin-flip loss, it seems no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
-Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone regions of phase space. 
-If thermalization is slow enough, spin-flip loss can actually masquerade as a two-body population curve, since it can lead to a loss rate that decreases over time.
+With the stronger spin-flip loss, it is no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
+Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone regions of phase space.
+If thermalization is slow, spin-flip loss can have a rate that decreases over time, producing a time dependence of population like that of a two-body effect.
+Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in~\cite{Stuhl2013} (Fig.~\ref{fig:eil}(b), shaded region), the possibility of its influencing the data in a non-single-particle manner was not considered.
 
-
-\begin{figure}
-\includegraphics[width=\linewidth]{SuppFigs/combo_out.png} 
-\caption{Experimental electric field induced loss data with an attempted overlap to spin-flip loss simulations. (b) Two body fits from~\cite{Stuhl2013} with spin flip loss single particle simulation in red.\label{fig:eil}}
-\end{figure}
-
-We can perform purely single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in Fig.~\ref{fig:eil}(a).
-The simulations do predict a loss rate that turns off over time, and they do a decent job matching the magnitude of the loss induced by the electric field.
+We can perform single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in Fig.~\ref{fig:eil}(a).
 We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the single particle spin-flip loss simulation traces, see Fig.~\ref{fig:eil}(b). 
-This suggests that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
-Still, there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment, and in the long time magnitude of the loss, which is maybe $20\%$ larger in experiment than simulation.
-One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement between simulation and experiment.
-Unfortunately there are many challenges in the quantitative application of simulations such as these, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
-We think the best path forward is to perform future collisional studies with the single-particle effect removed, as described in the main text.
+The results suggest that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
+Still, there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment, and in the long time magnitude of the loss, which is maybe $10\%$ larger in experiment than simulation.
+One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement.
+Unfortunately there are many challenges in the quantitative application of these simulations, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
+We think the best path forward is to perform future collisional studies with the single-particle effect removed~\footnote{See the main text.}.
 
-With regard to~\cite{Stuhl2012evap}, the present study is one of a number of important modifications to our understanding that have come up in the past few years. 
+\section{Evaporation}
+With regard to~\cite{Stuhl2012evap}, the present study is one of a number of important modifications to our understanding that have come up in recent years. 
 It was originally thought that the measured spatial distribution in the trap was consistent with the buildup of a cold population in a region that was insensitive to our spectroscopy.
 This was supported by the direct optical detection of this population and by the goodness of fits performed under the hypothesis.
 Regarding the fits, an important correction has been discovered and is discussed in~\cite{Maeda2015}, where a thorough investigation of hyperfine shifts and external field effects was performed for OH.
 This correction results in a $15\%$ increase in the magnetic dipole moment used to interpret spectroscopy, and thus to the magnetic field at a particular microwave frequency. 
 The data show a sudden suppression below $480\text{ G}$, consistent with the hypothesis of a suppressed population only if this is the location of a certain avoided crossing, but with the magnetic dipole moment correction the crossing is actually located closer to $400\text{ G}$.
 Without this, the fits used to calculate temperature under the suppression hypothesis are no longer trustworthy. 
-Without the suppression hypothesis, the temperatures fit in figure 3 of~\cite{Stuhl2012evap} are not reliable, and this is the same conclusion supported by the enhanced magnitude of spin-flip losses we are reporting.
-At the temperatures fitted to those spectra, the spin-flip loss caused by the electric field used during evaporation are large enough to significantly influence the population, see the table in the main text.
-Nonetheless, without fitting any temperatures, it is still possible to use normalized spectra to look for enhancements in density caused by the evaporation.
+Without the suppression hypothesis, the temperatures fit in Fig.~3 of~\cite{Stuhl2012evap} are not reliable. 
+
+This is the same conclusion supported by the enhanced magnitude of spin-flip losses we are reporting.
+At the temperatures fitted to those spectra, the spin-flip loss caused by the electric field used during evaporation are large enough to significantly influence the population, see Tab.~1 in~\footnote{See the main text.}.
+Nonetheless, without fitting temperatures, it is still possible to use normalized spectra to look for enhancements in density caused by the evaporation.
 The normalization simply rescales the trace so that the area beneath adds up to the observed total population by laser induced fluorescence. 
 Without it, spectroscopies of smaller populations yield distributions with enclosed areas that are decreased much more than the actual population.
-All of the evaporation traces in figure 3 of~\cite{Stuhl2012evap} show density enhancements in the region near $500\text{ G}$, but a further correction changes this.
-By more carefully investigating the usage of microwave chirp rates and powers, we confirmed that what was previously interpreted as an offset of some kind was in fact an "oort cloud" persisting at larger fields~\cite{Inguscio1999}.
-After this, only figure 3c of~\cite{Stuhl2012evap} shows an enhancement, but it does so very clearly and repeatably as in fig.~\ref{fig:normenhance}.
+All of the evaporation traces in Fig.~3 of~\cite{Stuhl2012evap} show density enhancements in the region near $500\text{ G}$, but a further correction changes this.
+By more carefully investigating the usage of microwave chirp rates and powers, we confirmed that what was previously interpreted as a frequency offset was in fact an ``oort cloud" persisting at larger fields~\cite{Inguscio1999}.
+After accounting for this, only Fig.~3c of~\cite{Stuhl2012evap} shows an enhancement, but it does so very clearly and repeatably as in Fig.~\ref{fig:normenhance}.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{SuppFigs/specfb_out.png}%
@@ -134,12 +137,22 @@ Normalized spectra are performed under three conditions: one with no evaporation
 \label{fig:normenhance}
 \end{figure}
 
-We have also developed a few more sensitive tools to look for collisional or evaporative effects, in addition to the microwave depletion during deceleration described and used in the main text.
-One is to compare the populations under two related conditions- the first a normal evaporation sequence and the second an evaporation with time-reversed microwave frequency. 
+We have also developed a few more sensitive tools to look for collisional or evaporative effects. 
+One is the ability to reduce population without perturbing phase space distribution, mentioned and used to look for collisions in~\cite{See the main text.}.
+This is non-trivial, and many possible techniques have key drawbacks. 
+For example it is not possible to change the discharge yield of OH in our supersonic expansion without also influencing the temperature of the initial distribution, which is effected by the discharge.
+We opt for the application of microwaves during deceleration to couple weak and strong field seeking states at low magnitudes of electric fields experienced by all molecules when flying through a de-energized stage just after switching.
+The microwaves are applied via microwave horn and have a long wavelength relative to the cloud, so that microwave power variations across the cloud are not relevant.
+The microwaves are applied early during deceleration, so that the molecules have many stages of deceleration and the process of trap-loading left to remix any asymmetries in the removal process.
+It is difficult to experimentally verify that the phase space distribution function is truly unaffected in all six dimensions, but in at least one dimension, the time of flight profile of slowed molecules after deceleration, the distribution is unaffected even by tenfold reductions using this technique.
+Unfortunately we have only recently developed this capability and cannot back-apply it to the experiments in~\cite{Stuhl2012evap}.
+
+Another tool is to compare the populations under two related conditions- the first a normal evaporation sequence and the second an evaporation with time-reversed microwave frequency. 
 In other words, the cut goes backwards from deep to shallow. 
-This comparison subjects all molecules to the same integrated microwave power, and thus the two conditions would be equivalent in a situation with only single particle effects. 
-With evaporative effects, the normal condition ought to perform better. 
-This is indeed what we consistently observe, at the 5\% level, see fig.~\ref{fig:normenhance}.
+This comparison subjects all molecules to the same integrated microwave power, and thus the two conditions should be equivalent in a situation with only single particle effects.
+One possible exception could be the existence of very slow single particle transfers to other trapped substates which could hide from the microwaves or interact with them differently, but we find no clear evidence for this.
+With evaporative effects, the normal condition ought to perform better, though perhaps not very significantly if the sequence is not well optimized. 
+This we have performed in the original system, and we consistently observe higher final numbers from the forward sequence, at the 5\% level, see Fig.~\ref{fig:normenhance}.
 
 %We have also pursued the precise calibration of our LIF system, using a careful comparison to Raman scattering of $\text{H}_2$, as described in~\cite{Bischel1986}. 
 %Our results suggest that since 2014, our molecule number has been about $1000$, yielding a peak density of $10^7/\text{cm}^3$ assuming a thermal distribution, and a collision rate of not more than $0.1/\text{s}$.
@@ -150,7 +163,7 @@ In conclusion, the roles of collisional effects in~\cite{Stuhl2013,Stuhl2012evap
 %The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect. 
 %There are some remaining discrepancies between simulations and experiments of electric field induced loss which may relate to collisions.
 Despite the effect of spin-flip losses and some other discoveries, spectroscopic comparisons and evaporation subtractions still point to an evaporative effect. 
-The development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system described in the main text.
+The development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system.
 
 %includes uncited bib entries
 %\nocite{*}
