@@ -57,14 +57,14 @@ prl,
 
 %\preprint{APS/123-QED}
 
-\title{Supplementary Information}%
+\title{Supplementary Materials}%
 \maketitle
 
 The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2013,Stuhl2012evap}.
 It has become evident that a significant portion of the effects attributed to collisions could in fact be attributed to spin-flip losses.
 In what follows we provide the interested reader with our current best understanding of the situation.
 
-We begin with reference~\cite{Stuhl2013} on E-field induced inelastic collisions. 
+We begin with reference~\cite{Stuhl2013} on electric field induced inelastic collisions. 
 The authors identified and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
 An appendix of~\cite{Stuhl2013} explains this well.
 Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important correction to the mathematics in the appendix of~\cite{Stuhl2013}.
@@ -73,7 +73,7 @@ Relative to the approach taken in the appendix of~\cite{Stuhl2013}, we make the 
 Our correction relates to the next step, where an integral calculation for the loss rate is performed.
 In~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
 \begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2n(r)dr\!\int\displaylimits_0^\infty \!n(v_\vartheta)dv_\vartheta\left( \frac{v_\vartheta}{\pi r} P_\text{hop}(r,v_\vartheta)\right)
+\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\vartheta)dv_\vartheta\left( \frac{v_\vartheta}{\pi r} P_\text{hop}(r,v_\vartheta)\right)
 \end{equation}
 Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^\infty 4\pi r^2n(r)=1$, and of the form $n(r)\propto e^{-\mu_BB`r/kT}$. 
 Likewise $n(v_\vartheta)$ is the usual normalized Maxwellian velocity distribution. 
@@ -90,7 +90,7 @@ Although the two integrals differ significantly in their conception, mathematica
 
 The influence of this on the deconvolution procedure relates to the details of the two-body fitting routine.
 One plus two body fits were performed to various decay trap curves, with the one body component fixed to the value expected due to vacuum scattering and spin-flip loss.
-An example of  such decay curves is shown in fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
+An example of  such decay curves is shown in Fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
 The problem is that with the stronger spin-flip loss, it seems no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
 Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone regions of phase space. 
 If thermalization is slow enough, spin-flip loss can actually masquerade as a two-body population curve, since it can lead to a loss rate that decreases over time.
@@ -98,15 +98,14 @@ If thermalization is slow enough, spin-flip loss can actually masquerade as a tw
 
 \begin{figure}
 \includegraphics[width=\linewidth]{SuppFigs/combo_out.png} 
-\label{fig:eil}
-\caption{Experimental E-field induced loss data with an attempted overlap to spin-flip loss simulations. (b) Two body fits from~\cite{Stuhl2013} with spin flip loss single particle simulation in red.}
+\caption{Experimental electric field induced loss data with an attempted overlap to spin-flip loss simulations. (b) Two body fits from~\cite{Stuhl2013} with spin flip loss single particle simulation in red.\label{fig:eil}}
 \end{figure}
 
-We can perform purely single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in fig.~\ref{fig:eil}(a).
+We can perform purely single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in Fig.~\ref{fig:eil}(a).
 The simulations do predict a loss rate that turns off over time, and they do a decent job matching the magnitude of the loss induced by the electric field.
-We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the data obtained from this single particle spin-flip loss simulation, see fig.~\ref{fig:eil}(b). 
+We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the single particle spin-flip loss simulation traces, see Fig.~\ref{fig:eil}(b). 
 This suggests that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
-Of course there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment.
+Still, there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment, and in the long time magnitude of the loss, which is maybe $20\%$ larger in experiment than simulation.
 One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement between simulation and experiment.
 Unfortunately there are many challenges in the quantitative application of simulations such as these, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
 We think the best path forward is to perform future collisional studies with the single-particle effect removed, as described in the main text.
@@ -119,7 +118,7 @@ This correction results in a $15\%$ increase in the magnetic dipole moment used 
 The data show a sudden suppression below $480\text{ G}$, consistent with the hypothesis of a suppressed population only if this is the location of a certain avoided crossing, but with the magnetic dipole moment correction the crossing is actually located closer to $400\text{ G}$.
 Without this, the fits used to calculate temperature under the suppression hypothesis are no longer trustworthy. 
 Without the suppression hypothesis, the temperatures fit in figure 3 of~\cite{Stuhl2012evap} are not reliable, and this is the same conclusion supported by the enhanced magnitude of spin-flip losses we are reporting.
-At the temperatures fitted to those spectra, the spin-flip loss caused by the E-field used during evaporation are large enough to significantly influence the population, see the table in the main text.
+At the temperatures fitted to those spectra, the spin-flip loss caused by the electric field used during evaporation are large enough to significantly influence the population, see the table in the main text.
 Nonetheless, without fitting any temperatures, it is still possible to use normalized spectra to look for enhancements in density caused by the evaporation.
 The normalization simply rescales the trace so that the area beneath adds up to the observed total population by laser induced fluorescence. 
 Without it, spectroscopies of smaller populations yield distributions with enclosed areas that are decreased much more than the actual population.
