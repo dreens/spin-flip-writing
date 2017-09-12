@@ -24,3 +24,10 @@ diff:
 clean:
 	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg}
 	rm -f ${sname}.{ps,pdf,log,aux,out,dvi,bbl,blg}
+
+all:
+	make clean
+	make figs
+	make pdf
+	make supp
+	make diff

@@ -19,7 +19,7 @@
    inkscape:export-xdpi="349.98199"
    inkscape:export-ydpi="349.98199">
   <sodipodi:namedview
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      inkscape:window-maximized="1"
      inkscape:window-y="1"
      inkscape:window-x="0"
@@ -1497,6 +1497,13 @@
          id="path25187"
          inkscape:connector-curvature="0" />
     </g>
+    <rect
+       style="font-style:normal;font-weight:normal;font-size:12px;font-family:Dialog;opacity:1;color-interpolation:auto;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.86152148;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:1.86152146, 5.58456436;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+       id="rect15929"
+       width="90.064171"
+       height="17.45636"
+       x="160.50288"
+       y="257.67084" />
   </g>
   <g
      inkscape:label="Topper"
@@ -1506,7 +1513,7 @@
        id="text10807"
        y="271.77515"
        x="162.86028"
-       style="fill-opacity:1;color-rendering:auto;color-interpolation:auto;stroke:none;text-rendering:auto;stroke-linecap:butt;stroke-miterlimit:10;stroke-opacity:1;shape-rendering:auto;fill:#000000;stroke-dasharray:none;font-weight:normal;stroke-width:1px;font-family:sans-serif;font-style:normal;stroke-linejoin:miter;font-size:80px;stroke-dashoffset:0;image-rendering:auto;font-variant:normal;font-stretch:normal;line-height:25px;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;color-interpolation:auto;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
        xml:space="preserve"><tspan
          style="font-size:16px"
          y="271.77515"
@@ -1514,7 +1521,7 @@
          id="tspan10805"
          sodipodi:role="line">Δ <tspan
    id="tspan11553"
-   style="font-size:13.33333333px">= 1.7 GHz</tspan></tspan></text>
+   style="font-size:13.33333302px">= 1.7 GHz</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -7040,13 +7047,6 @@
        d="m 168.26439,274.16044 v 34.65991"
        id="path11271"
        inkscape:connector-curvature="0" />
-    <rect
-       style="fill-opacity:1;color-rendering:auto;color-interpolation:auto;stroke:none;text-rendering:auto;stroke-linecap:square;stroke-miterlimit:10;stroke-opacity:1;shape-rendering:auto;fill:#ffffff;stroke-dasharray:1.86152146, 5.58456435999999989;font-weight:normal;stroke-width:1.86152148;font-family:'Dialog';font-style:normal;stroke-linejoin:miter;font-size:12px;stroke-dashoffset:0;image-rendering:auto;opacity:1;fill-rule:nonzero;paint-order:stroke markers fill"
-       id="rect15929"
-       width="90.064171"
-       height="17.45636"
-       x="160.50288"
-       y="257.67084" />
     <image
        y="27.969957"
        x="324.01813"
