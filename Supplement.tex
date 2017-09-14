@@ -62,7 +62,8 @@ pra,
 
 The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2013,Stuhl2012evap}.
 These investigations have revealed that an important fraction of the effects attributed to collisions are in fact attributable to spin-flip losses.
-In what follows we provide the interested reader with our current best understanding of the situation.
+In Secs.~\ref{sec:eic,sec:evap} we provide the interested reader with our current best understanding of the situation.
+Lastly, we provide in Sec.~\ref{sec:der} an algebraic derivation of the loss enhancement factor presented in Eqn.~3 of the main text~\cite{smt}.
 
 \section{Electric Field Induced Collisions}
 We begin with reference~\cite{Stuhl2013} on electric field induced inelastic collisions. 
@@ -161,11 +162,35 @@ This we have performed in the original system, and we consistently observe highe
 %At this rate, only $1\%$ of molecules collide during a $100\text{ ms}$ experiment, and only a fraction of those collisions would result in cooling. 
 %Nonetheless, there are uncertainties with the calibration, and it is possible that some decline in system performance could be involved, since we have a record of decreased voltage conditioning performance in our decelerator.
 
-In conclusion, the roles of collisional effects in~\cite{Stuhl2013,Stuhl2012evap} are reduced by spin-flip losses and other modifications to our understanding.
+In conclusion, the roles of collisional effects in Refs.~\cite{Stuhl2013,Stuhl2012evap} are reduced by spin-flip losses and other modifications to our understanding.
 %The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect. 
 %There are some remaining discrepancies between simulations and experiments of electric field induced loss which may relate to collisions.
 Despite the effect of spin-flip losses and some other discoveries, spectroscopic comparisons and evaporation subtractions still point to an evaporative effect. 
 The development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system.
+
+\section{Loss Enhancement Derivation}
+
+Here we derive the loss enhancement factor presented in Eqn.~3 of the main text~\cite{smt}, and repeated here:
+\begin{equation}
+\eta= \left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
+\end{equation}
+The key idea is to compare the areas of the contour surfaces of energy $\kappa$ which sets the energy below which spin-flips can occur.
+There is no exact energy scale for which a molecule is guaranteed to hop, but rather their velocity and direction contribute to the Landau-Zener probability (Eqn.~2, Ref.~\cite{smt}).
+For the purposes of a scaling law, the average thermal velocity $v_T$ normal to the surface can be used, and a probability threshold of $P>1/e$.
+These assumptions allow us to define: 
+\begin{equation}
+\kappa=\sqrt{\hbar\dot{G}}=\sqrt{2\hbar v_T B`},
+\end{equation} 
+where $G$ is the energy gap between the trapped state and its spin flip partner, and $B'$ is the trap gradient.
+
+One complication is that in a quadrupole trap there is a weak and a strong axis, so that $B'$ is not actually a constant but varies by a factor of two in different directions.
+Once a sufficient electric field is applied, the gradient in the two directions within the loss plane becomes negligible, (Eqn.~1, Ref.~\cite{smt}) and only the gradient normal to the loss plane matters.
+In the case of electric field applied between the faces of permanent magnets used to create a magnetic quadrupole trap, the loss plane is normal to the strong axis of the trap, so we use $B'=B'{\text{strong}}$ throughout, and use equal gradients in the loss plane.
+Before application of electric field, the $\kappa$ valued energy contour is an oblate ellipsoid of long radius $r=2\kappa/\mu_\text{eff}B'$. It's area is then:
+\begin{equation}
+2\pi\cdot1.38r^2,
+\end{equation}
+where the prefactor comes from the specific $2:1$ aspect ratio of the ellipsoid.
 
 %includes uncited bib entries
 %\nocite{*}
