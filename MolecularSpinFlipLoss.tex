@@ -142,7 +142,7 @@ This is only challenging near the trap center where the magnetic field is vanish
 When electric field is added, it dominates in the trap center. % where the magnetic field is weakest. 
 %As correctly noted in~\cite{Bohn2013}, this causes a quantization axis to be maintained, either of $\, d_\text{eff}\vec{E} \,{\pm}\,\mu_\text{eff}\vec{B}$.
 Now suppose a molecule initially follows the quantization axis $d_\text{eff}\vec{E}\,{+}\,\mu_\text{eff}\vec{B}$ and is in the hemisphere where $\phi\,{=}\,\vec{E}\cdot\vec{B}>0$, i.e. the fields are closer to parallel than antiparallel.
-During its orbit, $\vec{B}$ continuously rotates while $\vec{E}$ maintains its lab frame orientation, so that eventually $\phi<0$ and $\vec{E}$ and $\vec{B}$ are closer to anti-parallel. 
+During its orbit, $\vec{B}$ continuously rotates while $\vec{E}$ maintains its lab frame orientation, so that eventually $\phi\,{<}\,0$ and $\vec{E}$ and $\vec{B}$ are closer to anti-parallel. 
 Now the length of the quantization axis $d_\text{eff}\vec{E}\,{+}\,\mu_\text{eff}\vec{B}$, which is proportional to the field induced energy shift of the molecule, actually decreases with increasing $|B|$.
 The molecule is then magnetically strong field seeking and is lost.
 Therefore, to remain well-trapped a molecule must have the quantization axis $d_\text{eff}\vec{E}\,{+}\,\text{sign}(\phi)\mu_\text{eff}\vec{B}$, so that an increase in magnitude of the magnetic field increases its potential energy. 
@@ -167,7 +167,7 @@ However, in the case of applying mixed fields during trapping, this suppression 
 \caption{
 Enhancements ($\eta$) and loss rates ($\Gamma$) for OH with typical applied fields. 
 Zero field values are equivalent to atomic spin-flip loss. 
-Electric field is required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}, or applied for polarization of the molecules to study collisions~\cite{Stuhl2013}. Background loss is $2\text{ s}^{-1}$, experiment length $100\text{ ms}$.
+Electric field is required during evaporation and spectroscopy to open avoided crossings for $|e\rangle$ parity states~\cite{Stuhl2012evap,Stuhl2012uwave}, or applied for polarization of the molecules to study collisions~\cite{Stuhl2013}. Background loss is $2\,\text{s}^{-1}$, experiment length $100\,\text{ms}$.
 }
 \label{tab:rates}
 \begin{tabular*}{\linewidth}{l*{4}{@{\quad}c}@{\extracolsep{\fill}}l}
@@ -186,10 +186,10 @@ Electric field is required during evaporation and spectroscopy to open avoided c
 To deduce the effect of this loss plane on the ensemble, we consider molecular trajectories in light of the Landau Zener formula:
 \begin{equation}
 \label{eqn:lz}
-P_\text{hop}=e^{-\delta^2/\hbar v_zdG/dz},
+P_\text{hop}=e^{-\delta^2/\hbar\dot{G}},
 \end{equation}
-which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\delta$ and the rate of approach of the energy levels $\dot{G}=v_zdG/dz$. 
-Here $z$ and $v_z$ are normal to the plane, and we neglect the component of $\dot{G}$ due to the other coordinates since from Eqn.~\ref{eqn:energetics} it is clear that dG/dz dominates.
+which relates the probability of diabatically hopping between two states $P_\text{hop}$ to the energetic coupling between the states $\delta$ and the rate of approach of the energy levels $\dot{G}\,{=}\,v_zdG/dz$. 
+Here $z$ and $v_z$ are normal to the plane, and we neglect the component of $\dot{G}$ due to the other coordinates since from Eqn.~\ref{eqn:energetics} it is clear that $dG/dz$ dominates.
 We can also set $\delta$ to the minimum energy gap along the trajectory, which is found in the plane.
 This facilitates direct numerical computation of loss rates by integrating the molecule flux through the plane for a thermal distribution, weighted by the hopping probability.
 %The extent of the loss enhancement caused by electric field is best addressed as discussed below, but a useful scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.~\ref{fig:blocking}e-f.
@@ -200,17 +200,23 @@ This facilitates direct numerical computation of loss rates by integrating the m
 %Here we have defined $\kappa$ as the energy scale of spin-flips in the non-enhanced case- it depends in general on trap gradient and temperature.
 % FULL DERIVATION IN SUPP, DISCUSSION HERE
 %The Landau-Zener loss through the plane can be numerically integrated as a flux.
-We perform these integrations for OH in our previous $2\text{ T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
+We perform these integrations for OH in a $2\,\mbox{T/cm}$ magnetic quadrupole~\cite{Sawyer2008} under various electric fields of interest (Tab.~\ref{tab:rates}).
 
 It is also possible to proceed algebraically, which is useful for understanding the scaling of the effect with various parameters.
 This yields a loss electric field induced loss enhancement factor of
 \begin{equation}
-\eta= \left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
+\eta= \left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3},
 \end{equation}
+See Sec.~3 of~\cite{ssm} for the full derivation. 
 Here $\kappa$ is a characteristic energy scale for spin-flips that can be derived by setting $P\,{=}1/e$ in Eqn.~\ref{eqn:lz} and solving for $\delta$. 
-To get $\eta$, one simply compares the areas of the $\kappa$ valued energy contours with and without electric field, solving $G(0,\mathcal{B}_{||},\mathcal{E})\,{=}\,\kappa$ from Eqn.~{eqn:energetics} in the former case.
-It is interesting to note that in the limit of small $\Delta$ or linear Stark effect, the loss enhancement increases without bound.
-This makes sense from Eqn.~\ref{eqn:energetics}, where we see that without $\Delta$, $G=0$ in the entire \epb{} plane.
+%To get $\eta$, one simply compares the areas of the $\kappa$ valued energy contours with and without electric field, solving $G(0,\mathcal{B}_{||},\mathcal{E})\,{=}\,\kappa$ from Eqn.~{eqn:energetics} in the former case.
+This means that for electric fields with $d_\text{eff}E>\sqrt{\kappa\Delta}$, the loss enhancement is almost cubic with electric field.
+Crucially, it is not $\Delta$ that sets the relevant scale, as one might naively suppose given that this is the energy beyond which the Stark effect is linear and the molecule is polarized.
+Instead it is $\sqrt{\kappa\Delta}$, which is in general much smaller.
+For $50\,\text{mK}$ OH in a $2\,\text{T/cm}$ trap~\cite{Sawyer2008}, $\kappa\,{=}\,5\,\text{MHz}\,{<<}\,\Delta\,{=}\,1.7\,\text{GHz}$.
+
+%It is interesting to note that in the limit of small $\Delta$ or linear Stark effect, the loss enhancement increases without bound.
+%This makes sense from Eqn.~\ref{eqn:energetics}, where we see that without $\Delta$, $G=0$ in the entire \epb{} plane.
 
 Returning to the numerical approach, we note that the direct integration of flux is a key improvement relative to our previous work~\cite{Stuhl2013}, where electric fields were applied in our magnetic quadrupole trap to study their effect on collisions.
 The mechanism of molecular spin-flip loss was correctly identified in~\cite{Stuhl2013}, and an appendix of that work describes the effect well. 
@@ -242,6 +248,7 @@ These domains produce a magnetic quadrupole trap with zero along the $z$-axis, s
 
 Our idea is to use a pair of 2D quadrupole traps, one magnetic and the other electric, with orthogonal centerlines (Fig.~\ref{fig:CAD}):
 \begin{equation}
+\label{eqn:BE}
 \vec{B}=B'x\hat{y}-B'y\hat{x}\quad\quad\vec{E}=E'y\hat{y}-E'z\hat{z}
 \end{equation}
 We achieve these fields in a geometry that matches our Stark decelerator~\cite{Bochinski2003}. 
@@ -251,12 +258,14 @@ We achieve these fields in a geometry that matches our Stark decelerator~\cite{B
 This geometry has \epb{} in both the $x\,{=}\,0$ and $y\,{=}\,0$ planes, and $\mu_\text{eff}B \,{<}\, d_\text{eff}E$ in a large cylinder surrounding the $z$-axis- a perfect recipe for large spin-flip losses.
 However, by adding a small magnetic field $\vec{B}\,{=}\,B_\text{coil}\hat{z}$ along the centerline of the magnetic quadrupole with an external bias coil, a dramatic change can be made to the surfaces where \epb{} with only a tiny change to the trapping potential.
 
-\bcl{} morphs the \epb{} surface from a pair of planes into a hyperbolic sheet, pushing it away from the $z$-axis where the magnetic field is smallest. 
-Algebraically, \epb{} occurs when $\vec{E}\,{\cdot}\,\vec{B}\,{=}\,B'E'xy\,{-}\,B_\text{coil}E'z\,{=}\,0$ and hence $x\,{\cdot}\,y\,{=}\, z\,{\cdot}\,B_\text{coil}/B'$.
-In Fig.~\ref{fig:LSurfs}, the surfaces where \epb{} for several \bcl{} magnitudes are calculated wherever the splitting there is small enough that a molecule of thermally average velocity orthogonal to the surface would have a $1/e$ or greater hopping probability.
+\bcl{} morphs the \epb{} surface from a pair of planes into the hyperbolic sheet given by
+$x\,{\cdot}\,y\,{=}\, z\,{\cdot}\,B_\text{coil}/B'$
+(Substitute Eqn.~\ref{eqn:BE} into  $\vec{E}\,{\cdot}\,\vec{B}\,{=}\,0$).
+This means that \epb{} is pushed away from the $z$-axis where $\vec{B}$ is smallest.
+In Fig.~\ref{fig:LSurfs}, the surfaces where \epb{} for several \bcl{} magnitudes are calculated and shown only where a molecule of thermally average velocity normal to the surface would have a $1/e$ or greater hopping probability.
 The loss regions ought to be tuned far enough from the trap center that molecules cannot access them.
 This is indeed what we observe, note the striking difference in trap lifetimes in Fig.~\ref{fig:WVplot}a.
-With only $200\text{ G}$ bias field (the trap is $5\text{ kG}$ deep) the loss is suppressed below that due to background gas.
+With only $200\,\text{G}$ bias field (the trap is $5\,\text{kG}$ deep) the loss is suppressed below that due to background gas.
 
 
 \begin{figure}[tb]
@@ -269,11 +278,11 @@ The purple star marks the trap center, to which molecules are confined within a 
 \end{figure}
 
 In order to further verify our calculations of loss by integration of molecule fluxes across \epb{} surfaces, we perform these calculations for a diverse collection of loss surfaces obtained by translation of the magnetic pins in their mounts. 
-This translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B}\propto B^\prime z\hat{z}$. 
+This translation serves to disrupt the idealized 2D magnetic quadrupole by adding a small trapping field $\vec{B} \,{\propto}\, B^\prime z\hat{z}$. 
 This dramatically alters the \epb{} surfaces, the magnitude of the fields on them, and the hopping probability across them.
 We perform this translation in situ, and obtain a reasonable agreement (Fig.~\ref{fig:WVplot}b). 
 This is particularly noteworthy given that this direct integral calculation assumes a purely thermal distribution and doesn't involve the computation of any actual trajectories.
-The fits are performed using only temperature as a free parameter, which enters the calculation via the thermal distribution used for integration, and fits to $170\,{\pm}\,20\text{ mK}$.
+The fits are performed using only temperature as a free parameter, which enters the calculation via the thermal distribution used for integration, and fits to $170\,{\pm}\,20\,\text{mK}$
 ~\footnote{Calculation performed in COMSOL: \href{https://github.com/dreens/spin-flip-integration/}{Source Code}}.
 An intuitive explanation for the intriguing double well structure in population verses \bcl{} is that \bcl{} first translates the magnetic zero along the z-axis, overlapping it with larger electric fields at first before moving it out of the trap.
 
@@ -332,7 +341,7 @@ This is in contrast with other strategies for plugging the hole of a magnetic tr
 With loss removed, we observe a population trend whose initially fast decay rate decreases over time (Fig.~\ref{fig:WVplot}a, green dots), suggesting a two-body collisional effect.
 We test this by reducing the initial population fivefold but without changing its spatial or velocity distribution~\cite{ssm}, and then scale the resulting trend by five (green circles). 
 If collisions had contributed, this new trend would show less decay, but we observe no significant change.
-This seeming lack of collisions could be due to the warmer initial temperature of $170\text{ mK}$, in contrast to the earlier work at and below $50\text{ mK}$~\cite{Stuhl2012evap}.
+This seeming lack of collisions could be due to the warmer initial temperature of $170\,\text{mK}$, in contrast to the earlier work at and below $50\,\text{mK}$~\cite{Stuhl2012evap}.
 The results of this paper are important for the evaporation work, since the electric fields used for the RF knife ought to have caused a significant spin-flip loss effect, especially at low temperatures~\cite{ssm}.
 An alternative hypothesis for the population trend is the existence of chaotic trap orbits with long escape times~\cite{Gonzalez-Ferez2014}.
 Moving forward, we aim to increase the density by means of several improvements~\cite{Even2015,Segev2017}.
