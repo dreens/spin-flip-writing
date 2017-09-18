@@ -58,36 +58,55 @@ pra,
 %\preprint{APS/123-QED}
 
 \title{Supplementary Materials}%
+
+\author{David Reens}
+\thanks{Contributed equally. Email dave.reens@colorado.edu or hao.wu@colorado.edu.}
+
+\author{Hao Wu}
+\thanks{Contributed equally. Email dave.reens@colorado.edu or hao.wu@colorado.edu.}
+
+\author{Tim Langen}%
+\altaffiliation{Present Address: 5. Physikalisches Institut and Center for Integrated Quantum Science and Technology (IQST), Universit\"at Stuttgart, Pfaffenwaldring 57, 70569 Stuttgart, Germany}
+
+\author{Jun Ye}
+\affiliation{JILA, National Institute of Standards and Technology and the University of Colorado and\\ Department of Physics, University of Colorado, Boulder, Colorado 80309-0440, USA}
+
+
+\date{\today}
 \maketitle
 
-The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in references~\cite{Stuhl2013,Stuhl2012evap}.
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
+
+
+The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in Refs.~\cite{Stuhl2013,Stuhl2012evap}.
 These investigations have revealed that an important fraction of the effects attributed to collisions are in fact attributable to spin-flip losses.
 In Sec.~\ref{sec:eic} and Sec.~\ref{sec:evap} we provide the interested reader with our current best understanding of the situation.
 Lastly, we provide in Sec.~\ref{sec:der} an algebraic derivation of the loss enhancement factor presented in Eqn.~3 of the main text~\cite{smt}.
 
-\section{Electric Field Induced Collisions\label{sec:eic}}
+\subsection{Electric Field Induced Collisions\label{sec:eic}}
 
-We begin with reference~\cite{Stuhl2013} on electric field induced inelastic collisions. 
-The authors identified and investigated the same single particle spin-flip loss enhancement process we discuss in the present work, and an attempt was made at deconvolution from the collisional effect. 
-An appendix of~\cite{Stuhl2013} explains this well.
-Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important improvement to the mathematics in the appendix of~\cite{Stuhl2013}.
+We begin with Ref.~\cite{Stuhl2013} on electric field induced inelastic collisions. 
+The authors identified the same single particle spin-flip loss enhancement process we discuss~\cite{smt}, and an attempt was made at deconvolution from the collisional effect (App.~A, Ref.~\cite{Stuhl2013}).
+%An appendix of~\cite{Stuhl2013} explains this well.
+Since that time, new observations prompted us to make an even more careful investigation, during which we discovered an important mathematical improvement.
 
-Relative to the approach taken then, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters, and the population is a thermalized Maxwell-Boltzmann distribution.
+Relative to the approach taken in App.~A of Ref.~\cite{Stuhl2013}, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters, and the population is a thermalized Maxwell-Boltzmann distribution.
 Our correction relates to the next step, where an integral calculation for the loss rate is performed.
-In~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
+In Ref.~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
 \begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\vartheta)dv_\vartheta\left( \frac{v_\vartheta}{\pi r} P_\text{hop}(r,v_\vartheta)\right)
+\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\theta)dv_\theta\left( \frac{v_\theta}{\pi r} P_\text{hop}(r,v_\theta)\right)
 \end{equation}
 Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^\infty 4\pi r^2n(r)=1$, and of the form $n(r)\propto e^{-\mu_BB`r/kT}$. 
-Likewise $n(v_\vartheta)$ is the usual normalized Maxwellian velocity distribution. 
-Implicit in this integration is the simplifying assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\vartheta/\pi r$.
-Though not a bad place to start, this approximation is rather rough given that molecules are certainly not following circular orbits of constant $v_\vartheta$ but are in general following some unusual trap motion.
+Likewise $n(v_\theta)$ is the usual normalized Maxwellian velocity distribution. 
+Implicit in this integration is the simplifying assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\theta/\pi r$.
+Though not a bad place to start, this approximation is rather rough given that molecules are certainly not following circular orbits of constant $v_\theta$ but are in general following some unusual trap motion.
 Our correction is to perform an integration of flux through the loss plane directly:
 \begin{equation}
 \Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right)
 \end{equation}
 Here the same distributions are used, but the spatial distribution is integrated over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by the velocity $v_z$ to give a flux.
-The coordinates $z$ and $\vartheta$ are mathematically equivalent in the central plane, but $z$ is more appropriate given that integration is no longer spanning the $\vartheta$ direction.
+The coordinates $z$ and $\theta$ are mathematically equivalent in the central plane, but $z$ is more appropriate given that integration is no longer spanning the $\theta$ direction.
 This flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency.
 Although the two integrals differ significantly in their conception, mathematically the changes to the integrand and the Jacobean reduce to precisely an overall scaling factor of $\pi$.
 
@@ -97,29 +116,37 @@ Although the two integrals differ significantly in their conception, mathematica
 \end{figure}
 
 The influence of this on the deconvolution procedure relates to the details of the two-body fitting routine.
-One plus two body fits were performed to various decay trap curves, with the one body component fixed to the value expected due to vacuum scattering and spin-flip loss.
-An example of  such decay curves is shown in Fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
+One plus two body fits were performed to various decay trap curves:
+\begin{equation}
+\dot{N}=-\gamma N-\beta N^2,
+\end{equation}
+with the one body rate $\gamma$ fixed to the value expected due to vacuum scattering and spin-flip loss.
+An example of such decay curves is shown in Fig.~\ref{fig:eil}(a), where Electric field is turned on suddenly after various hold times.
 With the stronger spin-flip loss, it is no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
-Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone regions of phase space.
+Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone trajectories of phase space.
 If thermalization is slow, spin-flip loss can have a rate that decreases over time, producing a time dependence of population like that of a two-body effect.
-Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in~\cite{Stuhl2013} (Fig.~\ref{fig:eil}(b), shaded region), the possibility of its influencing the data in a non-single-particle manner was not considered.
+Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in Ref.~\cite{Stuhl2013} (Fig.~\ref{fig:eil}(b), shaded region), the possibility of its influencing the data in a non-single-particle manner was not addressed.
 
 We can perform single particle simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the time dependent experiment data points in Fig.~\ref{fig:eil}(a).
-We can even perform a two body fitting procedure like the one used in~\cite{Stuhl2013} to the single particle spin-flip loss simulation traces, see Fig.~\ref{fig:eil}(b). 
-The results suggest that the effect attributed to two-body collisions could be largely explained by spin-flip losses.
-Still, there are notable differences, such as in the initial rate of the decays in fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment, and in the long time magnitude of the loss, which is maybe $10\%$ larger in experiment than simulation.
+We can even perform the same one plus two body fitting procedure to the single particle spin-flip loss simulation traces.
+The single particle traces yield "two-body" values that overlap nicely with those derived in Ref.~\cite{Stuhl2013}, see Fig.~\ref{fig:eil}(b).
+This suggests that the effect attributed to two-body collisions is largely explained by spin-flip losses.
+Still, there are notable differences, such as in the initial rate of the decays in Fig.~\ref{fig:eil}(a), which is faster in simulation than in experiment, and in the long time magnitude of the loss, which is maybe $10\%$ larger in experiment than simulation.
 One avenue to try and be more quantitative would be to incorporate collisions in the simulation and see what collision rates yield the best agreement.
-Unfortunately there are many challenges in the quantitative application of these simulations, such as uncertainty regarding the initial distribution and the existence of various partially trapped substates.
-We think the best path forward is to perform future collisional studies with the single-particle effect removed~\cite{smt}.
+Unfortunately there are many challenges in the quantitative application of these simulations, such as the existence of various partially trapped substates.
+We think the best path forward is to perform future collisional studies with the single-particle effect removed, as achieved in our most recent trap~\cite{smt}.
 
-\section{Evaporation\label{sec:evap}}
+\subsection{Evaporation\label{sec:evap}}
 
 % Lead off with the connection to the spin-flip loss. More important at lower temperature. And thus we give up on suppression, focus only on warmer temperatures, and only on what we can directly see. 
-With regard to~\cite{Stuhl2012evap}, the present study has important ramifications, since the process of evaporation and depletion spectroscopy required the use of electric fields. 
-Molecules were transferred from positive to negative parity at specific magnetic fields, and subsequently de-stabilized by the addition of electric field to open avoided crossings.
-These crossings would only allow molecules above $500\text{ G}$ to escape, so it was thought that a cold population insensitive to the spectroscopic technique was building up at lower fields.
+With regard to Ref.~\cite{Stuhl2012evap}, the present study has important ramifications. 
+The process of evaporation and of depletion spectroscopy both require two steps.
+First molecules are transferred from positive to negative parity by microwaves targeting a specific range of magnetic fields.
+After this transfer, the molecules are still trapped, and only by the subsequent addition of electric field to open avoided crossings can these opposite parity molecules escape from the trap.
+In the case of depletion spectroscopy, there is a final step of measuring the population by laser induced fluorescence, so that the population originally at the magnetic field transferred by microwaves can be inferred by subtraction.
+The crossings opened by electric field would only allow molecules in the upper $90\%$ of the trap to escape, so it was thought that a cold population insensitive to the spectroscopic technique could be building up at low magnetic fields.
 Given the existence of spin-flip loss caused by the electric field at the very center of the trap where such a cold population would build up, we reject this hypothesis of a hidden cold population.
-The cold hidden population hypothesis was essential to the temperature fits performed in Fig.~3 of~\cite{Stuhl2012evap}, which are therefore no longer trustworthy.
+Since this hypothesis was essential to the temperature fits performed in Fig.~3 of Ref.~\cite{Stuhl2012evap}, they are therefore no longer trustworthy.
 %This was supported by the direct optical detection of this population and by the goodness of fits performed under the hypothesis.
 %Regarding the fits, an important correction has been discovered and is discussed in~\cite{Maeda2015}, where a thorough investigation of hyperfine shifts and external field effects was performed for OH.
 %This correction results in a $15\%$ increase in the magnetic dipole moment used to interpret spectroscopy, and thus to the magnetic field at a particular microwave frequency. 
@@ -131,11 +158,15 @@ The cold hidden population hypothesis was essential to the temperature fits perf
 %At the temperatures fitted to those spectra, the spin-flip loss caused by the electric field used during evaporation are large enough to significantly influence the population, see Tab.~1 in~\cite{smt}.
 
 Nonetheless, without fitting temperatures, it is still possible to use normalized spectra to look for enhancements in density caused by the evaporation.
-The normalization simply rescales the trace so that the area beneath adds up to the observed total population by laser induced fluorescence. 
-Without it, spectroscopies of smaller populations yield distributions with enclosed areas that are decreased much more than the actual population.
 We repeatably find such enhancements for evaporation sequences designed to achieve a twofold temperature reduction, see Fig.~\ref{fig:normenhance}.
 The initial temperature of $59\pm2\text{ mK}$ is higher than reported in~\cite{Stuhl2012evap} due to an important correction to the molecular Hamiltonian found by inclusion of nearly one hundred molecular states~\cite{Maeda2015}.
 
+Regarding the normalization procedure, the idea is simply to require the area beneath the curve to add up to the observed total population by laser induced fluorescence.
+An important question however is why this would need to be done in the first place.
+The spectroscopy is performed by depleting molecules from a given region of the trap over a total time of about a quarter oscillation, so that molecules are not at all frozen in place.
+Relative to a very brief spectroscopy pulse that would only deplete molecules in a given region at that particular instant, the longer pulse can be seen as a way of boosting the signal to noise ratio of the experiment.
+The spectroscopy still gives a value that ought to be proportional to the true instantaneous population in the region of interest, but with a scaling factor relating to details of population transfer in and out of the region of interest while it is probed.
+Without normalization, spectroscopies of smaller populations yield distributions with enclosed areas that are decreased much more than the actual population.
 
 %All of the evaporation traces in Fig.~3 of~\cite{Stuhl2012evap} show density enhancements in the region near $500\text{ G}$, but a further correction changes this.
 %By more carefully investigating the usage of microwave chirp rates and powers, we confirmed that what was previously interpreted as a frequency offset was in fact an ``oort cloud" persisting at larger fields~\cite{Inguscio1999}.
@@ -181,7 +212,7 @@ In conclusion, the role of collisional effects in Ref.~\cite{Stuhl2013} is reduc
 but spectroscopic comparisons and evaporation subtractions still point to an evaporative effect. 
 The development of various more sensitive tools has us poised to more unambiguously identify any future collisional effects in our next generation system.
 
-\section{Scaling Law Derivation\label{sec:der}}
+\subsection{Scaling Law Derivation\label{sec:der}}
 
 Here we derive the loss enhancement scaling law presented in Eqn.~3 of the main text~\cite{smt}, and repeated here:
 \begin{equation}
