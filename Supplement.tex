@@ -187,19 +187,20 @@ However, with respect to collisional effects, the time-reversed case functions l
 To whatever extent an evaporation is successful in facilitating beneficial thermalizing collisions, the time-reversed condition should perform worse.
 %One possible exception could be the existence of very slow single particle transfers to other trapped substates which could hide from the microwaves or interact with them differently, but we find no clear evidence for this.
 %With evaporative effects, the normal condition ought to perform better, though perhaps not very significantly if the sequence is not well optimized. 
-We consistently observe higher final numbers from the forward sequence, at about the 5\% level.
-One possible caveat would be the existence of very slow single-particle shelving processes where molecules slowly leak into some state that is sensitive to the detection laser but not the microwave knife.
+We consistently observe this, at about the 5\% level.
+One possible caveat would be the existence of very slow single-particle shelving processes where molecules leak into some state that is sensitive to the detection laser but not the microwave knife.
 This would result in the forward evaporation yielding higher final numbers by purely single particle means, but no fully plausible processes have been identified.
 For example, electric field induced spin-flip loss could allow the well-trapped $|f,3/2\rangle$ molecules to slowly leak into $|f,1/2\rangle$, and the latter does have a different behavior with respect to microwave spectroscopy. 
 But the electric fields also ought to destabilize these molecules and prevent them from staying in the trap in either case.
 
-More recently, we have developed the ability to reduce population without perturbing phase space distribution, mentioned and used to look for collisions in~\cite{smt}.
+More recently, we have developed the ability to reduce population without perturbing phase space distribution, mentioned and used to look for collisions in Ref.~\cite{smt}.
 This is non-trivial, and many possible techniques have key drawbacks. 
 For example it is not possible to change the discharge yield of OH in our supersonic expansion without also influencing the temperature of the initial distribution, which is effected by the discharge.
-We opt for the application of microwaves during deceleration to couple weak and strong field seeking states at low magnitudes of electric fields experienced by all molecules when flying through a de-energized stage just after switching.
+We opt for the application of microwaves during deceleration to couple weak to strong field seeking states, leading to a probability for transitioning to a strong field seeking state and being deflected out of the beam. 
+We tune the microwaves to be resonant at low magnitudes of electric fields, experienced by all molecules when flying through a de-energized stage just after switching.
 The microwaves are applied via microwave horn and have a long wavelength relative to the cloud, so that microwave power variations across the cloud are not relevant.
-The microwaves are applied early during deceleration, so that the molecules have many stages of deceleration and the process of trap-loading left to remix any asymmetries in the removal process.
-It is difficult to experimentally verify that the phase space distribution function is truly unaffected in all six dimensions, but in at least one dimension, the time of flight profile of slowed molecules after deceleration, the distribution is unaffected even by tenfold reductions using this technique.
+The microwaves are applied early during deceleration, so that the molecules have many stages of deceleration left to remix any outstanding asymmetries in the removal process.
+It is difficult to experimentally verify that the phase space distribution is truly unaffected in all six dimensions, but in at least one projection of phase space, the time of flight profile of slowed molecules after deceleration, the distribution is unaffected even by tenfold reductions using this technique.
 
 %We have also pursued the precise calibration of our LIF system, using a careful comparison to Raman scattering of $\text{H}_2$, as described in~\cite{Bischel1986}. 
 %Our results suggest that since 2014, our molecule number has been about $1000$, yielding a peak density of $10^7/\text{cm}^3$ assuming a thermal distribution, and a collision rate of not more than $0.1/\text{s}$.
@@ -227,8 +228,8 @@ These assumptions allow us to define the loss region as the contour surface of e
 \end{equation} 
 $G$ is the energy gap between the trapped state and its spin flip partner, and $B'$ is the trap gradient.
 
-One complication is that in a quadrupole trap there is a weak and a strong axis, so that $B'$ varies by as much as a factor of two in different directions.
-We assume that the electric field is applied parallel to the strong axis, which leads to a loss plane where $\vec{E}\perp\vec{B}$ perpendicular to the strong axis. 
+One complication is that in a quadrupole trap there is a weak and a strong axis.
+We assume that the electric field is applied parallel to the strong axis, which makes the loss plane where $\vec{E}\perp\vec{B}$ perpendicular to the strong axis. 
 This matches the geometry that has been realized in our experiment~\cite{Stuhl2013}, and is the worst case, but by no more than a constant factor of $2\sqrt{2}$ relative to other directions the electric field could have.
 We always use $B'$ to refer to the stronger gradient.
 
@@ -237,18 +238,18 @@ Its area is then $2\pi\cdot1.38r_0^2$, where the prefactor comes from the specif
 When electric field is applied, the energy gap near the trap zero takes the following functional form:
 \begin{equation}
 \label{eqn:energy}
-G(r,z) = \mu_\text{eff}B'|z| + \alpha(\mu_\text{eff}B'r/2)^3\frac{\Delta\sqrt{\beta\Delta^2+d_\text{eff}^2E^2}}{(d_\text{eff}E)^4},% + \mathcal{O}(z^2,r^4).
+G = \mu_\text{eff}B'|z| + \alpha(\frac{1}{2}\mu_\text{eff}B'r)^3\frac{\Delta\sqrt{\beta\Delta^2\!+\!d_\text{eff}^2E^2}}{(d_\text{eff}E)^4},% + \mathcal{O}(z^2,r^4).
 \end{equation}
 plus higher order terms in $r$ and $z$. 
 Here we use $r$ to denote the in-loss-plane coordinate and $z$ to denote distance away from the loss plane, along the strong axis of the trap. 
 The constants $\alpha$ and $\beta$ are nearly unity for OH and will be ignored henceforth.
-This is essentially Eqn.~1 of Ref.~\cite{smt} but with an explicit coordinate system, and can be derived by series expanding the energy difference between the trapped state and its spin-flip-partner.
+This is a series expansion the energy difference between the trapped state and its spin-flip-partner.
 The energy difference can be derived for OH by diagonalizing the ground state hamiltonian in mixed fields, see App.~A of Ref.~\cite{stuhl2012uwave}, or similarly for any other species.
 
 Now we use Eqn.~\ref{eqn:energy} to compute the area of the surface $G=\kappa$.
 We specialize to the regime where $d_\text{eff}E<\Delta$, so that $\Delta\approx\sqrt{\Delta^2+d_\text{eff}^2E^2}$. 
 For larger fields, one $\Delta$ can be exchanged for $d_\text{eff}E$, but in practice the loss rate is already so high in these regimes that no sample remains trapped.
-The radial extent of the surface can be solved by inverting $\kappa=G(r,0)$:
+The radial extent of the surface can be solved by inverting $\kappa=G|_{z=0}$:
 \begin{equation}
 \label{eqn:rE}
 r_E = \frac{1}{\mu_\text{eff}B'}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\Delta^2}}.
@@ -267,8 +268,12 @@ Outside, $G$ retains a nearly linear dependence on $r$.
 This means that Eqn.~\ref{eqn:rE} only holds for $E$ above some threshold. 
 For smaller $E$, $r_E$ will simply not be significantly perturbed from its zero electric field value of $r_0=2\kappa/\mu_\text{eff}B'$.
 The implication for the enhancement factor in Eqn.~\ref{eqn:eta} is simply that it is only valid when it predicts an enhancement significantly greater than unity.
-In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>\sqrt{\kappa\Delta}$, but below this $\eta$ just gradually returns to unity.
-Eventually when $d_\text{eff}E>\Delta$, $\eta\propto (d_\text{eff}E)^2$ instead of $8/3$, and by this point the enhancement $\eta$ is already greater than $\Delta/\kappa$, generally a very large factor.
+In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>\sqrt{\kappa\Delta}$, but below this $\eta$ gradually returns to unity.
+Eventually when $d_\text{eff}E>\Delta$, the factor of $\sqrt{\beta\Delta^2+d_\text{eff}^2E^2}$ in Eqn.~\ref{eqnSenergy} is better approximated by $d_\text{eff}E$, which leads to the modification $\eta\propto (d_\text{eff}E)^2/\kappa^{4/3}\Delta^{2/3}$. 
+Thus for these larger E-fields, the enhancement factor reduces in its dependence on electric field from order $8/3$ to order $2$.
+At this point, the loss is typically so large as to preclude all but the briefest trapping experiments, see Tab.~I of the main text~\ref{smt}.
+
+%In summary, the loss enhancement scales with the $8/3$ power of the electric field magnitude in the regime where $\sqrt{\kappa\Delta}<d_\text{eff}<\Delta$, where naively one might not expect the electric field to play any role. At even higher fields, the loss is already so large as to preclude successful trapping experiments, but the scaling with electric field does reduce to quadratic order.
 
 
 \bibliographystyle{apsrev4-1_no_Arxiv}
