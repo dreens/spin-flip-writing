@@ -3,7 +3,7 @@
 %
 % Want to do some shaded confidence regions, etc.
 %
-%f = gcf;
+fff = gcf;
 a = gca(fff);
 traces = get(a,'Children');
 un = traces(1);
