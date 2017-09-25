@@ -94,18 +94,32 @@ We conclusively demonstrate and address this with OH molecules in a trap geometr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The ultracold regime extends toward molecules on many fronts\s\cite{Carr2009}. 
-Since the earlier condensation of short-lived homonuclear alkali dimers near Feshbach resonances\s\cite{Greiner2003,Zwierlein2003,Jochim2003}, KRb polar molecules have reached lattice quantum degeneracy\s\cite{Moses2015} and other heterogeneous bialkalis continue to progress\s\cite{Takekoshi2014, Park2015,Guo2016,Liu2017,Rvachov2017}. 
+Weakly bound dimers have been condensed\s\cite{Greiner2003,Zwierlein2003,Jochim2003}, and ground state alkali dimers continue to progress, both homogeneous\s\cite{} and hetereogeneous\s\cite{Takekoshi2014, Park2015,Guo2016,Liu2017,Rvachov2017}. 
+KRb polar molecules have reached lattice quantum degeneracy\s\cite{Moses2015}.
 Recently developed laser cooling strategies are tackling certain nearly vibrationally diagonal molecules\s\cite{Stuhl2008,Hummon2013, Barry2014, Zhelyazkova2014, Hemmerling2016,Truppe2017}. 
 A diverse array of alternative strategies have succeeded to greater or lesser extents on other molecules\s\cite{Doyle1998, Bethlem1999, Bochinski2003, Narevicius2008, Wiederkehr2012, Prehn2016,Liu2017a}. 
-All of these molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density\s\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}. 
-They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for many doubly dipolar molecules due to their internal spin dynamics in mixed electric and magnetic fields. 
+Many of these molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density\s\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}. 
+They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for doubly dipolar molecules due to their internal spin dynamics in mixed electric and magnetic fields. 
 
-The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the first magnetic trapping of neutrals\s\cite{Migdall1985}. 
+%The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the first magnetic trapping of neutrals\s\cite{Migdall1985}. 
 Spin flips were directly observed near $50\s\mu\text{K}$ and overcome with a time-orbiting potential trap\s\cite{Petrich1995} and a plugged dipole trap\s\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates.
-Motivated by the interest in dipolar molecules in mixed fields for quantum chemistry, precision measurement and many-body physics, we previously investigated loss of magnetically trapped hydroxyl radicals (OH) with applied electric field\s\cite{Stuhl2012uwave}. 
-This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J\s {=}\s 3/2}$ ground state manifold other than the most well trapped one (positive parity and full spin polarization, $|f,m_J\s {=}\s 3/2\rangle$, blue in Fig.\s\ref{fig:blocking}). 
-Due to the closely spaced parity doublet, a general feature of Hund's case (a), these states intersect opposite parity states at non-zero magnetic fields, where electric fields can then open avoided crossings and cause trap loss.
-We now identify internal spin-dynamics leading to trap loss near zero magnetic field even for the most well trapped state and as warm as $50\text{ mK}$.
+Molecules produced by associated of ultracold atoms inherit the trap-plugging strategy employed for the atoms, but for directly cooled molecules this is not the case.
+Many direct cooling experiments begin at modest temperatures and require trap strengths typically only attained with quadrupole fields\s\cite{}.
+In the $2\text{ T/cm}$ magnetic quadrupole used in our previous studies of hydroxyl radicals (OH)~\cite{Stuhl2012evap}, spin-flips should not have had a significant influence until the $\mu$K regime, but the application of electric field changes this.
+Electric fields applied to magnetically trapped dipolar species offer interesting opportunities to study anisotropic collisions and quantum chemistry, as we have previously pursued~\cite{Stuhl2013}.
+They can also be useful for control over state purity~\cite{Stuhl2012uwave}.
+But the electric field can also dramatically amplify spin-flip losses, due to internal spin-dynamics that we corroborate with direct experimental evidence for the first time in the present work.
+We achieve this with a novel trap geometry that also allows complete plugging of the loss with minimal sacrifice of trap strength.
+%This possibility was realized and modeled in an App.~A of Ref.~\cite{Stuhl2013}, and an attempt was made at deconvolution from the reported collisional effect, but we now report a larger magnitude than previously calculated.
+%In what follows, we endeavor to clearly elucidate the effect, generalize it, and derive its scaling behavior.
+%We will also present a new trap geometry which gives clear evidence of the effect and also allows complete plugging with minimal sacrifice of trap strength.
+
+%Electrostatic traps are free from spin-flips in the traditional sense since even at zero field a typically large, GHz scale splitting separates the electrically weak and strong seeking substates.
+%However this same splitting pushes the weak-field seeking states of different field polarization together, leading to non-adiabatic transitions 
+%Motivated by the interest in dipolar molecules in mixed fields for quantum chemistry, precision measurement and many-body physics, we previously investigated loss of magnetically trapped hydroxyl radicals (OH) with applied electric field\s\cite{Stuhl2012uwave}. 
+%This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J\s {=}\s 3/2}$ ground state manifold other than the most well trapped one (positive parity and full spin polarization, $|f,m_J\s {=}\s 3/2\rangle$, blue in Fig.\s\ref{fig:blocking}). 
+%Due to the closely spaced parity doublet, a general feature of Hund's case (a), these states intersect opposite parity states at non-zero magnetic fields, where electric fields can then open avoided crossings and cause trap loss.
+%We now identify internal spin-dynamics leading to trap loss near zero magnetic field even for the most well trapped state and as warm as $50\text{ mK}$.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{blocking_out.png}%
@@ -123,12 +137,13 @@ Note the drastic widening of the lowest contour\s(red), the culprit for molecula
 \label{fig:blocking}
 \end{figure}
 
-These internal spin-dynamics are subtle, having eluded two previous investigations: In Ref.\s\cite{Lara2008} the analogues of atomic spin-flip loss for molecules in mixed fields were modeled, and a magnetic quadrupole trap for OH molecules with superposed electric field was specifically addressed. 
-It was concluded that no significant loss enhancement due to electric field would be evident. 
-This is true only for the approximate $^2\Pi_{1/2}$ Hamiltonian used in that study. 
+The internal spin-dynamics leading to spin-flip enhancement are subtle, having eluded two previous investigations: 
+In Ref.\s\cite{Lara2008} the analogues of atomic spin-flip loss for molecules in mixed fields were modeled. %, and a magnetic quadrupole trap for OH molecules with superposed electric field was specifically addressed. 
+It was incorrectly concluded that no significant loss enhancement due to electric field would be evident, but this was true only for the approximate Hamiltonian used in that study. 
 In Ref.\s\cite{Bohn2013} it was correctly noted that Hund's case (a) molecules maintain a quantization axis in mixed fields. 
 The states of the molecule were shown to align with one of the two quantization axes given by the vectors $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$
-\s\footnote{The authors use $\mu_\text{eff}\vec{B} \s {\pm}\s  d_\text{eff}\vec{E}$. We reverse this to provide a more physical connection to our experiment, where the electric field is fixed.}, $\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields. 
+\s\footnote{The authors use $\mu_\text{eff}\vec{B} \s {\pm}\s  d_\text{eff}\vec{E}$. We reverse this to provide a more physical connection to our experiment, where the electric field is fixed.}, 
+$\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields. 
 It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe, the loss is actually enhanced.
 
 % Outline for this section...
