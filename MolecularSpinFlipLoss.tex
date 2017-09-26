@@ -94,8 +94,8 @@ We conclusively demonstrate and address this with OH molecules in a trap geometr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The ultracold regime extends toward molecules on many fronts\s\cite{Carr2009}. 
-Weakly bound dimers have been condensed\s\cite{Greiner2003,Zwierlein2003,Jochim2003}, and ground state alkali dimers continue to progress, both homogeneous\s\cite{} and hetereogeneous\s\cite{Takekoshi2014, Park2015,Guo2016,Liu2017,Rvachov2017}. 
-KRb polar molecules have reached lattice quantum degeneracy\s\cite{Moses2015}.
+Feshbach molecules at the BEC-BCS crossover have been studied\s\cite{Greiner2003,Zwierlein2003,Jochim2003}, and ground state alkali dimers continue to progress\s\cite{Ni2008, Takekoshi2014, Park2015, Guo2016,Liu2017,Rvachov2017}, %Cs2 goes here too. %Durham Simon Cornish
+including KRb polar molecules reaching quantum degeneracy\s\cite{Moses2015}.
 Recently developed laser cooling strategies are tackling certain nearly vibrationally diagonal molecules\s\cite{Stuhl2008,Hummon2013, Barry2014, Zhelyazkova2014, Hemmerling2016,Truppe2017}. 
 A diverse array of alternative strategies have succeeded to greater or lesser extents on other molecules\s\cite{Doyle1998, Bethlem1999, Bochinski2003, Narevicius2008, Wiederkehr2012, Prehn2016,Liu2017a}. 
 Many of these molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density\s\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}. 
@@ -103,10 +103,10 @@ They also may face a familiar challenge: spin flip loss near the zero of a magne
 
 %The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the first magnetic trapping of neutrals\s\cite{Migdall1985}. 
 Spin flips were directly observed near $50\s\mu\text{K}$ and overcome with a time-orbiting potential trap\s\cite{Petrich1995} and a plugged dipole trap\s\cite{Davis1995}, famously enabling the first production of Bose-Einstein condensates.
-Molecules produced by associated of ultracold atoms inherit the trap-plugging strategy employed for the atoms, but for directly cooled molecules this is not the case.
-Many direct cooling experiments begin at modest temperatures and require trap strengths typically only attained with quadrupole fields\s\cite{}.
+%Molecules produced by associated of ultracold atoms inherit the trap-plugging strategy employed for the atoms, but for directly cooled molecules this is not the case.
+Direct cooling experiments begin at modest temperatures and require trap strengths typically only attained with quadrupole fields\s\cite{}.
 In the $2\text{ T/cm}$ magnetic quadrupole used in our previous studies of hydroxyl radicals (OH)~\cite{Stuhl2012evap}, spin-flips should not have had a significant influence until the $\mu$K regime, but the application of electric field changes this.
-Electric fields applied to magnetically trapped dipolar species offer interesting opportunities to study anisotropic collisions and quantum chemistry, as we have previously pursued~\cite{Stuhl2013}.
+Electric fields applied to magnetically trapped dipolar species offer interesting opportunities to study anisotropic collisions and quantum chemistry~\cite{Stuhl2013}.
 They can also be useful for control over state purity~\cite{Stuhl2012uwave}.
 But the electric field can also dramatically amplify spin-flip losses, due to internal spin-dynamics that we corroborate with direct experimental evidence for the first time in the present work.
 We achieve this with a novel trap geometry that also allows complete plugging of the loss with minimal sacrifice of trap strength.
@@ -155,16 +155,24 @@ It was asserted that this would maintain quantization near the zero of a quadrup
 
 We begin with an intuitive picture.
 In order to remain well-trapped in combined fields, a molecule must remain weak field seeking with respect to both fields, i.e. doubly stretched.
-But in a geometry where the fields are continuously rotating, the quantization axis that defines the doubly stretched state can be either of $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$, depending on whether the fields are oriented closer to parallel or antiparallel.
-Consider a molecule initially in the hemisphere of a quadrupole trap where the fields are close to parallel and in the doubly stretched state with the sum quantization axis $d_\text{eff}\vec{E} \s {+}\s  \mu_\text{eff}\vec{B}$.
+This means that its quantization axis, which is proportional to the field induced energy shift of the molecule, should have maximal length.
+In a geometry where the fields are continuously rotating, the maximal quantization axis can be either of $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$, depending on whether the fields are oriented closer to parallel or antiparallel.
+Consider a molecule in a magnetic quadrupole trap with a uniform electric field.
+This trap has two hemispheres, a parallel hemisphere where the fields are closer to parallel, and vice versa. 
+The hemispheres are separated by a plane where \epb{}, which intersects the trap center.
+Now suppose a molecule in the doubly stretched state begins in the parallel hemisphere. 
+Its quantization axis must be the field sum $d_\text{eff}\vec{E} \s {+}\s  \mu_\text{eff}\vec{B}$.
 If its trajectory carries it near the trap center where the magnetic field is small, the electric field does indeed maintain the quantization axis.
 % $d_\text{eff}\vec{E} \s {+}\s  \mu_\text{eff}\vec{B}$ as claimed in Ref.~\cite{Bohn2013}. 
-However, because the magnetic field orientation also changes near the center, the molecule enters the hemisphere where the fields are closer to antiparallel.
-The length of the quantization axis, which is proportional to the field induced energy shift of the molecule, now decreases in magnitude with increasing magnetic field.
-This molecule is now magnetically strong field seeking and will be lost.
-Thus the doubly stretched state is degenerate with a magnetically strong field seeking spin-flip partner state wherever the electric and magnetic fields are orthogonal, at least in this intuitive first order picture.
-Defining $\phi\s {=}\s\vec{E}\cdot\vec{B}$ the field orientation, the well-trapped molecule most have the quantization axis $d_\text{eff}\vec{E}\s {+}\s\text{sign}(\phi)\mu_\text{eff}\vec{B}$.
-Since $\phi$ is a continuous scalar, $\phi\s{=}\s 0$ is its contour level and always corresponds to a 2D surface; in a magnetic quadrupole with homogeneous electric field it is a plane.
+%However, because the magnetic field orientation also changes near the center, the molecule enters the hemisphere where the fields are closer to antiparallel.
+However when the molecule enters the antiparallel hemisphere, the magnitude of the quantization axis now decreases with increasing magnetic field.
+%This molecule is thus magnetically strong field seeking and will be lost.
+Thus the doubly stretched state is degenerate with a magnetically strong field seeking spin-flip partner state whenever the molecules cross the plane where \epb{}, leading to loss. %, at least in this intuitive first order picture.
+
+
+%Defining $\phi\s {=}\s\vec{E}\cdot\vec{B}$ the field orientation, the well-trapped molecule most have the quantization axis $d_\text{eff}\vec{E}\s {+}\s\text{sign}(\phi)\mu_\text{eff}\vec{B}$.
+%Since $\phi$ is a continuous scalar, $\phi\s{=}\s 0$ is its contour level and always corresponds to a 2D surface; 
+%In a magnetic quadrupole with homogeneous electric field this happens in a plane through the trap center.
 
 
 %We begin with an intuitive explanation of the loss enhancement based on molecular orientation.
