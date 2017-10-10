@@ -1,7 +1,5 @@
 %	% ****** Start of file MolecularSpinFlipLoss.tex ******
-%
-%
-%
+
 
 \documentclass[%
  reprint,
@@ -10,7 +8,7 @@
 %groupedaddress,
 %unsortedaddress,
 %runinaddress,
-%frontmatterverbose, 
+%frontmatterverbose,
 %preprint,
 %showpacs,preprintnumbers,
 %nofootinbib,
@@ -38,7 +36,7 @@ prl,
 \usepackage{color}
 \newcommand{\red}[1]{{\color{black} #1}}
 
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%\usepackage[showframe,%Uncomment any one of the following lines to test
 %%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
 %%text={7in,10in},centering,
 %%margin=1.5in,
@@ -83,110 +81,79 @@ prl,
 \setcounter{subsection}{3}
 
 
-The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes reported in Refs.~\cite{Stuhl2013,Stuhl2012evap}.
-These investigations have revealed that an important fraction of the effects previously attributed to collisions are in fact attributable to spin-flip losses.
-In Secs.~\hyperref[sec:eic]{A}, \hyperref[sec:evap]{B} we provide the interested reader with our current best understanding of the situation.
-Lastly, we provide in Sec.~\hyperref[sec:der]{C} an algebraic derivation of the loss enhancement factor presented in Eqn.~3 of the main text~\cite{smt}.
+The present study on the role of mixed fields for spin-flip loss evolved out of our continuing investigations into the collisional processes of trapped OH molecules in a magnetic quadrupole trap reported in Refs.~\cite{Stuhl2013,Stuhl2012evap}. The current investigations have revealed that the spin-flip loss can be substantially enhanced when an electric field is applied to the magnetic trap, and thus an important fraction of the inelastic collisional loss under various electric fields is in fact attributable to spin-flip losses. In Sections~\hyperref[sec:eic]{A}, \hyperref[sec:evap]{B} we provide further information on the electric field-induced trap loss and evaporative cooling, respectively. In Section~\hyperref[sec:der]{C} we provide an algebraic derivation of the loss enhancement factor presented in Eqn.~3 of the main text~\cite{smt}.
 
-\subsection{A.\quad Electric Field Induced Collisions\label{sec:eic}}
+\subsection{A.\quad Electric Field-Induced Trap Losses\label{sec:eic}}
 
-We begin with Ref.~\cite{Stuhl2013} on electric field induced inelastic collisions. 
-The authors identified the same single particle spin-flip loss enhancement process we discuss~\cite{smt}, and an attempt was made at deconvolution from the collisional effect (App.~A, Ref.~\cite{Stuhl2013}).
-%An appendix of~\cite{Stuhl2013} explains this well.
-Since that time, new experimental observations have prompted important improvements to the analysis that was presented there.
+Ref.~\cite{Stuhl2013} introduced the single particle spin-flip loss enhancement process and deconvoluted its effect from the inelastic collisional effect (Appendix~A, Ref.~\cite{Stuhl2013}). Since that time, new and more systematic experimental observations have prompted improvements to the analysis that was presented there.
 
-Relative to the approach taken in App.~A of Ref.~\cite{Stuhl2013}, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, only the velocity orthogonal to this plane matters, and the population is a thermalized Maxwell-Boltzmann distribution.
+Relative to the previous approach, we make the same simplifying assumptions: loss only occurs in the \epb{} plane, and only the velocity orthogonal to this plane matters as molecules cross this loss plane, and the in-trap population follows a thermalized Maxwell-Boltzmann distribution.
 Our improvement relates to the next step, where an integral calculation for the loss rate is performed.
 In Ref.~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
 \begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\theta)dv_\theta\left( \frac{v_\theta}{\pi r} P_\text{hop}(r,v_\theta)\right)
+\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\theta)dv_\theta\left( \frac{v_\theta}{\pi r} P_\text{hop}(r,v_\theta)\right).
 \end{equation}
-Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^\infty 4\pi r^2n(r)=1$, and of the form $n(r)\propto e^{-\mu_BB' r/kT}$. 
-Likewise $n(v_\theta)$ is the usual normalized Maxwellian velocity distribution. 
-Implicit in this integration is the assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\theta/\pi r$.
-This approximation is rather rough given that molecules are typically not following circular orbits of constant $v_\theta$ but are in general following some complex trap motion.
-Our improvement is to perform an integration of flux through the loss plane directly:
-\begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right)
-\end{equation}
-Here the same distributions are used, but the spatial is integrated over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by $v_z$ to give a flux.
-We change to cylindrical coordinates to highlight our focus on the central plane.
-This flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency.
-Although the two integrals differ significantly in conception, mathematically the differences reduce to precisely an overall scaling factor of $\pi$.
+Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^\infty 4\pi r^2n(r)=1$, and of the form $n(r)\propto e^{-\mu_BB' r/kT}$. Likewise $n(v_\theta)$ is the usual normalized Maxwellian velocity distribution.  Implicit in this integration is the assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\theta/\pi r$.
+This approximation is rather simplistic given that molecules are typically not following circular orbits of constant $v_\theta$ but are in general following some complex trap motion. In addition, the trap is approximated as spherically symmetric to avoid the complication of elliptical coordinates in the three dimension.
 
-\begin{figure}[t] 
-\includegraphics[width=\linewidth]{SuppFigs/eil_out.png} 
-\caption{Experimental electric field induced loss data with an attempted overlap to spin-flip loss simulations. The case of no electric field (black, solid, circles) is compared to electric fields of $3\text{ kV/cm}$ turned on after a wait time indicated in the legend.
+A more accurate treatment that we use here is to perform an integration of flux through the loss plane directly:
+\begin{equation}
+\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right).
+\end{equation}
+Here the spatial integration is over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by $v_z$ to give a flux. The population distribution $n(r)$ is now normalized correctly for an oblate ellipsoidal quadrupole trap, which no longer requires elliptical coordinates since the integration is only in one plane. We change to cylindrical coordinates to highlight our focus on the central plane.
+This flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency. This rigorous treatment provides precisely an overall scaling factor of $\pi$ relative to the previous estimate. Comparing the integrands and Jacobeans of Eqn. 1 and 2 gives a factor of $\pi$/2, and the change of integration from the spherical trap volume to the loss plane provides a factor of 2 via the distribution $n(r)$.
+
+\begin{figure}[t]
+\includegraphics[width=\linewidth]{SuppFigs/eil_out.png}
+\caption{Experimental data on electric field-induced loss with an attempted overlap to spin-flip loss simulations. The case of no electric field (black, solid, circles) is compared to electric fields of $3\text{ kV/cm}$ turned on after a wait time indicated in the legend.
 \label{fig:eil}}
 \end{figure}
 
-The influence of this on the deconvolution procedure relates to the details of the two-body fitting routine.
+The influence of this factor on the deconvolution procedure relates to the details of the two-body fitting routine.
 One plus two body fits $\dot{N}=-\gamma N-\beta N^2$ were performed to various decay trap curves, with the one body rate $\gamma$ fixed to the value expected due to vacuum scattering and spin-flip loss.
-An example of such decay curves is shown in Fig.~\ref{fig:eil}, where electric field is turned on suddenly after various hold times.
-With the stronger spin-flip loss, it is no longer appropriate to assume this loss will be present in the data as a pure one-body decay.
-Rather, only those molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone trajectories of phase space.
-If thermalization is slow, spin-flip loss can have a rate that decreases over time, producing a time dependence of population like that of a two-body effect.
-Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in Ref.~\cite{Stuhl2013} (Repeated here in Fig.~\ref{fig:beta}, shaded regions), the possibility of its influencing the data in a non-single-particle manner was not addressed.
+An example of such decay curves is shown in Fig.~\ref{fig:eil}, where electric field is turned on suddenly after various hold times, which is motivated by the desire to vary the trapped sample density.
+With the stronger spin-flip loss, we also consider its effect beyond a pure one-body decay. Molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone trajectories of phase space. If thermalization is slow, spin-flip loss can have a rate that decreases over time, producing a time dependence of population like that of a two-body effect.
+Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in Ref.~\cite{Stuhl2013} (Repeated here in Fig.~\ref{fig:beta}, shaded regions), the possibility of its influencing the data in a non-single-particle manner was not addressed. We note however that both the previous and current derivations of spin-flip loss assume a thermal distribution in the trap.
 
-\begin{figure}[t] 
-\includegraphics[width=\linewidth]{SuppFigs/beta_out.png} 
-\caption{Two body fits from~\cite{Stuhl2013} to experimental data like that in Fig.~\ref{fig:eil} but at various electric fields. The blue data points and shaded region are repeated from Fig.~3 of~\cite{Stuhl2013}, where the shading indicates the variation that would be brought about by two-fold changes in $\gamma$ from spin-flip losses. Even though we discover a factor of only three, the spin flip loss simulation (thick red line) matches the data within errorbars.\label{fig:beta}}
+\begin{figure}[t]
+\includegraphics[width=\linewidth]{SuppFigs/beta_out.png}
+\caption{Two body fits from~\cite{Stuhl2013} to experimental data like that in Fig.~\ref{fig:eil} but at various electric fields. The blue data points and shaded region are repeated from Fig.~3 of~\cite{Stuhl2013}, where the shading indicates the variation that would be brought about by two-fold changes in $\gamma$ from spin-flip losses. With a factor of three correction noted in this study, the spin flip loss simulation (thick red line) matches the original data within errorbars.\label{fig:beta}}
 \end{figure}
 
-
-We can perform single particle Monte Carlo simulations of spin-flip loss to investigate this, and we obtain curves such as shown above the experimental data in Fig.~\ref{fig:eil}.
-We can even perform the same one plus two body fitting procedure to the single particle spin-flip loss simulation traces.
-The single particle traces yield ``two-body" values that overlap nicely with those derived in Ref.~\cite{Stuhl2013}, see Fig.~\ref{fig:beta}.
-This suggests that the effect attributed to two-body collisions is largely explained by spin-flip losses.
-Still, there are notable discrepancies, such as in the initial rate of the decays in Fig.~\ref{fig:eil}.
-One avenue to try and improve agreement would be to incorporate collisions in the simulation.
-Unfortunately there are many challenges in the quantitative application of these simulations, such as the existence of various partially trapped substates.
-We think the best path forward is to perform future collisional studies with the single-particle effect removed, as achieved in our most recent trap~\cite{smt}.
+We have performed single particle Monte Carlo simulations of spin-flip loss to further investigate this effect, and we obtain curves such as shown with the experimental data in Fig.~\ref{fig:eil}.
+We also performed the same one- plus two-body fitting procedure to the single particle spin-flip loss simulation traces, which yield two-body values that overlap with those derived in Ref.~\cite{Stuhl2013}, see Fig.~\ref{fig:beta}.  This suggests that the spin-flip loss plays an important role in the observed loss data under applied electric fields, and the effect of inelastic collisions is marginal within the errorbars. Still, as we did not involve inelastic collisions in the simulation, there are notable discrepancies between simulation and data, such as in the initial rate of the decays in Fig.~\ref{fig:eil}.
+One avenue to try and improve agreement would be to incorporate collisions in the simulation. There are many challenges in the quantitative application of these simulations, such as the existence of various partially trapped substates. The best path forward is to perform future collisional experiments with the single-particle effect removed~\cite{smt}.
 
 \subsection{B.\quad Evaporation\label{sec:evap}}
 
-% Lead off with the connection to the spin-flip loss. More important at lower temperature. And thus we give up on suppression, focus only on warmer temperatures, and only on what we can directly see. 
-With regard to Ref.~\cite{Stuhl2012evap}, the present study has important ramifications. 
-The process of evaporation and of depletion spectroscopy both require two steps.
-First molecules are transferred from positive to negative parity by microwaves targeting a specific range of magnetic fields.
-After this transfer, the molecules are still trapped, and only by the subsequent addition of electric field to open avoided crossings can these opposite parity molecules escape from the trap.
-In the case of depletion spectroscopy, there is a final step of measuring the population by laser induced fluorescence, so that the population originally at the magnetic field transferred by microwaves can be inferred by subtraction.
-The crossings opened by electric field would only allow molecules in the upper $90\%$ of the trap to escape, so it was thought that a cold population insensitive to the spectroscopic technique could be building up at low magnetic fields.
-Given the existence of spin-flip loss caused by the electric field at the very center of the trap where such a cold population would build up, and given its strength for the relevant temperatures and electric fields (Tab.~I of the main text~\cite{smt}), we reject this hypothesis.
+% Lead off with the connection to the spin-flip loss. More important at lower temperature. And thus we give up on suppression, focus only on warmer temperatures, and only on what we can directly see.
+Ref.~\cite{Stuhl2012evap} describes the processes of evaporation from a magnetic quadrupole trap and of depletion spectroscopy to measure the trap distribution. Both processes require two steps.
+First, molecules are transferred from the positive to the negative parity state by applying short pulses of microwaves tuned to a specific range of magnetic fields.
+After this transfer, the molecules are still trapped, and only by the subsequent application of a DC electric field to open avoided crossings can these opposite parity molecules escape from the trap.
+In the case of using depletion spectroscopy for thermometry, the microwave pulses transfer only a small fraction of population between the opposite parity state to reflect the original population distribution~\cite{Stuhl2012uwave}. A final step is necessary to measure the overall population in the trap by laser induced fluorescence.
+The crossings opened by electric field would only allow molecules in the upper $90\%$ of the trap to escape, so it was assumed that a cold population insensitive to the spectroscopic technique would be building up in both parity states at low magnetic fields. Given the existence of spin-flip loss caused by the electric field at the center of the trap where such a cold population would build up, and given its strength for the relevant temperatures and electric fields (Tab.~I of the main text~\cite{smt}), the assumption of cold samples building up in the lower parity state must be reexamined.
 
-Without the cold hidden population hypothesis, the temperature fits performed in Fig.~3 of Ref.~\cite{Stuhl2012evap} are significantly altered, and only panels (a-c) can be reasonably fit.
-Nonetheless, the normalized spectra can still be used to identify enhancements in density caused by the evaporation.
-Since the publication of Ref.~\cite{Stuhl2012evap}, we have repeatably found such enhancements for evaporation sequences designed to achieve a twofold temperature reduction, see Fig.~\ref{fig:normenhance}.
-The initial temperature of $59\pm2\text{ mK}$ is higher than reported in Ref.~\cite{Stuhl2012evap} due to an important correction to the molecular Hamiltonian found by inclusion of nearly one hundred ground and excited hyperfine levels~\cite{Maeda2015}.
+Some of the temperature fits performed in Fig.~3 of Ref.~\cite{Stuhl2012evap} relied on this assumption, which we now no longer use. We rely on only the directly experimentally accessible spectra, such as those shown in panels (a-c) (Fig.~3 of Ref.~\cite{Stuhl2012evap}). After taking similar measurements repeatedly, the depletion spectra are found to be useful to identify enhancements in density caused by the evaporation. Figure~\ref{fig:normenhance} show such enhancements for evaporation sequences designed to achieve a twofold temperature reduction. The initial temperature of $59\pm2\text{ mK}$ is higher than reported in Ref.~\cite{Stuhl2012evap}, mostly due to a subtle correction to the molecular Hamiltonian.  A detailed calculation of this correction including nearly one hundred ground and excited hyperfine levels is given in Ref.~\cite{Maeda2015}.
 
-Regarding the normalization procedure, the idea is to require the area beneath the curve to add up to the observed total population by laser induced fluorescence.
-%An important question however is why this is necessary.
-This is necessary because the spectroscopy is performed over a total time of about a quarter of a trap oscillation, so that molecules are not at all frozen in place.
-Relative to a very brief spectroscopy pulse that would only deplete molecules in a given region at that particular instant, the longer pulse can be seen as a way of boosting the signal to noise ratio of the experiment.
-The spectroscopy still gives a value that ought to be proportional to the true instantaneous population in the region of interest, but with a scaling factor relating to details of population transfer in and out of the region of interest while it is probed.
-Without normalization, spectroscopies of smaller total populations yield distributions with enclosed areas that are decreased much more than the actual population.
-In the future, a variety of density enhancing strategies~\cite{smt} may improve our signal enough that a more straightforward spectroscopy could be performed without the need for normalization.
-For the time being, we find no particular reason to distrust the normalization procedure, and we carefully include all of the steps in the error analysis leading to the error bars shown in Fig.~\ref{fig:normenhance}.
+Since depletion spectroscopy transfers only a fraction of molecules to the lower parity state at a specific magnetic field value, we integrate the total area enclosed by the spectroscopy curve, which is scaled according to the observed total population by laser induced fluorescence.  This is necessary because depletion spectroscopy is performed with a train of short microwave pulses lasting over a total time of about a quarter of a trap oscillation, so that molecules are not at all frozen in place.  Relative to a very brief spectroscopy pulse that would only deplete molecules in a given region at that particular instant, the use of a train of pulses over a longer period of time allows us to sample molecules more widely to boost the signal to noise ratio of spectroscopy.  The spectroscopy gives a value that is proportional to the true instantaneous population in a specific magnetic field region, but with a scaling factor that allows the signal to be constrained with the measured total number of molecules in the trap.  We carefully include all of the steps in the error analysis leading to the error bars shown in Fig.~\ref{fig:normenhance}.  
 
-%All of the evaporation traces in Fig.~3 of~\cite{Stuhl2012evap} show density enhancements in the region near $500\text{ G}$, but a further correction changes this.
-%By more carefully investigating the usage of microwave chirp rates and powers, we confirmed that what was previously interpreted as a frequency offset was in fact an ``oort cloud" persisting at larger fields~\cite{Inguscio1999}.
-%After accounting for this, only Fig.~3c of~\cite{Stuhl2012evap} shows an enhancement, but it does so very clearly and repeatably as in Fig.~\ref{fig:normenhance}.
+In addition to the spatial density enhancement in the low magnetic field region, we can also examine the phase space density in the trap, under the assumption of good thermal equilibrium in all six dimensions. As the population $N$ was reduced by $60\%$ after evaporation, the temperature came down by a factor of $2$. For a quadrupole trap the phase space density is proportional to $N T^{-9/2}$. This gives an increase of about a factor of $10$ in phase space density. 
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{SuppFigs/specf_out.png}%
 \caption{
-Normalized spectra are performed after evaporation (red x's) and without evaporation (black circles). Solid lines are fits to Maxwell-Boltzmann distributions with temperatures of $59\pm2$ without evaporation (black), and $30\pm3$ for evaporation (red, dashed). The evaporation achieves a clear density enhancement in the vicinity of $500\text{ G}$, where the line markers are bolded. 
+Depletion spectroscopy spectra are obtained after evaporation (blue filled circles) and without evaporation (red open circles). The integrated areas under the curves correspond to the total number of molecules detected. Solid lines are fits to Maxwell-Boltzmann distributions with temperatures of $59\pm2$~mK without evaporation (red), and $30\pm2$~mK for evaporation (blue). The evaporation achieves a clear density enhancement in the vicinity of $500\text{ G}$.
 }
 \label{fig:normenhance}
 \end{figure}
 
-Seeking more direct and sensitive verification of the collisional effect, we have compared the populations under two related treatments. 
-The first is a normal evaporation sequence and the second is identical but with a time-reversed microwave frequency chirp, so that the cut goes backwards from deep to shallow.
+We have also performed another independent verification of the collisional effect by comparing the populations under two closely related experimental sequences.
+The first is a normal evaporation sequence and the second is identical but with a time-reversed microwave frequency chirp, so that the population cut goes backwards from deep to shallow in the trap.
 %We refer to these conditions as forward and backward evaporation, respectively.
 This comparison subjects all molecules to the same integrated microwave power, and thus the two conditions should be equivalent in a situation with only single particle effects.
 With respect to collisional effects, the time-reversed case functions like a truncation, preventing molecules that would otherwise have collisionally thermalized to lower temperatures from doing so.
 To whatever extent an evaporation is successful in facilitating beneficial thermalizing collisions, the time-reversed condition should yield fewer molecules.
-We consistently observe this at the $(6\,{\pm}\,2)\%$ level, suggesting a slight evaporative effect despite the negative influence of spin-flip losses.%, note the height difference in the traces shown in Fig.~\ref{fig:normenhance}.
+We consistently observe this at the $(6\,{\pm}\,2)\%$ level, suggesting an evaporative effect despite the negative influence of spin-flip losses.%, note the height difference in the traces shown in Fig.~\ref{fig:normenhance}.
 %Regarding the shape of the traces, both evaporations yield $30\pm3\text{ mK}$ distributions, and the backward case still shows a slight density enhancement.
 %This could be consistent with a single-particle mechanism for density enhancement involving the spin-flip loss process we know to be at work.
 %Molecules transferred by the microwaves into a lower state have a small probability to end up back in the trapped state by traversing the spin-flip loss plane in the trap center in reverse, at which point they have experienced significant sisyphus type cooling via the microwave photon.
@@ -198,15 +165,15 @@ We consistently observe this at the $(6\,{\pm}\,2)\%$ level, suggesting a slight
 
 %It is also surprising that the backwards evaporation also produces a density enhancement relative to the unevaporated case.
 %A possible interpretation of this is that both sequences are somehow functioning as evaporations, even though the backwards sequence removes most its molecules within the first $10\%$ of the evaporation time.
-%Another possible interpretation is that the backwards and forwards difference 
+%Another possible interpretation is that the backwards and forwards difference
 %One possible exception could be the existence of very slow single particle transfers to other trapped substates which could hide from the microwaves or interact with them differently, but we find no clear evidence for this.
-%With evaporative effects, the normal condition ought to perform better, though perhaps not very significantly if the sequence is not well optimized. 
+%With evaporative effects, the normal condition ought to perform better, though perhaps not very significantly if the sequence is not well optimized.
 %One possible caveat would be the existence of a slow single-particle shelving processes where molecules leak into some state that is sensitive to the detection laser but not the microwave knife.
 %If this process had a similar time scale to the evaporation, it would result in the normal evaporation yielding higher final numbers by purely single particle means, but no fully plausible processes have been identified.
-%For example, electric field induced spin-flip loss could allow the well-trapped $|f,3/2\rangle$ molecules to slowly leak into $|f,1/2\rangle$, and the latter does have a different behavior with respect to microwave spectroscopy. 
+%For example, electric field induced spin-flip loss could allow the well-trapped $|f,3/2\rangle$ molecules to slowly leak into $|f,1/2\rangle$, and the latter does have a different behavior with respect to microwave spectroscopy.
 %But the electric fields also ought to destabilize these molecules and prevent them from staying in the trap in either case.
 
-We have also developed the ability to reduce the size of the population without perturbing its phase space distribution, utilized in our new trap as described in the main text~\cite{smt}.
+In future work we can also use a newly developed capability of reducing the size of the population without perturbing its phase space distribution, as reported in the main text~\cite{smt}.
 This ought to reduce the influence of collisional processes, but keep any single particle effects the same, thus disambiguating the two.
 Many possible approaches have key drawbacks, for example changing the partial pressure of water in our supersonic expansion would require changing the temperature of the valve and thereby influencing the initial speed of the beam.
 %For example it is not possible to change the discharge yield of OH in our supersonic expansion without also influencing the temperature of the initial distribution, which is effected by the discharge.
@@ -214,79 +181,81 @@ We opt for the application of microwaves during deceleration, leading to a proba
 We tune the microwaves to be resonant only at low magnitudes of electric fields, experienced by all molecules when flying through a de-energized stage just after switching.
 The microwaves are applied via microwave horn and have a long wavelength relative to the cloud, so that microwave power variations across the cloud are minimal.
 The microwaves are applied early during deceleration, so that the molecules have many stages of deceleration left to remix any outstanding asymmetries in the removal process.
-It is difficult to experimentally verify that the phase space distribution is truly unaffected, but in at least one projection of phase space, the time of flight profile of slowed molecules after deceleration, the distribution is unaffected even by tenfold reductions using this technique.
+It is difficult to experimentally verify that the phase space distribution is truly unaffected, but in one projection of phase space, the time of flight profile of slowed molecules after deceleration, the distribution seems to be unaffected even by tenfold reductions using this technique.
 
-%We have also pursued the precise calibration of our LIF system, using a careful comparison to Raman scattering of $\text{H}_2$, as described in~\cite{Bischel1986}. 
+%We have also pursued the precise calibration of our LIF system, using a careful comparison to Raman scattering of $\text{H}_2$, as described in~\cite{Bischel1986}.
 %Our results suggest that since 2014, our molecule number has been about $1000$, yielding a peak density of $10^7/\text{cm}^3$ assuming a thermal distribution, and a collision rate of not more than $0.1/\text{s}$.
-%At this rate, only $1\%$ of molecules collide during a $100\text{ ms}$ experiment, and only a fraction of those collisions would result in cooling. 
+%At this rate, only $1\%$ of molecules collide during a $100\text{ ms}$ experiment, and only a fraction of those collisions would result in cooling.
 %Nonetheless, there are uncertainties with the calibration, and it is possible that some decline in system performance could be involved, since we have a record of decreased voltage conditioning performance in our decelerator.
 
-In conclusion, the role of collisional effects in Ref.~\cite{Stuhl2012evap} is reduced by spin-flip losses,
-%The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect. 
+While the role of collisional effects in Ref.~\cite{Stuhl2012evap} is reduced by spin-flip losses, especially at low temperatures below 10 mK,
+%The density may simply have been too low, although back-application to the 2012-13 systems used is not perfect.
 %There are some remaining discrepancies between simulations and experiments of electric field induced loss which may relate to collisions.
-but spectroscopic comparisons and evaporation subtractions still suggest an evaporative effect. 
-The development of forward to backward comparisons and homogeneous density reductions has us poised to more unambiguously identify any future collisional effects in our next generation system.
+spectroscopic comparisons and evaporation subtractions do point to an evaporative effect. The development of forward to backward comparisons and homogeneous density reductions will allow us to further distinguish collisional effects from single particle dynamics in the next generation system.
 
 \subsection{C.\quad Scaling Law Derivation\label{sec:der}}
 
 Here we derive the loss enhancement scaling law presented in Eqn.~3 of the main text~\cite{smt}, and repeated here:
 \begin{equation}
-\eta\propto \left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
+\eta=\frac{3}{11} \left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
 \end{equation}
-The key idea is to compare the surface areas of the loss regions with and without electric field. 
-There is no exact loss region where a molecule is guaranteed to hop, but rather its velocity and direction contribute to the Landau-Zener probability (Eqn.~2, Ref.~\cite{smt}).
+The key idea is to compare the surface areas of the loss regions with and without electric field.
+There is no exact loss region where a molecule is guaranteed to spin flip, but rather its velocity and direction contribute to the Landau-Zener probability (Eqn.~2, Ref.~\cite{smt}).
 Nonetheless, for the purposes of a scaling law, we can assume the average thermal velocity $v_T$, and choose a probability threshold of $P>1/e$.
-These assumptions allow us to define the loss region as the contour surface of energy $\kappa$ where 
+These assumptions allow us to define the loss region as the contour surface of energy $\kappa$ where
 \begin{equation}
-\kappa=\sqrt{\hbar\dot{G}}=\sqrt{2\hbar v_T B'}.
-\end{equation} 
-Here $G$ is the energy gap between the trapped state and its spin flip partner, and $B'$ is the trap gradient along the strong axis.
+\kappa=\sqrt{2\hbar\dot{G}/\pi}=\sqrt{4\hbar v_T B'/\pi}.
+\end{equation}
+Here $\dot{G}$ is the rate of change in the energy gap between the trapped state and its spin flip partner, and $B'$ is the magnetic field gradient along the strong axis of the trap.
 
 %One complication is that in a quadrupole trap there is a weak and a strong axis.
-We assume that the electric field is applied parallel to the strong axis of the quadrupole trap, which makes the loss plane where $\vec{E}\perp\vec{B}$ perpendicular to this axis. 
-This matches the geometry that has been realized in our experiment~\cite{Stuhl2013}, and is the worst case, but by no more than a constant factor of $2\sqrt{2}$ relative to other directions the electric field could have.
+We assume that the electric field is applied parallel to the strong axis of the quadrupole trap, which makes the loss plane, as defined by $\vec{E}\perp\vec{B}$, perpendicular to this axis. This matches the geometry that has been realized in our experiment~\cite{Stuhl2013}, and is the worst case, but by no more than a constant factor of $2\sqrt{2}$ relative to other directions the electric field could have.
 
-Before application of electric field, the $\kappa$ valued energy contour is the surface of an oblate ellipsoid of long radius $r_0=2\kappa/\mu_\text{eff}B'$. 
-Its area is then $2\pi\cdot1.38\,r_0^2$, where the numeric factor relates to the specific $2:1$ aspect ratio of the ellipsoid and is hereafter neglected.
+Before application of electric field, the $\kappa$ valued energy contour is the surface of an oblate ellipsoid of long radius $r_0=2\kappa/\mu_\text{eff}B'$.
+Its area is then $2\pi\alpha\,r_0^2$, where $\alpha(e)=1+(1-e^2)\text{tanh}^{-1}(e)/e$ generally for eccentricity $e$, and $\alpha\sim 1.38$ for the present 2:1 ellipsoid.
 When electric field is applied, the energy gap near the trap zero takes an unusual functional form.
 To derive it, we first assign spatial coordinates $r$ and $z$ denoting directions within and normal to the loss plane, respectively.
-Next we diagonalize the ground state hamiltonian of OH in mixed fields, see App.~A of Ref.~\cite{stuhl2012uwave}, or similarly for another species.
-Subtracting the energies of the trapped state and its spin-flip partner and series expanding the result then yields:
+Next we diagonalize the ground state hamiltonian of OH in mixed fields, see App.~A of Ref.~\cite{Stuhl2012uwave}, or similarly for another species.
+Subtracting the energies of the trapped state and its spin-flip partner, and then series expanding the result yields:
 \begin{equation}
 \label{eqn:energy}
-G = \mu_\text{eff}B'|z| + \alpha(\frac{1}{2}\mu_\text{eff}B'r)^3\frac{\Delta\sqrt{\beta\Delta^2\!+\!d_\text{eff}^2E^2}}{(d_\text{eff}E)^4},% + \mathcal{O}(z^2,r^4).
+G = 2\mu_\text{eff}B'|z| + \beta\frac{(\mu_\text{eff}B'r/2)^3\Delta^2}{(d_\text{eff}E)^4}f(d_\text{eff}E/\Delta),% + \mathcal{O}(z^2,r^4).
 \end{equation}
-plus higher order terms in $r$ and $z$. 
-%Here we use $r$ to denote the in-loss-plane coordinate and $z$ to denote distance away from the loss plane, along the strong axis of the trap. 
-The constants $\alpha$ and $\beta$ are nearly unity for OH and will be ignored henceforth.
+plus higher order terms in $r$ and $z$.
+%Here we use $r$ to denote the in-loss-plane coordinate and $z$ to denote distance away from the loss plane, along the strong axis of the trap.
+Here $\beta=625/144=4.3$ and $f$ is a rational expression that approaches $1$ for small arguments: $f(x) = (1 + 1.28x^2)/\sqrt{1+1.44x^2}$. 
 %This is a series expansion the energy difference between the trapped state and its spin-flip-partner.
 %The energy difference can be derived for OH by diagonalizing the ground state hamiltonian in mixed fields, see App.~A of Ref.~\cite{stuhl2012uwave}, or similarly for any other species.
-The key feature, as discussed in the main text~\cite{smt}, is the cubic dependence $G$ exhibits on $r$ which leads to a much more severely oblate contours.
+The key feature, as discussed in the main text~\cite{smt}, is the cubic dependence $G$ exhibits on $r$ which leads to much more severely oblate contours.
 
 Now we can use Eqn.~\ref{eqn:energy} to compute the surface area of the $G=\kappa$ contour.
-We specialize to the regime where $d_\text{eff}E<\Delta$, so that $\Delta\approx\sqrt{\Delta^2+d_\text{eff}^2E^2}$. 
+We specialize to the regime where $d_\text{eff}E<\Delta$, so that $f(d_\text{eff}E/\Delta)\sim 1$.
 %For larger fields, one $\Delta$ can be exchanged for $d_\text{eff}E$, but in practice the loss rate is already so high in these regimes that no sample remains trapped.
 The radial extent of the surface can be solved by inverting $\kappa=G|_{z=0}$:
 \begin{equation}
 \label{eqn:rE}
-r_E = \frac{1}{\mu_\text{eff}B'}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\Delta^2}}.
+r_E = \frac{1}{\mu_\text{eff}B'}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\beta\Delta^2}}.
 \end{equation}
 The axial extent remains $z=\kappa/\mu_\text{eff}B'$ for all $\vec{E}$.
-For large enough $E$, $r_E$ dominates over this axial extent, so that the area is effectively $2\pi r_E^2$ and the loss area enhancement becomes $\eta = (r_E/r_0)^2$.
-Comparing the expressions for $r_E$ and $r_0$, $\mu_\text{eff}B'$ cancels and we have
+For large enough $E$, $r_E$ dominates over this axial extent, so that the area is effectively $2\pi r_E^2$ and the loss area enhancement becomes $\eta = r_E^2/(\alpha r_0^2)$.
+Putting everything together:
 \begin{equation}
+\begin{split}
 \label{eqn:eta}
-\eta= \left(\frac{1}{2\kappa}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\Delta^2}}\right)^2=\left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
+\eta\quad =&\quad \left(\frac{1}{\mu_\text{eff}B'}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\beta\Delta^2}}\right)^2\bigg/\alpha\left(\frac{2\kappa}{\mu_\text{eff}B'}\right)^2\\
+\quad=&\quad \frac{1}{\alpha\beta^{2/3}}\left(\frac{1}{2\kappa}\sqrt[3]{\frac{8\kappa(d_\text{eff}E)^4}{\Delta^2}}\right)^2\\
+\quad=&\quad\frac{3}{11}\left(\frac{d_\text{eff}E}{\sqrt{\kappa\Delta}}\right)^{8/3}.
+\end{split}
 \end{equation}
 
-Now we address the domain of validity of this result. 
-When $E$ is small, Eqn.~\ref{eqn:energy} only has a narrow range of validity, since the electric field only dominates in a very small region near the trap center. 
-Outside, $G$ retains a nearly linear dependence on $r$. 
-This means that Eqn.~\ref{eqn:rE} only holds for $E$ above some threshold. 
+Now we address the domain of validity of this result.
+When $E$ is small, Eqn.~\ref{eqn:energy} only has a narrow range of validity, since the electric field only dominates in a very small region near the trap center.
+Outside, $G$ retains a nearly linear dependence on $r$.
+This means that Eqn.~\ref{eqn:rE} only holds for $E$ above some threshold.
 For smaller $E$, $r_E$ will simply not be significantly perturbed from its zero electric field value of $r_0=2\kappa/\mu_\text{eff}B'$.
 The implication for the enhancement factor in Eqn.~\ref{eqn:eta} is simply that it is only valid when it predicts an enhancement significantly greater than unity.
-In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>\sqrt{\kappa\Delta}$, but below this $\eta$ gradually returns to unity.
-Eventually when $d_\text{eff}E>\Delta$, the factor of $\sqrt{\beta\Delta^2+d_\text{eff}^2E^2}$ in Eqn.~\ref{eqn:energy} is better approximated by $d_\text{eff}E$, which leads to the modification $\eta\propto (d_\text{eff}E)^2/\kappa^{4/3}\Delta^{2/3}$. 
+In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>1.6\!\cdot\!\sqrt{\kappa\Delta}$, but below this $\eta$ gradually returns to unity.
+Eventually when $d_\text{eff}E>\Delta$, the factor of $f(d_\text{eff}E/\Delta)$ in Eqn.~\ref{eqn:energy} is better approximated by $1.1d_\text{eff}E/\Delta$, which leads to the modification $\eta=0.26\!\cdot\!(d_\text{eff}E)^2/\kappa^{4/3}\Delta^{2/3}$.
 Thus for these larger E-fields, the enhancement factor reduces in its dependence on electric field from order $8/3$ to order $2$.
 At this point, the loss is typically so large as to preclude all but the briefest trapping experiments, see Tab.~I of the main text~\cite{smt}.
 
