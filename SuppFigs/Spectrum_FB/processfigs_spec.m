@@ -3,6 +3,8 @@
 %
 % Want to do some shaded confidence regions, etc.
 %
+open('Forward vs Backward 1663.7MHz Sawtooth Evap after Normalization .fig')
+pause(2)
 fff = gcf;
 a = gca(fff);
 traces = get(a,'Children');
