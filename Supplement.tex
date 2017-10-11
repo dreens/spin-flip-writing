@@ -137,10 +137,10 @@ Some of the temperature fits performed in Fig.~3 of Ref.~\cite{Stuhl2012evap} re
 
 Since depletion spectroscopy transfers only a fraction of molecules to the lower parity state at a specific magnetic field value, we integrate the total area enclosed by the spectroscopy curve, which is scaled according to the observed total population by laser induced fluorescence.  This is necessary because depletion spectroscopy is performed with a train of short microwave pulses lasting over a total time of about a quarter of a trap oscillation, so that molecules are not at all frozen in place.  Relative to a very brief spectroscopy pulse that would only deplete molecules in a given region at that particular instant, the use of a train of pulses over a longer period of time allows us to sample molecules more widely to boost the signal to noise ratio of spectroscopy.  The spectroscopy gives a value that is proportional to the true instantaneous population in a specific magnetic field region, but with a scaling factor that allows the signal to be constrained with the measured total number of molecules in the trap.  We carefully include all of the steps in the error analysis leading to the error bars shown in Fig.~\ref{fig:normenhance}.  
 
-In addition to the spatial density enhancement in the low magnetic field region, we can also examine the phase space density in the trap, under the assumption of good thermal equilibrium in all six dimensions. As the population $N$ was reduced by $60\%$ after evaporation, the temperature came down by a factor of $2$. For a quadrupole trap the phase space density is proportional to $N T^{-9/2}$. This gives an increase of about a factor of $10$ in phase space density. 
+In addition to the spatial density enhancement in the low magnetic field region, we can also examine the phase space density in the trap, under the assumption of good thermal equilibrium. As the population $N$ was reduced by $60\%$ after evaporation, the temperature came down by a factor of $2$. For a quadrupole trap the phase space density is proportional to $N T^{-9/2}$. This gives an increase of about a factor of $10$ in phase space density. 
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{SuppFigs/specf_out.png}%
+\includegraphics[width=8.2cm]{SuppFigs/specf_out.png}%
 \caption{
 Depletion spectroscopy spectra are obtained after evaporation (red filled circles) and without evaporation (blue open circles). The integrated areas under the curves correspond to the total number of molecules detected. Solid lines are fits to Maxwell-Boltzmann distributions with temperatures of $59\pm2$~mK without evaporation (blue), and $30\pm2$~mK for evaporation (red). The evaporation achieves a clear density enhancement in the vicinity of $500\text{ G}$.
 }
@@ -153,7 +153,10 @@ The first is a normal evaporation sequence and the second is identical but with 
 This comparison subjects all molecules to the same integrated microwave power, and thus the two conditions should be equivalent in a situation with only single particle effects.
 With respect to collisional effects, the time-reversed case functions like a truncation, preventing molecules that would otherwise have collisionally thermalized to lower temperatures from doing so.
 To whatever extent an evaporation is successful in facilitating beneficial thermalizing collisions, the time-reversed condition should yield fewer molecules.
-We consistently observe this at the $(6\,{\pm}\,2)\%$ level, suggesting an evaporative effect despite the negative influence of spin-flip losses.%, note the height difference in the traces shown in Fig.~\ref{fig:normenhance}.
+We consistently observe this at the $(6\,{\pm}\,2)\%$ level, suggesting an evaporative effect despite the negative influence of spin-flip losses.
+We have also observed that under less ideal initial conditions, such as higher initial temperatures of $80\text{ mK}$ resulting from poorer decelerator performance, the density enhancements at low magnetic field and the forward backward differences both disappear.
+
+%, note the height difference in the traces shown in Fig.~\ref{fig:normenhance}.
 %Regarding the shape of the traces, both evaporations yield $30\pm3\text{ mK}$ distributions, and the backward case still shows a slight density enhancement.
 %This could be consistent with a single-particle mechanism for density enhancement involving the spin-flip loss process we know to be at work.
 %Molecules transferred by the microwaves into a lower state have a small probability to end up back in the trapped state by traversing the spin-flip loss plane in the trap center in reverse, at which point they have experienced significant sisyphus type cooling via the microwave photon.
@@ -179,7 +182,7 @@ Many possible approaches have key drawbacks, for example changing the partial pr
 %For example it is not possible to change the discharge yield of OH in our supersonic expansion without also influencing the temperature of the initial distribution, which is effected by the discharge.
 We opt for the application of microwaves during deceleration, leading to a probability for transitioning from a weak to strong field seeking state and being deflected out of the beam.
 We tune the microwaves to be resonant only at low magnitudes of electric fields, experienced by all molecules when flying through a de-energized stage just after switching.
-The microwaves are applied via microwave horn and have a long wavelength relative to the cloud, so that microwave power variations across the cloud are minimal.
+The microwaves are applied via horn and have a $18\text{ cm}$ wavelength, so that microwave power variations across the cloud are minimal.
 The microwaves are applied early during deceleration, so that the molecules have many stages of deceleration left to remix any outstanding asymmetries in the removal process.
 It is difficult to experimentally verify that the phase space distribution is truly unaffected, but in one projection of phase space, the time of flight profile of slowed molecules after deceleration, the distribution seems to be unaffected even by tenfold reductions using this technique.
 
@@ -212,7 +215,7 @@ Here $\dot{G}$ is the rate of change in the energy gap between the trapped state
 We assume that the electric field is applied parallel to the strong axis of the quadrupole trap, which makes the loss plane, as defined by $\vec{E}\perp\vec{B}$, perpendicular to this axis. This matches the geometry that has been realized in our experiment~\cite{Stuhl2013}, and is the worst case, but by no more than a constant factor of $2\sqrt{2}$ relative to other directions the electric field could have.
 
 Before application of electric field, the $\kappa$ valued energy contour is the surface of an oblate ellipsoid of long radius $r_0=2\kappa/\mu_\text{eff}B'$.
-Its area is then $2\pi\alpha\,r_0^2$, where $\alpha(e)=1+(1-e^2)\text{tanh}^{-1}(e)/e$ generally for eccentricity $e$, and $\alpha\sim 1.38$ for the present 2:1 ellipsoid.
+Its area is then $2\pi\alpha\,r_0^2$, where $\alpha(e)=1+(1/e-e)\text{tanh}^{-1}(e)$ generally for eccentricity $e$, and $\alpha\sim 1.38$ for the present 2:1 ellipsoid.
 When electric field is applied, the energy gap near the trap zero takes an unusual functional form.
 To derive it, we first assign spatial coordinates $r$ and $z$ denoting directions within and normal to the loss plane, respectively.
 Next we diagonalize the ground state hamiltonian of OH in mixed fields, see App.~A of Ref.~\cite{Stuhl2012uwave}, or similarly for another species.
