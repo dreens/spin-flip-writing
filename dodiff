@@ -1,5 +1,12 @@
 #!\bin\bash
-git show HEAD~15:MolecularSpinFlipLoss.tex > lookatold.tex
-latexdiff lookatold.tex MolecularSpinFlipLoss.tex > diff.tex
-cp MolecularSpinFlipLoss.bib diff.bib
-cp MolecularSpinFlipLossNotes.bib diffNotes.bib
+
+file=MolecularSpinFlipLoss
+git show HEAD~3:${file}.tex > lookatold.tex
+latexdiff lookatold.tex ${file}.tex > diff.tex
+cp ${file}.bib diff.bib
+cp ${file}.bib diffNotes.bib
+pdflatex diff
+bibtex diff||true
+pdflatex diff
+pdflatex diff
+open -a Preview diff.pdf
