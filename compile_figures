@@ -8,8 +8,8 @@ inkscape -f $PWD/LossSurfaces/Loss_Surfaces_Pins.svg -D -d 300 -e $PWD/losssurfa
 #inkscape -f $PWD/MWSpec/Spec_prep_Inkscape.svg -D -d 300 -e $PWD/mwspec_out.png
 
 # Adding Support for Supplementary Figures
-#inkscape -f $PWD/SuppFigs/Spectrum_FB/spectrum_fb.svg -D -d 300 -e $PWD/SuppFigs/specfb_out.png
-inkscape -f $PWD/SuppFigs/Spectrum_FB/spectrum_f.svg -D -d 300 -e $PWD/SuppFigs/specf_out.png
-inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/elosstraj.svg -D -d 300 -e $PWD/SuppFigs/eil_out.png
-inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/beta_plot_fit_pretty.svg -D -d 300 -e $PWD/SuppFigs/beta_out.png
-#inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/combo.svg -D -d 300 -e $PWD/SuppFigs/combo_out.png
+#inkscape -f $PWD/SuppFigs/Spectrum_FB/spectrum_fb.svg -D -d 300 -e $PWD/specfb_out.png
+inkscape -f $PWD/SuppFigs/Spectrum_FB/spectrum_f.svg -D -d 300 -e $PWD/specf_out.png
+inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/elosstraj.svg -D -d 300 -e $PWD/eil_out.png
+inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/beta_plot_fit_pretty.svg -D -d 300 -e $PWD/beta_out.png
+#inkscape -f $PWD/SuppFigs/E_Loss_Trajectories/combo.svg -D -d 300 -e $PWD/combo_out.png
