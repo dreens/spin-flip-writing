@@ -37,14 +37,6 @@ prl,
 \usepackage{color}
 \newcommand{\red}[1]{{\color{black} #1}}
 
-%\usepackage[showframe,%Uncomment any one of the following lines to test
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
-
 
 \newcommand{\bcl}{{$B_\text{coil}$}}
 \newcommand{\epb}{{$\vec{E}\s {\perp}\s\vec{B}$}}
@@ -55,8 +47,6 @@ prl,
 
 
 \begin{document}
-
-%\preprint{APS/123-QED}
 
 \title{Molecular Spin-Flip Loss and a Dual Quadrupole Trap}%
 
@@ -101,25 +91,13 @@ A diverse array of alternative strategies have succeeded on other molecules\s\ci
 Many of these directly cooled molecules will require secondary strategies like evaporation or sympathetic cooling to make further gains in phase space density\s\cite{Parazzoli2011, Stuhl2012evap, Quemener2016}.
 They also may face a familiar challenge: spin flip loss near the zero of a magnetic trap, but dramatically enhanced for doubly dipolar molecules, relative to atoms, due to their internal spin dynamics in mixed electric and magnetic fields.
 
-%The knowledge of spin flips or Majorana hops as an eventual trap lifetime limit predates the first magnetic trapping of neutrals\s\cite{Migdall1985}.
 Spin flips were directly observed for magnetically trapped atoms near $50\s\mu\text{K}$ and overcome with a time-orbiting potential trap\s\cite{Petrich1995} or an optically plugged trap\s\cite{Davis1995}, enabling the first production of Bose-Einstein condensates.
-%Molecules produced by associated of ultracold atoms inherit the trap-plugging strategy employed for the atoms, but for directly cooled molecules this is not the case.
 Non-laser-based molecular cooling experiments begin at modest temperatures and require trap strengths typically only attained with quadrupole fields\s\cite{Weinstein1998, Sawyer2008, Riedel2011, Quintero-Perez2014, Akerman2017}.
 In the $2\text{ T/cm}$ magnetic quadrupole used in our previous studies of hydroxyl radicals (OH)~\cite{Stuhl2012evap}, spin-flips should not have had a significant influence until the $\mu$K regime, but the application of electric field changes this.
 Electric fields applied to magnetically trapped dipolar species offer interesting opportunities to study anisotropic collisions and quantum chemistry~\cite{Stuhl2013}.
 They can also be useful for control over state purity~\cite{Stuhl2012uwave}.
 But the electric field can also dramatically enhance spin-flip losses, due to internal spin-dynamics that we corroborate with direct experimental evidence for the first time in the present work.
 We achieve this with a novel trap geometry that also allows complete removal of the loss with minimal sacrifice of trap strength.
-%This possibility was realized and modeled in an App.~A of Ref.~\cite{Stuhl2013}, and an attempt was made at deconvolution from the reported collisional effect, but we now report a larger magnitude than previously calculated.
-%In what follows, we endeavor to clearly elucidate the effect, generalize it, and derive its scaling behavior.
-%We will also present a new trap geometry which gives clear evidence of the effect and also allows complete plugging with minimal sacrifice of trap strength.
-
-%Electrostatic traps are free from spin-flips in the traditional sense since even at zero field a typically large, GHz scale splitting separates the electrically weak and strong seeking substates.
-%However this same splitting pushes the weak-field seeking states of different field polarization together, leading to non-adiabatic transitions
-%Motivated by the interest in dipolar molecules in mixed fields for quantum chemistry, precision measurement and many-body physics, we previously investigated loss of magnetically trapped hydroxyl radicals (OH) with applied electric field\s\cite{Stuhl2012uwave}.
-%This trap loss occurred for sub-states of OH's $\mathrm{X}^2\Pi_{J\s {=}\s 3/2}$ ground state manifold other than the most well trapped one (positive parity and full spin polarization, $|f,m_J\s {=}\s 3/2\rangle$, blue in Fig.\s\ref{fig:blocking}).
-%Due to the closely spaced parity doublet, a general feature of Hund's case (a), these states intersect opposite parity states at non-zero magnetic fields, where electric fields can then open avoided crossings and cause trap loss.
-%We now identify internal spin-dynamics leading to trap loss near zero magnetic field even for the most well trapped state and as warm as $50\text{ mK}$.
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{blocking_out.png}%
@@ -139,19 +117,13 @@ Note the drastic widening of the lowest contour\s(red), the culprit for molecula
 \end{figure}
 
 The internal spin-dynamics leading to spin-flip enhancement are subtle, having eluded two previous investigations:
-In Ref.\s\cite{Lara2008} the analogues of atomic spin-flip loss for molecules in mixed fields were modeled. %, and a magnetic quadrupole trap for OH molecules with superposed electric field was specifically addressed.
+In Ref.\s\cite{Lara2008} the analogues of atomic spin-flip loss for molecules in mixed fields were modeled. 
 It was concluded that no significant loss enhancement due to electric field would be evident. However, this conclusion holds only for the approximate Hamiltonian used in that study, not more generally. In Ref.\s\cite{Bohn2013} it was correctly noted that Hund's case (a) molecules maintain a quantization axis in mixed fields.
 The states of the molecule were shown to align with one of the two quantization axes given by the vectors $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$
 \s\footnote{The authors use $\mu_\text{eff}\vec{B} \s {\pm}\s  d_\text{eff}\vec{E}$. We reverse this to provide a more physical connection to our experiment, where the electric field is fixed.},
 $\mu_\text{eff}$ and $d_\text{eff}$ the effective dipole moments of the molecule in uncombined fields.
 The key idea is that Hund's case (a) molecules have both dipole moments fixed to their internuclear axis, so that in the molecular frame, the energy shifts from the two fields combine like vectors.
 It was asserted that this would maintain quantization near the zero of a quadrupole trap and avoid spin-flip loss, but as we now describe, the loss is actually enhanced.
-
-% Outline for this section...
-% 1. Intuition
-% 2. Energies, Cubic B-dependence, eEDM literature.
-% 3. P_LZ, flux calculation, ref 29
-% 4. Generalization
 
 We begin with an intuitive picture.
 In order to remain well trapped in combined fields, a molecule must remain weak field seeking with respect to both fields, i.e. doubly stretched.
@@ -162,30 +134,8 @@ This trap has two hemispheres, a parallel hemisphere where the fields are closer
 The hemispheres are separated by a plane where \epb{}, which intersects the trap center.
 Now suppose a molecule in the doubly stretched state begins in the parallel hemisphere.
 Its quantization axis must be the field sum $d_\text{eff}\vec{E} \s {+}\s  \mu_\text{eff}\vec{B}$.
-If its trajectory carries it near the trap center where the magnetic field is small, the electric field does indeed maintain the quantization axis.
-% $d_\text{eff}\vec{E} \s {+}\s  \mu_\text{eff}\vec{B}$ as claimed in Ref.~\cite{Bohn2013}.
-%However, because the magnetic field orientation also changes near the center, the molecule enters the hemisphere where the fields are closer to antiparallel.
+If its trajectory carries it near the trap center where the magnetic field is small, the electric field does indeed maintain the quantization axis. 
 However when the molecule enters the antiparallel hemisphere, the magnitude of the quantization axis now decreases with increasing magnetic field. This molecule has therefore spin-flipped from the doubly stretched state to a magnetically strong field seeking state. These states are degenerate in the plane where \epb{}, leading to loss.
-%This molecule is thus magnetically strong field seeking and will be lost.
-
-%Defining $\phi\s {=}\s\vec{E}\cdot\vec{B}$ the field orientation, the well-trapped molecule most have the quantization axis $d_\text{eff}\vec{E}\s {+}\s\text{sign}(\phi)\mu_\text{eff}\vec{B}$.
-%Since $\phi$ is a continuous scalar, $\phi\s{=}\s 0$ is its contour level and always corresponds to a 2D surface;
-%In a magnetic quadrupole with homogeneous electric field this happens in a plane through the trap center.
-
-
-%We begin with an intuitive explanation of the loss enhancement based on molecular orientation.
-%Consider a magnetic quadrupole trap, where a weak-field seeking molecule remains trapped insofar as it adiabatically follows the field direction.
-%This is only challenging near the trap center where the magnetic field is vanishingly small, causing spin-flips.
-%When electric field is added, it dominates near the trap center. % where the magnetic field is weakest.
-%As correctly noted in\s\cite{Bohn2013}, this causes a quantization axis to be maintained, either of $\s  d_\text{eff}\vec{E} \s {\pm}\s\mu_\text{eff}\vec{B}$.
-%Now suppose a molecule initially follows the quantization axis $d_\text{eff}\vec{E}\s {+}\s\mu_\text{eff}\vec{B}$ and is in the hemisphere where $\phi\s {=}\s\vec{E}\cdot\vec{B}>0$, i.e. the fields are closer to parallel than antiparallel.
-%If the molecule passes near the trap center, $\vec{B}$ rotates while $\vec{E}$ maintains its orientation and magnitude, so that $\phi$ changes sign.
-%Now the length of the quantization axis $d_\text{eff}\vec{E}\s {+}\s\mu_\text{eff}\vec{B}$, which is proportional to the field induced energy shift of the molecule, actually decreases with increasing $|\vec{B}|$.
-%This molecule is now no longer in a well-trapped state.
-%To remain well-trapped a molecule must have the quantization axis $d_\text{eff}\vec{E}\s {+}\s\text{sign}(\phi)\mu_\text{eff}\vec{B}$, so that an increase in magnetic field magnitude always increases its potential energy.
-%Whenever $\phi$ changes sign, even far from the trap center, there will be a chance of spin-flip associated with the molecule's propensity to maintain its quantization axis rather than remain in the well-trapped state.
-%Since $\phi$ is a continuous scalar defined in 3D, $\phi\s {=}\s 0$ is a contour level of $\phi$ and thus always corresponds to a 2D surface defined by \epb{}; in the case of a magnetic quadrupole with homogeneous $\vec{E}$ it is a plane.
-%This contrasts with traditional spin-flip loss, which does not favor a particular plane but occurs in a small ellipsoidal region near to the trap center.
 
 This intuition agrees with a more rigorous analysis of the energy splitting $G$ between the trapped state and its spin-flip partner.
 By diagonalizing the approximate eight state ground molecular Hamiltonian for OH, subtracting the relevant state energies and Taylor expanding, we find:
@@ -231,14 +181,6 @@ which relates the probability of diabatically hopping between two states $P_\tex
 Here $z$ and $v_z$ are normal to the \epb{} plane, and we neglect the components of $\dot{G}$ due to the other coordinates since from Eqn.\s\ref{eqn:energetics} it is clear that $G$ grows predominately in one direction.
 We can also set $\kappa$ to the minimum energy gap along the trajectory, which is found in the plane.
 This facilitates direct numerical computation of the loss rate ($\gamma$) by integrating the molecule flux through the plane for a thermal distribution, weighted by the hopping probability. See Eqn.\s2 in Sec.\s A of the Supplementary\s\cite{ssm} for the full expression.
-%The extent of the loss enhancement caused by electric field is best addressed as discussed below, but a useful scaling law can be formed by comparing the surface area of energy contours such as those shown in red in Fig.\s\ref{fig:blocking}e-f.
-%This yields an enhancement $\eta \s {=}\s  (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$, See\s\cite{ssm} Supplementary Materials\s\cite{ssm}.
-% WORK THIS STUFF IN
-%For $\kappa$ the energy scale of hops without any application of electric field, electric field enhances the loss rate by $\eta \s {=}\s  (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
-%This yields an enhancement $\eta \s {=}\s  (d_\text{eff}E/\sqrt{\kappa\Delta})^{8/3}$.
-%Here we have defined $\kappa$ as the energy scale of spin-flips in the non-enhanced case- it depends in general on trap gradient and temperature.
-% FULL DERIVATION IN SUPP, DISCUSSION HERE
-%The Landau-Zener loss through the plane can be numerically integrated as a flux.
 We perform these integrations for OH over the velocity distribution in a $2\text{ T/cm}$ magnetic quadrupole\s\cite{Sawyer2008} under various electric fields in Tab.\s\ref{tab:rates}.
 
 We have also developed an algebraic scaling law, which yields the electric field induced loss enhancement factor
@@ -247,17 +189,12 @@ We have also developed an algebraic scaling law, which yields the electric field
 \end{equation}
 see Sec.\s C of\s\cite{ssm} for the full derivation.
 Here $\kappa$ represents a characteristic energy scale for spin-flips that can be derived by setting $P_\text{hop}\s {=}1/e$ in Eqn.\s\ref{eqn:lz} and using a typical value of $v_z$.
-%To get $\eta$, one simply compares the areas of the $\kappa$ valued energy contours with and without electric field, solving $G(0,\mathcal{B}_{||},\mathcal{E})\s {=}\s\kappa$ from Eqn.\s {eqn:energetics} in the former case.
 This means that for electric fields with $d_\text{eff}E>\sqrt{\kappa\Delta}$, the loss enhancement is almost cubic with electric field.
 Crucially, it is not $\Delta$ that sets the relevant scale, as one might naively suppose given that this is the energy beyond which the Stark effect is linear and the molecule is polarized.
 Instead it is $\sqrt{\kappa\Delta}$, which is in general much smaller; $\kappa\s {=}\s 5\text{ MHz}$ for OH in our trap, while $\Delta\s {=}\s1.7\text{ GHz}$.
-%For $50\text{ mK}$ OH in a $2\text{ T/cm}$ trap\s\cite{Sawyer2008}, $\kappa\s {=}\s 5\text{ MHz}\s {<<}\s\Delta\s {=}\s 1.7\text{ GHz}$.
-%It is interesting to note that in the limit of small $\Delta$ or linear Stark effect, the loss enhancement increases without bound.
-%This makes sense from Eqn.\s\ref{eqn:energetics}, where we see that without $\Delta$, $G=0$ in the entire \epb{} plane.
 
 Returning to the numerical approach, the direct integration of flux is a key improvement relative to our previous work\s\cite{Stuhl2013}, where electric fields were applied to study collisions.
 The mechanism of molecular spin-flip loss was identified, and an attempt was made to deconvolve it from the collisional effect of the electric field.
-%However, no separate experimental demonstration could be performed to verify or ascertain its magnitude since the application of electric field enhances trap loss both by spin-flips and inelastic collisions.
 Revisiting this with the direct integration of flux, we find a three-fold larger loss magnitude, enough to explain a significant portion of the effect previously attributed to collisions, see Sec.\s A of the Supplementary\s\cite{ssm}.
 In light of this, it becomes especially important to perform direct, unconvolved experimental verification of both the magnitude of the loss effect and the validity of our loss-flux calculations.
 We now present the new trap where this is achieved.
@@ -270,7 +207,7 @@ We now present the new trap where this is achieved.
 
 
 \begin{figure}[tb]
-\includegraphics[width=\linewidth]{geometry_out.png}%blue-red-yellow-v2_CAD.png}%
+\includegraphics[width=\linewidth]{geometry_out.png}
 \caption{
 The last six pins of our Stark decelerator\s\cite{Sawyer2008} form the trap\s(a), which is $0.45\text{ K}$ deep with trap frequency $\nu\s {\approx}\s 4\text{ kHz}$\s(b).
 Along $y$ the trap is bounded by the $2\text{ mm}$ pin spacing.
@@ -288,9 +225,6 @@ Our idea is to use a pair of 2D quadrupole traps, one magnetic and the other ele
 \vec{B}=B'x\hat{y}-B'y\hat{x}\quad\quad\vec{E}=E'y\hat{y}-E'z\hat{z}
 \end{equation}
 We achieve these fields in a geometry that matches our Stark decelerator\s\cite{Bochinski2003}.
-%This approach is similar to the Ioffe-Pritchard strategy\s\cite{pritchard1983}, where a 2D magnetic quadrupole is combined with an axial magnetic dipole trap.
-%While this successfully prevents spin-flip loss, axial and radial trapping interfere, resulting in significantly lower trap depths than for a 3D quadrupole.
-%We thwart this interference by using electric field for the third direction.
 This geometry features large spin-flip loss, since \epb{} in both the $x\s {=}\s 0$ and $y\s {=}\s 0$ planes, and from Eqn.~\ref{eqn:energetics}, $G\s {=} \s \mathcal{B}_\perp^3\Delta^2/\mathcal{E}^4$ will be generally very small due to the large $\mathcal{E}$.
 However, by adding a small magnetic field $\vec{B}\s {=}\s B_\text{coil}\hat{z}$ along the centerline of the magnetic quadrupole with an external bias coil, a dramatic change can be made to the surfaces where \epb{} with minimal perturbation of the trapping potential.
 
@@ -308,7 +242,6 @@ With only $200\s\text{G}$ bias field (the trap is $5\s\text{kG}$ deep) the loss 
 \includegraphics[width=\linewidth]{losssurfaces_out.png}%
 \caption{
 Surfaces where spin-flips can occur are shown for three values of \bcl{} in light gray, dark gray, and black.
-%(\epb{}, $\mu_\text{eff}B\s {<}\s d_\text{eff}E$)
 The magnetic pins are shown as in Fig.\s\ref{fig:CAD} for context.
 The purple star marks the trap center, to which molecules are confined within a \protect\raisebox{2.5px}{\texttildelow} $\!\!1\text{ mm}$ diameter.
 \label{fig:LSurfs}}
@@ -319,27 +252,6 @@ This pin translation disrupts the idealized 2D magnetic quadrupole by adding a s
 The direct integral calculation uses only the temperature of a purely thermal distribution as a free parameter, and does not involve computation of any trajectories.
 The temperature fits to $170\s {\pm}\s 20\s\text{mK}$\s\footnote{Calculation performed in COMSOL: \href{https://github.com/dreens/spin-flip-integration/}{Source Code}}.
 An intuitive explanation for the intriguing double well structure in Fig.\s\ref{fig:blocking} is that \bcl{} first translates the magnetic zero along the z-axis, overlapping it with larger electric fields at first before moving it out of the trap.
-
-%\begin{figure}[tb]
-%\includegraphics[width=\linewidth]{mwspec_out.png}%
-%\caption{
-%Microwave spectroscopy shows that increasing \bcl{} increases population and shifts its distribution to higher energy.
-%Triangles indicate the field at which a molecule can access loss regions for a given \bcl.
-%The dotted lines are eye-guides, but the solid line for highest \bcl{} is a fit to $175\s {\pm}\s 15\text{ mK}$.
-%\label{fig:spec}}
-%\end{figure}
-%
-%Returning to the case of well-aligned magnetic pins, we perform a final check on our loss calculations using microwave spectroscopy (Fig.\s\ref{fig:spec}).
-%Molecules experiencing a specific B-field are transferred them to an opposite parity state that is dark to our detection laser, as in\s\cite{Stuhl2012evap}.
-%Although the magnetic energy is only part of the total energy of molecules in our dual electric and magnetic quadrupole, molecules with a high magnetic energy during our spectroscopic snapshot are more likely to have a high total energy.
-%It is seen that increasing \bcl{} increases population first at low fields but eventually at higher fields as well.
-%This is consistent with our calculations showing that loss location moves further from the trap center with increasing \bcl{} (Fig.\s\ref{fig:LSurfs}), and thus can be accessed only by higher energy molecules.
-%At largest \bcl{} the distribution fits to $175\s {\pm}\s 15\text{ mK}$, agreeing with the pin translation fits (Fig.\s\ref{fig:WVplot}b).
-
-%In the case of lowest applied B-field in Fig.\s\ref{fig:spec}, a negative signal is observed.
-%This indicates an $|e\rangle$ state accumulation.
-%Although the spin-flips we have discussed connect $|f,3/2\rangle$ to $|f,-3/2\rangle$, the latter experiences various avoided crossings due to the large electric confinement fields and remains weakly trapped.
-%Its field-dressed state character varies, transitioning to $|e,3/2\rangle$ at larger B-fields (Fig.\s\ref{fig:blocking}d).
 
 \begin{figure}[tb]
 \includegraphics[width=\linewidth]{vwfig_out.png}%
@@ -358,19 +270,12 @@ In these states, which include most laser-cooled molecules thus far, the electri
 This constant is usually in the tens of MHz\s\cite{Quemener2016}, so molecular spin-flip loss remains quite significant.
 The inclusion of hyperfine requires a careful case-by-case investigation. For OH, it would initially seem to add an extra splitting that could protect from spin-flips, but in fact the loss plane is only shifted slightly away from \epb{} and retains the same area.
 For YO\s\footnote{This is particularly relevant given the recently realized 3D MOT for YO}, certain hyperfine states can avoid spin-flip loss entirely when electric fields are applied.
-These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation. %Although our focus has been spin-flips in magnetic traps, spin-flips in electric traps are also possible, (cite meijer).
+These states are characterized by significant electron-spin-to-nuclear-spin dipolar coupling, which results in a protective gap regardless of field orientation.
 
-%We can also generalize to other geometries with a simple loss suppression strategy: avoid $G \s {<}\s  \kappa$.
-%This is maximally violated where \epb{} which from Eqn.\s\ref{eqn:energetics} implies $G\s {=} \s \mathcal{B}_\perp^3\Delta^2/\mathcal{E}^4$, so that small $\vec{B}$ and large $\vec{E}$ should be avoided.
-%This is maximally violated by the magnetic quadrupole, where in a suitably small region even the smallest stray electric field dominates the magnetic.
-%One trivial tactic would be to use only one field, but we note that one of the main attractions of working with dipolar species is to utilize both.
 It is also instructive to consider the related case of a pure electrostatic trap.
 Here there is always some zero field parity splitting that prevents the orientation-reversing spin flips we have been discussing.
 However, this same splitting pushes all states with the same sign of $m$, the field alignment quantum number, very close to one another, leading to loss via Landau-Zener transitions other than the $m$ to $-m$ spin-flip\s\cite{Wall2010}.
 Intriguingly, the addition of a homogeneous magnetic field can actually suppress this loss\s\cite{Meek2011}.
-%Another option is to trap with both fields and keep zeros precisely overlapped.
-%This was realized for OH with a superposed magnetic quadrupole and electric hexapole\s\cite{Sawyer2007}.
-%Another way is to use an electrostatic trap and superpose a homogeneous magnetic field, as has specifically been investigated\s\cite{Meek2011}.
 
 The present trap, in addition to providing the desired experimental testing ground for molecular spin-flip loss, produces large $5\s\text{T/cm}$ trap gradients useful for maintaining high densities to facilitate collisional studies.
 This is in contrast with other strategies for plugging the hole of a magnetic trap which often lead to a reduction in trap gradient.
@@ -399,3 +304,20 @@ We thank Goulven Qu\'em\'ener for his continued involvement in this research.
 \end{document}
 %
 % ****** End of file MolecularMajoranaLoss.tex ******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -35,16 +35,6 @@ prl,
 
 \usepackage{color}
 \newcommand{\red}[1]{{\color{black} #1}}
-
-%\usepackage[showframe,%Uncomment any one of the following lines to test
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
-
-
 \newcommand{\bcl}{{$B_\text{coil}$}}
 \newcommand{\epb}{{$\vec{E}\,{\perp}\,\vec{B}$}}
 \newcommand{\epbm}{{\vec{E}\,{\perp}\,\vec{B}}}
@@ -54,7 +44,7 @@ prl,
 
 \begin{document}
 
-%\preprint{APS/123-QED}
+%\preprint{}
 
 \title{Supplementary Materials}%
 
@@ -126,7 +116,6 @@ One avenue to try and improve agreement would be to incorporate collisions in th
 
 \subsection{B.\quad Evaporation\label{sec:evap}}
 
-% Lead off with the connection to the spin-flip loss. More important at lower temperature. And thus we give up on suppression, focus only on warmer temperatures, and only on what we can directly see.
 Ref.~\cite{Stuhl2012evap} describes the processes of evaporation from a magnetic quadrupole trap and of depletion spectroscopy to measure the trap distribution. Both processes require two steps.
 First, molecules are transferred from the positive to the negative parity state by applying short pulses of microwaves tuned to a specific range of magnetic fields.
 After this transfer, the molecules are still trapped, and only by the subsequent application of a DC electric field to open avoided crossings can these opposite parity molecules escape from the trap.
@@ -153,37 +142,15 @@ Depletion spectroscopy spectra are obtained after evaporation (red filled circle
 
 We have also performed another independent verification of the collisional effect by comparing the populations under two closely related experimental sequences.
 The first is a normal evaporation sequence and the second is identical but with a time-reversed microwave frequency chirp, so that the population cut goes backwards from deep to shallow in the trap.
-%We refer to these conditions as forward and backward evaporation, respectively.
 This comparison subjects all molecules to the same integrated microwave power, and thus the two conditions should be equivalent in a situation with only single particle effects.
 With respect to collisional effects, the time-reversed case functions like a truncation, preventing molecules that would otherwise have collisionally thermalized to lower temperatures from doing so.
 To whatever extent an evaporation is successful in facilitating beneficial thermalizing collisions, the time-reversed condition should yield fewer molecules.
 We consistently observe this at the $(6\,{\pm}\,2)\%$ level, pointing to an evaporative effect despite the negative influence of spin-flip losses.
 We have also experimentally observed that under less ideal initial conditions, such as higher initial temperatures of $80\text{ mK}$ resulting from poorer decelerator performance, the density enhancements at low magnetic field and the forward backward differences both disappear, confirming the role of evaporation. 
 
-%, note the height difference in the traces shown in Fig.~\ref{fig:normenhance}.
-%Regarding the shape of the traces, both evaporations yield $30\pm3\text{ mK}$ distributions, and the backward case still shows a slight density enhancement.
-%This could be consistent with a single-particle mechanism for density enhancement involving the spin-flip loss process we know to be at work.
-%Molecules transferred by the microwaves into a lower state have a small probability to end up back in the trapped state by traversing the spin-flip loss plane in the trap center in reverse, at which point they have experienced significant sisyphus type cooling via the microwave photon.
-%The process is reversible, so these molecules should eventually be lost, but for some limited time period they could contribute to the observed density enhancement.
-%One puzzle however is that the observed spectra are only different by a scaling factor; both fit to $30\pm3\text{ mK}$.
-%One might have expected the forward evaporation to yield more molecules at lower fields relative to the backward and thus fit a colder temperature.
-%It could be that the collisional effect is strong enough to show an effect in final molecule number, but that more collisions are required before the spectra are distinguishable in shape and temperature.
-%It is also possible that the forward evaporation would show a clearer shift in the distribution if not for competition with the influence of spin-flip losses at the trap center.
-
-%It is also surprising that the backwards evaporation also produces a density enhancement relative to the unevaporated case.
-%A possible interpretation of this is that both sequences are somehow functioning as evaporations, even though the backwards sequence removes most its molecules within the first $10\%$ of the evaporation time.
-%Another possible interpretation is that the backwards and forwards difference
-%One possible exception could be the existence of very slow single particle transfers to other trapped substates which could hide from the microwaves or interact with them differently, but we find no clear evidence for this.
-%With evaporative effects, the normal condition ought to perform better, though perhaps not very significantly if the sequence is not well optimized.
-%One possible caveat would be the existence of a slow single-particle shelving processes where molecules leak into some state that is sensitive to the detection laser but not the microwave knife.
-%If this process had a similar time scale to the evaporation, it would result in the normal evaporation yielding higher final numbers by purely single particle means, but no fully plausible processes have been identified.
-%For example, electric field induced spin-flip loss could allow the well-trapped $|f,3/2\rangle$ molecules to slowly leak into $|f,1/2\rangle$, and the latter does have a different behavior with respect to microwave spectroscopy.
-%But the electric fields also ought to destabilize these molecules and prevent them from staying in the trap in either case.
-
 In future work we plan to use a newly developed capability of reducing the population without perturbing its phase space distribution, as reported in the main text~\cite{smt}.
 This ought to reduce the influence of collisional processes, but keep any single particle effects the same, thus disambiguating the two.
-Many possible approaches have key drawbacks, for example changing the partial pressure of water in our supersonic expansion would require changing the temperature of the valve and thereby influencing the initial speed of the beam.
-%For example it is not possible to change the discharge yield of OH in our supersonic expansion without also influencing the temperature of the initial distribution, which is effected by the discharge.
+Many possible approaches have key drawbacks, for example changing the partial pressure of water in our supersonic expansion would require changing the temperature of the valve and thereby influencing the initial speed of the beam. 
 We opt for the application of microwaves during deceleration, leading to a probability for transitioning from a weak to strong field seeking state and being deflected out of the beam.
 We tune the microwaves to be resonant only at low magnitudes of electric fields, experienced by all molecules when flying through a de-energized stage just after switching.
 The microwaves are applied via horn and have a $17\text{ cm}$ wavelength, so that microwave power variations across the cloud are minimal.
@@ -207,7 +174,6 @@ These assumptions allow us to define the loss region as the contour surface of e
 \end{equation}
 Here $\dot{G}$ is the rate of change in the energy gap between the trapped state and its spin flip partner, and $B'$ is the magnetic field gradient along the strong axis of the trap.
 
-%One complication is that in a quadrupole trap there is a weak and a strong axis.
 We assume that the electric field is applied parallel to the strong axis of the quadrupole trap, which makes the loss plane, as defined by $\vec{E}\perp\vec{B}$, perpendicular to this axis. This matches the geometry that has been realized in our experiment~\cite{Stuhl2013}, and is the worst case, but by no more than a constant factor of $2\sqrt{2}$ relative to other directions the electric field could have.
 
 Before application of electric field, the $\kappa$ valued energy contour is the surface of an oblate ellipsoid of long radius $r_0=2\kappa/\mu_\text{eff}B'$.
@@ -218,18 +184,14 @@ Next we diagonalize the ground state hamiltonian of OH in mixed fields, see App.
 Subtracting the energies of the trapped state and its spin-flip partner, and then series expanding the result yields:
 \begin{equation}
 \label{eqn:energy}
-G = 2\mu_\text{eff}B'|z| + \beta\frac{(\mu_\text{eff}B'r/2)^3\Delta^2}{(d_\text{eff}E)^4}f(d_\text{eff}E/\Delta),% + \mathcal{O}(z^2,r^4).
+G = 2\mu_\text{eff}B'|z| + \beta\frac{(\mu_\text{eff}B'r/2)^3\Delta^2}{(d_\text{eff}E)^4}f(d_\text{eff}E/\Delta),
 \end{equation}
 plus higher order terms in $r$ and $z$.
-%Here we use $r$ to denote the in-loss-plane coordinate and $z$ to denote distance away from the loss plane, along the strong axis of the trap.
 Here $\beta=625/144=4.3$ and $f$ is a rational expression that approaches $1$ for small arguments: $f(x) = (1 + 1.28x^2)/\sqrt{1+1.44x^2}$.
-%This is a series expansion the energy difference between the trapped state and its spin-flip-partner.
-%The energy difference can be derived for OH by diagonalizing the ground state hamiltonian in mixed fields, see App.~A of Ref.~\cite{stuhl2012uwave}, or similarly for any other species.
 The key feature, as discussed in the main text~\cite{smt}, is the cubic dependence $G$ exhibits on $r$ which leads to much more severely oblate contours.
 
 Now we can use Eqn.~\ref{eqn:energy} to compute the surface area of the $G=\kappa$ contour.
 We specialize to the regime where $d_\text{eff}E<\Delta$, so that $f(d_\text{eff}E/\Delta)\sim 1$.
-%For larger fields, one $\Delta$ can be exchanged for $d_\text{eff}E$, but in practice the loss rate is already so high in these regimes that no sample remains trapped.
 The radial extent of the surface can be solved by inverting $\kappa=G|_{z=0}$:
 \begin{equation}
 \label{eqn:rE}
@@ -257,9 +219,6 @@ In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>1.6\!\cdot\!\sqrt{\
 Eventually when $d_\text{eff}E>\Delta$, the factor of $f(d_\text{eff}E/\Delta)$ in Eqn.~\ref{eqn:energy} is better approximated by $1.1\!\cdot\!d_\text{eff}E/\Delta$, which leads to the modification $\eta=0.26\!\cdot\!(d_\text{eff}E)^2/\kappa^{4/3}\Delta^{2/3}$.
 Thus for these larger E-fields, the enhancement factor reduces in its dependence on electric field from order $8/3$ to order $2$.
 At this point, the loss is typically far too large for trapping, see Tab.~I of the main text~\cite{smt}.
-
-%In summary, the loss enhancement scales with the $8/3$ power of the electric field magnitude in the regime where $\sqrt{\kappa\Delta}<d_\text{eff}<\Delta$, where naively one might not expect the electric field to play any role. At even higher fields, the loss is already so large as to preclude successful trapping experiments, but the scaling with electric field does reduce to quadratic order.
-
 
 \bibliographystyle{apsrev4-1_no_Arxiv}
 \bibliography{Supplement}
