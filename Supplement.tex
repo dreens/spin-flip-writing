@@ -137,7 +137,11 @@ Some of the temperature fits performed in Fig.~3 of Ref.~\cite{Stuhl2012evap} re
 
 Since depletion spectroscopy transfers only a fraction of molecules to the lower parity state at a specific magnetic field value, we integrate the total area enclosed by the spectroscopy curve, which is scaled according to the observed total population by laser induced fluorescence.  This is necessary because depletion spectroscopy is performed with a train of short microwave pulses lasting over a total time of about a quarter of a trap oscillation, so that molecules are not at all frozen in place.  Relative to a very brief spectroscopy pulse that would only deplete molecules in a given region at that particular instant, the use of a train of pulses over a longer period of time allows us to sample molecules more widely to boost the signal to noise ratio of spectroscopy.  The spectroscopy gives a value that is proportional to the true instantaneous population in a specific magnetic field region, but with a scaling factor that allows the signal to be constrained with the measured total number of molecules in the trap.  We carefully include all of the steps in the error analysis leading to the error bars shown in Fig.~\ref{fig:normenhance}.
 
-In addition to the spatial density enhancement in the low magnetic field region, we can also examine the phase space density in the trap, under the assumption of good thermal equilibrium. As the population $N$ was reduced by $60\%$ after evaporation, the temperature came down by a factor of $2$. For a quadrupole trap the phase space density is proportional to $N T^{-9/2}$. This gives an increase of about a factor of $10$ in phase space density.
+In addition to the spatial density enhancement in the low magnetic field region, we can also examine the phase space density (PSD) in the trap, under the assumption of good thermal equilibrium. 
+As the population $N$ was reduced by $60\%$ after evaporation, the temperature came down by a factor of $2$. 
+For a quadrupole trap $\text{PSD}\,{\propto}\,N\,T^{-9/2}$, which gives a PSD increase of a factor of $10$. 
+It is possible for truncation effects to explain some of this factor, but not all.
+When we perform Maxwell-Boltzmann fits to truncated distribution models, we can see false PSD enhancements of at most $6$, at which point the truncated models no longer bear much resemblance to a thermal distribution and cannot be fit.
 
 \begin{figure}[tb]
 \includegraphics[width=8.2cm]{SuppFigs/specf_out.png}%
@@ -252,7 +256,7 @@ The implication for the enhancement factor in Eqn.~\ref{eqn:eta} is simply that 
 In other words, Eqn.~\ref{eqn:eta} holds when $d_\text{eff}E>1.6\!\cdot\!\sqrt{\kappa\Delta}$, but below this $\eta$ gradually returns to unity.
 Eventually when $d_\text{eff}E>\Delta$, the factor of $f(d_\text{eff}E/\Delta)$ in Eqn.~\ref{eqn:energy} is better approximated by $1.1\!\cdot\!d_\text{eff}E/\Delta$, which leads to the modification $\eta=0.26\!\cdot\!(d_\text{eff}E)^2/\kappa^{4/3}\Delta^{2/3}$.
 Thus for these larger E-fields, the enhancement factor reduces in its dependence on electric field from order $8/3$ to order $2$.
-At this point, the loss is typically so large as to preclude all but the briefest trapping experiments, see Tab.~I of the main text~\cite{smt}.
+At this point, the loss is typically far too large for trapping, see Tab.~I of the main text~\cite{smt}.
 
 %In summary, the loss enhancement scales with the $8/3$ power of the electric field magnitude in the regime where $\sqrt{\kappa\Delta}<d_\text{eff}<\Delta$, where naively one might not expect the electric field to play any role. At even higher fields, the loss is already so large as to preclude successful trapping experiments, but the scaling with electric field does reduce to quadratic order.
 
