@@ -1,5 +1,5 @@
-filename=MolecularSpinFlipLoss
-sname=Supplement
+filename=LF16145_Reens_MSFL
+sname=LF16145_Reens_SM
 
 pdf:
 	pdflatex ${filename}
