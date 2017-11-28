@@ -1,10 +1,10 @@
 #!\bin\bash
 
-file=LF16145_Reens_MSFL
-git show HEAD~5:${file}.tex > lookatold.tex
+file=LF16145_Reens_SM
+git show HEAD~2:${file}.tex > lookatold.tex
 latexdiff lookatold.tex ${file}.tex > diff.tex
 cp ${file}.bib diff.bib
-cp ${file}.bib diffNotes.bib
+cp ${file}Notes.bib diffNotes.bib
 pdflatex diff
 bibtex diff||true
 pdflatex diff
