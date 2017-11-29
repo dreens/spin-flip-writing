@@ -132,8 +132,8 @@ It was asserted that this would maintain quantization near the zero of a quadrup
 
 We begin with an intuitive picture.
 In order to remain well trapped in combined fields, a molecule must remain weak field seeking with respect to both fields, i.e. doubly stretched.
-This means that the quantization axis to which it aligns, whose length is proportional to the resulting energy shift of the molecule, should be maximal.
-In a geometry where the fields are continuously rotating, the maximal quantization axis can be either of $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$, depending on whether the fields are oriented closer to parallel or antiparallel.
+This means that the quantization axis to which it aligns, whose length is proportional to the resulting energy shift of the molecule, should have the maximal length.
+In a geometry where the fields are continuously rotating, the maximal length quantization axis can be either of $d_\text{eff}\vec{E} \s {\pm}\s  \mu_\text{eff}\vec{B}$, depending on whether the fields are oriented closer to parallel or antiparallel.
 Consider a molecule in a magnetic quadrupole trap with a uniform electric field.
 This trap has two hemispheres, a parallel hemisphere where the fields are closer to parallel, and vice versa.
 The hemispheres are separated by a plane where \epb{}, which intersects the trap center.
@@ -319,7 +319,7 @@ Relative to the previous approach, we make the same simplifying assumptions: los
 Our improvement relates to the next step, where an integral calculation for the loss rate is performed.
 In Ref.~\cite{Stuhl2013} the integration spans the entire 3D spatial distribution, weighted by the frequency of crossing of the center plane and the chance of loss for each crossing:
 \begin{equation}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\theta)dv_\theta\left( \frac{v_\theta}{\pi r} P_\text{hop}(r,v_\theta)\right).
+\gamma=\int\displaylimits_0^\infty\!4\pi r^2\,n(r)dr\!\int\displaylimits_0^\infty \!n(v_\theta)dv_\theta\left( \frac{v_\theta}{\pi r} P_\text{hop}(r,v_\theta)\right).
 \end{equation}
 Here $n(r)$ is the radial distribution function, constrained to satisfy $\int_0^\infty 4\pi r^2n(r)=1$, and of the form $n(r)\propto e^{-\mu_BB' r/kT}$. Likewise $n(v_\theta)$ is the usual normalized Maxwellian velocity distribution.  Implicit in this integration is the assumption that molecules at a given radius $r$ cross the center plane with a frequency of $v_\theta/\pi r$.
 This approximation is rather simplistic given that molecules are typically not following circular orbits of constant $v_\theta$ but are in general following some complex trap motion. In addition, the trap is approximated as spherically symmetric to avoid the complication of elliptical coordinates in the three dimension.
@@ -327,7 +327,7 @@ This approximation is rather simplistic given that molecules are typically not f
 A more accurate treatment that we use here is to perform an integration of flux through the loss plane directly:
 \begin{equation}
 \label{eq:fullInt}
-\Gamma_\text{LZ}=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right).
+\gamma=\int\displaylimits_0^\infty\!2\pi r \,n(r)dr\!\int\displaylimits_0^\infty\! n(v_z)dv_z\left(v_z P_\text{hop}(r,v_z)\right).
 \end{equation}
 Here the spatial integration is over the central plane only, hence the $2\pi r$ Jacobean, and the hopping probability is multiplied by $v_z$ to give a flux. The population distribution $n(r)$ is now normalized correctly for an oblate ellipsoidal quadrupole trap, which no longer requires elliptical coordinates since the integration is only in one plane. We change to cylindrical coordinates to highlight our focus on the central plane.
 This flux integral gives the desired loss rate without any approximations about molecule orbits or plane-crossing frequency. This rigorous treatment provides precisely an overall scaling factor of $\pi$ relative to the previous estimate. Comparing the integrands and Jacobeans of Eqn. 1 and 2 gives a factor of $\pi$/2, and the change of integration from the spherical trap volume to the loss plane provides a factor of 2 via the distribution $n(r)$.
@@ -339,14 +339,14 @@ This flux integral gives the desired loss rate without any approximations about 
 \end{figure}
 
 The influence of this factor on the deconvolution procedure relates to the details of the two-body fitting routine.
-One plus two body fits $\dot{N}=-\gamma N-\beta N^2$ were performed to various decay trap curves, with the one body rate $\gamma$ fixed to the value expected due to vacuum scattering and spin-flip loss.
+One plus two body fits $\dot{N}=-\Gamma N-\beta N^2$ were performed to various decay trap curves, with the one body rate $\Gamma$ fixed to the value expected due to vacuum scattering and spin-flip loss.
 An example of such decay curves is shown in Fig.~\ref{fig:eil}, where electric field is turned on suddenly after various hold times, which is motivated by the desire to vary the trapped sample density.
 With the stronger spin-flip loss, we also consider its effect beyond a pure one-body decay. Molecules whose orbits regularly intersect the loss region are lost, after which thermalization would be required to repopulate the loss prone trajectories of phase space. If thermalization is slow, spin-flip loss can have a rate that decreases over time, producing a time dependence of population like that of a two-body effect.
 Even though the possibility of a factor of two error in the calculated magnitude of spin-flip loss was considered in Ref.~\cite{Stuhl2013} (Repeated here in Fig.~\ref{fig:beta}, shaded regions), the possibility of its influencing the data in a non-single-particle manner was not addressed. We note however that both the previous and current derivations of spin-flip loss assume a thermal distribution in the trap.
 
 \begin{figure}[t]
 \includegraphics[width=\linewidth]{beta_out.png}
-\caption{Two body fits from~\cite{Stuhl2013} to experimental data like that in Fig.~\ref{fig:eil} but at various electric fields. The blue data points and shaded region are repeated from Fig.~3 of~\cite{Stuhl2013}, where the shading indicates the variation that would be brought about by two-fold changes in $\gamma$ from spin-flip losses. With a factor of 3 correction noted in this study, the spin flip loss simulation (thick red line) matches the original data within errorbars.\label{fig:beta}}
+\caption{Two body fits from~\cite{Stuhl2013} to experimental data like that in Fig.~\ref{fig:eil} but at various electric fields. The blue data points and shaded region are repeated from Fig.~3 of~\cite{Stuhl2013}, where the shading indicates the variation that would be brought about by two-fold changes in $\Gamma$ from spin-flip losses. With a factor of 3 correction noted in this study, the spin flip loss simulation (thick red line) matches the original data within errorbars.\label{fig:beta}}
 \end{figure}
 
 We have performed single particle Monte Carlo simulations of spin-flip loss to further investigate this effect, and we obtain curves such as shown with the experimental data in Fig.~\ref{fig:eil}.
