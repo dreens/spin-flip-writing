@@ -1,6 +1,6 @@
 #!\bin\bash
 
-file=LF16145_Reens_SM
+file=LF16145_Reens_MSFL
 git show HEAD~2:${file}.tex > lookatold.tex
 latexdiff lookatold.tex ${file}.tex > diff.tex
 cp ${file}.bib diff.bib
